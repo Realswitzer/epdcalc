@@ -377,3 +377,26 @@ export const zero_two_unknown: Tower = [
 
 // TODO: add stats
 export const mystic_engineer: Tower = [{}, {}, {}, {}, {}, {}, {}];
+// TODO: add stats, find right rarity
+export const code_002: Tower = [
+	{
+		price: 3_800 // not known but end value is similar to normal zt.
+	},
+	{ price: 1_700 },
+	{ price: 4_600 },
+	{ price: 21_700 },
+	{ price: 78_500 },
+	{ price: 294_000 },
+	{
+		damage: 300,
+		cooldown: 0.05,
+		range: 130,
+		leech: 0.48,
+		purify: 2,
+		damage_buff: -0.4,
+		camo: true,
+		aim: 175,
+		shield_dmg: 0.3,
+		price: 3_002_002
+	}
+];

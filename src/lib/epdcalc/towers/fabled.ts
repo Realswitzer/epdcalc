@@ -279,4 +279,38 @@ export const quantum_turret: Tower = [
 // TODO: add stats
 export const mystic_zero_two: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
-export const uranium_stryker: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const uranium_stryker: Tower = [
+	{
+		damage: 40,
+		cooldown: 21,
+		exclusion: 160,
+		radius: 50,
+		inaccuracy: 40,
+		rad_strength: 0.8,
+		rad_length: 8,
+		rupture: 0.35,
+		rupture_duration: 7,
+		shield_bypass: 0.3,
+		armor_piercing: true,
+		camo: true
+		// already placed so dont have idea for price.
+	},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{
+		//idk about the path on this one either
+		// he still doesnt scroll down
+		damage: 2_500,
+		cooldown: 11.9,
+		exclusion: 60,
+		radius: 70,
+		inaccuracy: 15,
+		rad_strength: 2.4,
+		rad_length: 11,
+		rupture: 0.5
+	}
+];
