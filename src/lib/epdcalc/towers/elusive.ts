@@ -186,7 +186,27 @@ export const workshop: Tower = [
 //TODO: add stats
 export const invisible_man: Tower = [{}, {}, {}, {}, {}, {}, {}];
 //TODO: add stats
-export const poacher: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const poacher: Tower = [
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{
+		// unsure of path but this is _a_ level 7 path.
+		damage: 25_500,
+		cooldown: 4.75,
+		range: 80,
+		radius: 35,
+		stun: 3.5,
+		bounty_add: 1_000,
+		armor_destruction: 1,
+		camo: true,
+		cash_conv: 0.55,
+		shield_dmg: 8
+	}
+];
 //TODO: add stats
 export const operative: Tower = [
 	{
@@ -369,4 +389,61 @@ export const festive_tree_grand: Tower = [
 //TODO: add stats
 export const jar_guard_unknown: Tower = [{}, {}, {}, {}, {}, {}, {}];
 //TODO: add stats
-export const mystic_heavy: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const mystic_heavy: Tower = [
+	{
+		damage: 40,
+		cooldown: 0.12,
+		range: 110,
+		hollow_point: 1.5
+		//ahhh he upgraded them wtf
+	},
+	{},
+	{},
+	{
+		damage: 2_000,
+		cooldown: 0.12,
+		range: 140,
+		hollow_point: 1.5
+		// god damn it
+	},
+	{
+		damage: 5_000,
+		cooldown: 0.08,
+		range: 180,
+		hollow_point: 1.5,
+		armor_destruction: 0.2,
+		camo: true,
+		aim: 85,
+		shield_dmg: 0.75
+	},
+	{
+		damage: 12_000,
+		cooldown: 0.08,
+		range: 200,
+		hollow_point: 1.5,
+		armor_destruction: 0.2,
+		camo: true,
+		aim: 85,
+		shield_dmg: 0.75
+	},
+	{
+		damage: 80_000,
+		cooldown: 0.1,
+		range: 250,
+		hollow_point: 1.5,
+		armor_destruction: 0.25,
+		camo: true,
+		aim: 85,
+		shield_dmg: 0.75
+	},
+	{
+		damage: 50_000,
+		cooldown: 0.05,
+		range: 200,
+		hollow_point: 1.5,
+		armor_destruction: 0.2,
+		camo: true,
+		aim: 85,
+		shield_dmg: 0.75
+	}
+];

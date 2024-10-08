@@ -1,11 +1,11 @@
 <script lang="ts">
-	let checked: boolean[] = [];
-	import { localize } from '$lib/ts-front/localize.ts';
+	let checked: { [key: string]: boolean } = {};
+	import { localize } from '$lib/ts-front/localize';
 	let modifiers = ['rad', 'scorch', 'rupture', 'frostbite'];
 </script>
 
 {#each modifiers as type}
-	<label for={type}>
+	<label>
 		<input type="checkbox" bind:checked={checked[type]} />
 		{type}
 		{#if checked[type]}

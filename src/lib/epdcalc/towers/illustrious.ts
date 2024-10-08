@@ -278,6 +278,20 @@ export const lord_lucifer: Tower = [
     +130_330brndmg
     -4brndur
     +"instant reflexes" */
+		damage: 2_666,
+		crit_chance: 0.66,
+		crit_dmg: 1.6,
+		cooldown: 2.4,
+		range: 240,
+		exclusion: 50,
+		radius: 20,
+		burn_damage: 133_330,
+		burn_time: 2,
+		departure: 0.35,
+		armor_piercing: true,
+		camo: true,
+		aim: 195,
+		shield_dmg: 0.66
 	},
 	{
 		damage: 6_666,
@@ -348,8 +362,12 @@ export const hallowed_stryker: Tower = [
 		exclusion: 30,
 		radius: 85,
 		inaccuracy: 15,
-		rad_strength: 1.44
-		// or the stats. i guess.
+		rad_strength: 1.44,
+		rad_length: 1.65,
+		purify: 4,
+		shield_bypass: 1,
+		armor_piercing: true,
+		camo: true
 	}
 ];
 // TODO: add stats
@@ -373,8 +391,51 @@ export const summer_zero_two: Tower = [
 	{},
 	{},
 	{},
-	{},
-	{}
+	{
+		damage: 100,
+		cooldown: 0.15,
+		range: 155,
+		bleed: 30,
+		shredding: 0.15,
+		shredding_length: 0.42,
+		hollow_point: 7,
+		execution: 2.7,
+		damage_buff: 0.15,
+		cooldown_buff: 0.7,
+		camo: true,
+		aim: 120,
+		shield_dmg: 0.3
+	},
+	{
+		damage: 700,
+		cooldown: 0.15,
+		range: 155,
+		bleed: 90,
+		shredding: 0.15,
+		shredding_length: 1.24,
+		hollow_point: 7,
+		execution: 10,
+		damage_buff: 0.15,
+		cooldown_buff: 0.12,
+		camo: true,
+		aim: 120,
+		shield_dmg: 0.3
+	},
+	{
+		damage: 100,
+		cooldown: 0.09,
+		range: 190,
+		bleed: 200,
+		shredding: 0.25,
+		shredding_length: 0.42,
+		hollow_point: 10,
+		execution: 2.7,
+		damage_buff: 0.24,
+		cooldown_buff: 0.7,
+		camo: true,
+		aim: 120,
+		shield_dmg: 0.3
+	}
 ];
 // TODO: add stats
 export const virtual_turret: Tower = [
@@ -701,12 +762,19 @@ export const winter_executive: Tower = [
 	},
 	{},
 	{},
-	{},
+	{
+		damage: 50,
+		cooldown: 0.09,
+		range: 50,
+		boss_slayer: 4,
+		upgrade_reduction: 0.15,
+		camo: true,
+		instabreak: 0.02
+	},
 	{
 		damage: 150,
 		cooldown: 0.08,
 		range: 55,
-
 		boss_slayer: 5.4,
 		range_buff: 0.15,
 		upgrade_reduction: 0.15,

@@ -97,9 +97,9 @@ export enum Upgrade {
 	'Level6',
 	'Level7a',
 	'Level7b',
-	'level7c',
-	'level7d',
-	'level7e'
+	'Level7c',
+	'Level7d',
+	'Level7e'
 }
 export interface TowerInfo {
 	Name: string;
