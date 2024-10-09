@@ -87,13 +87,59 @@ export function CostPerDPS(tower: Tower, upgrade: Upgrade): number | undefined {
 }
 
 // CPS (cash per sec) // Time-based income
+export function CashPerSecond(tower: TowerUpgrade): number | undefined {
+	if (!(tower.income && tower.cooldown)) {
+		return undefined;
+	}
+	return tower.income / tower.cooldown;
+}
 // CPM
+export function CashPerMinute(tower: TowerUpgrade): number | undefined {
+	const _cps: number = CashPerSecond(tower) || NaN;
+	if (!Number.isNaN(_cps)) {
+		return _cps * 60;
+	}
+	return undefined;
+}
 // Cost/CPS
 
 // -- ENGIS
 // Spawn DPS
+export function SpawnDamagePerSecond(tower: TowerUpgrade): number | undefined {
+	if (!(tower.spawns_cd && tower.spawns_damage)) {
+		return undefined;
+	}
+	return tower.spawns_damage / tower.spawns_cd;
+}
 // Spawn DPM
+export function SpawnDamagePerMinute(tower: TowerUpgrade): number | undefined {
+	const _spawndps: number = SpawnDamagePerSecond(tower) || NaN;
+	if (Number.isNaN(_spawndps)) {
+		return undefined;
+	}
+	return _spawndps * 60;
+}
 // Max DPS (spawndps*maxspawn)
+export function SpawnMaxDamagePerSecond(tower: TowerUpgrade): number | undefined {
+	const _spawndps: number = SpawnDamagePerSecond(tower) || NaN;
+	if (Number.isNaN(_spawndps)) {
+		return undefined;
+	}
+	if (!tower.max_spawns) {
+		return undefined;
+	} // need to do separate so typescript stops complaining
+	return _spawndps * tower.max_spawns;
+}
 // Max DPM
+export function SpawnMaxDamagePerMinute(tower: TowerUpgrade): number | undefined {
+	const _spawndpm: number = SpawnDamagePerMinute(tower) || NaN;
+	if (Number.isNaN(_spawndpm)) {
+		return undefined;
+	}
+	if (!tower.max_spawns) {
+		return undefined;
+	}
+	return _spawndpm * tower.max_spawns;
+}
 // Cost/spawn dps
 // Cost/max dps

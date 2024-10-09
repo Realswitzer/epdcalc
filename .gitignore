@@ -22,3 +22,4 @@ vite.config.ts.timestamp-*
 
 # epdcalc:nonlib
 src/lib/epdcalc/_Scripts/*
+src/lib/epdcalc/_BUILD/*
