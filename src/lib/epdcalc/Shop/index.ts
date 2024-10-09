@@ -40,5 +40,8 @@ export const blueprints: ShopCategory = {
 	zero_two_school: 2_725,
 	huge_zero_two_school: 8_025,
 	engineer_archetype: 2_600,
-	adamant_styker: 2_150
+	adamant_styker: 2_150,
+	quantum_turret: 3_950,
+	mechanic: 2_100,
+	casual_zero_two: 3_050
 };
