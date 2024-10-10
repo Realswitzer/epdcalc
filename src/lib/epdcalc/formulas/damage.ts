@@ -1,4 +1,4 @@
-import { TowerType, type TowerUpgrade } from '../types';
+import { type TowerUpgrade } from '../types';
 import { Cooldown } from './shared';
 
 const multipliers: string[] = [
@@ -56,16 +56,16 @@ export function BaseDamagePerShot(tower: TowerUpgrade): number | undefined {
 }
 export function BaseDamagePerSecond(tower: TowerUpgrade): number | undefined {
 	const _dmg: number = tower.damage || NaN;
-	const _cd: number|undefined = Cooldown(tower)
-	if (Number.isNaN(_dmg) || _cd===undefined) {
+	const _cd: number | undefined = Cooldown(tower);
+	if (Number.isNaN(_dmg) || _cd === undefined) {
 		return undefined;
 	}
 	return _dmg / _cd;
 }
 export function ShieldDamagePerSecond(tower: TowerUpgrade): number | undefined {
 	const _sdmg: number = tower.shield_dmg || NaN;
-	const _cd: number|undefined = Cooldown(tower)
-	if (Number.isNaN(_sdmg)||_cd===undefined) {
+	const _cd: number | undefined = Cooldown(tower);
+	if (Number.isNaN(_sdmg) || _cd === undefined) {
 		return undefined;
 	}
 	return _sdmg / _cd;
@@ -89,8 +89,8 @@ export function AvgCritRateDamagePerSecond(
 	rupture: number = 0
 ): number | undefined {
 	const _crdpshot: number | undefined = AvgCritRateDamagePerShot(tower, rupture);
-	const _cd: number | undefined = Cooldown(tower)
-	if (_crdpshot === undefined || _cd===undefined) {
+	const _cd: number | undefined = Cooldown(tower);
+	if (_crdpshot === undefined || _cd === undefined) {
 		return undefined;
 	}
 	return _crdpshot / _cd;
@@ -109,8 +109,8 @@ export function MaxCritRateDamagePerSecond(
 	rupture: number = 0
 ): number | undefined {
 	const _mcrdpshot: number | undefined = MaxCritRateDamagePerShot(tower, rupture);
-	const _cd :number|undefined = Cooldown(tower)
-	if (_mcrdpshot === undefined||_cd===undefined) {
+	const _cd: number | undefined = Cooldown(tower);
+	if (_mcrdpshot === undefined || _cd === undefined) {
 		return undefined;
 	}
 	return _mcrdpshot / _cd;

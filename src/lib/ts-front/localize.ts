@@ -1,7 +1,9 @@
-import { enUS } from './enUS.ts';
+import { enUS } from './locale/enUS';
+import { locale } from './types';
 
-let localization_object: any = enUS;
+const localization_object: locale = enUS;
+const default_locale: locale = enUS;
 
 export function localize(key: string): string {
-	return localization_object[key] || key;
+	return localization_object[key as keyof locale] || default_locale[key as keyof locale] || key;
 }
