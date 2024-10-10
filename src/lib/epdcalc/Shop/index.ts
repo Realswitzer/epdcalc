@@ -14,7 +14,10 @@ export const prestigious: ShopCategory = {
 };
 export const exalteds: ShopCategory = {
 	titanium_turret: 25_600,
-	adamant_styker: 16_300,
+	adamant_styker: 2_150,
+	quantum_turret: 3_950,
+	mechanic: 2_100,
+	casual_zero_two: 3_050,
 	high_engineer: 13_200,
 	super_stryker: 14_200,
 	zero_two_school: 18_100,
