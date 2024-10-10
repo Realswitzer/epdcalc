@@ -686,6 +686,8 @@ export const super_stryker: Tower = [
 		price: 6_170_000
 	}
 ];
+// TODO: add stats
+export const titanium_turret: Tower = [{}, {}, {}, {}, {}, {}, {}];
 export const true_vaporizer: Tower = [
 	{
 		damage: 4,
@@ -807,7 +809,5 @@ export const true_vaporizer: Tower = [
 		price: 4_127_000
 	}
 ];
-// TODO: add stats
-export const titanium_turret: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
 export const zero_two_school: Tower = [{}, {}, {}, {}, {}, {}, {}];

@@ -2,8 +2,26 @@ import { type Tower } from '../types';
 // Note: This is also classified as HUGE, but in the index are listed as elusive/standard.
 
 // TODO: add stats
-export const huge_scar: Tower = [
-	{ damage: 3, cooldown: 0.3, range: 60, bleed: 3, armor_piercing: true, aim: 135, price: 9_600 },
+export const huge_shotgunner: Tower = [
+	{
+		damage: 40,
+		cooldown: 3,
+		range: 45,
+		radius: 9,
+		aim: 110,
+		shield_dmg: 2,
+		price: 1_500 // i think, though in this the model hasnt loaded. seems like a jump cut (for some reason)
+	},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{}
+];
+// TODO: add stats
+export const huge_coordinator: Tower = [
+	{ damage: 30, cooldown: 1.6, range: 60, damage_buff: 0.15, camo: true, aim: 100, price: 9_500 },
 	{},
 	{},
 	{},
@@ -47,21 +65,6 @@ export const huge_godfather: Tower = [
 	{}
 ];
 // TODO: add stats
-export const huge_server_farm: Tower = [
-	{
-		income: 120,
-		cooldown: 20,
-		range: 5,
-		price: 1_500
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
-];
-// TODO: add stats
 export const huge_mercenary: Tower = [
 	{
 		damage: 500,
@@ -82,8 +85,23 @@ export const huge_mercenary: Tower = [
 	{}
 ];
 // TODO: add stats
-export const huge_coordinator: Tower = [
-	{ damage: 30, cooldown: 1.6, range: 60, damage_buff: 0.15, camo: true, aim: 100, price: 9_500 },
+export const huge_scar: Tower = [
+	{ damage: 3, cooldown: 0.3, range: 60, bleed: 3, armor_piercing: true, aim: 135, price: 9_600 },
+	{},
+	{},
+	{},
+	{},
+	{},
+	{}
+];
+// TODO: add stats
+export const huge_server_farm: Tower = [
+	{
+		income: 120,
+		cooldown: 20,
+		range: 5,
+		price: 1_500
+	},
 	{},
 	{},
 	{},
@@ -102,24 +120,6 @@ export const huge_sharpshooter: Tower = [
 		aim: 150,
 		shield_dmg: 5,
 		price: 6_750
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
-];
-// TODO: add stats
-export const huge_shotgunner: Tower = [
-	{
-		damage: 40,
-		cooldown: 3,
-		range: 45,
-		radius: 9,
-		aim: 110,
-		shield_dmg: 2,
-		price: 1_500 // i think, though in this the model hasnt loaded. seems like a jump cut (for some reason)
 	},
 	{},
 	{},
