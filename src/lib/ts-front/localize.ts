@@ -1,5 +1,5 @@
 import { enUS } from './locale/enUS';
-import { locale } from './types';
+import { type locale } from './types';
 
 const localization_object: locale = enUS;
 const default_locale: locale = enUS;

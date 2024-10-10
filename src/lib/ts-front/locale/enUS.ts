@@ -1,8 +1,8 @@
 import type { locale } from '../types';
 
 export const enUS: locale = {
+	frostbite: 'Frostbite',
 	rad: 'Rad',
-	scorch: 'Scorch',
 	rupture: 'Rupture',
-	frostbite: 'Frostbite'
+	scorch: 'Scorch'
 };
