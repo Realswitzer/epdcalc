@@ -9,9 +9,13 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
+		"module": "ES2022",
 		"moduleResolution": "bundler",
-		"lib": ["ES2023","DOM"]
-	}
+		"lib": ["ES2023", "DOM"],
+		"outDir": "./dist"
+	},
+	"include": ["./**/*"],
+	"exclude": ["./dist/**/*"]
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	// except $lib which is handled by https://kit.svelte.dev/docs/configuration#files
 	//

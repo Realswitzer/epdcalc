@@ -14,8 +14,8 @@ export function DamagePerShot(tower: TowerUpgrade): [number, string[]] {
 	if (Number.isNaN(damage)) {
 		return [NaN, []];
 	}
-	let affectedMultipliers: string[] = [];
-	for (let multiplier of multipliers) {
+	const affectedMultipliers: string[] = [];
+	for (const multiplier of multipliers) {
 		if (!tower[multiplier as keyof TowerUpgrade]) {
 			continue;
 		}
@@ -34,8 +34,8 @@ export function DamagePerShot_pre(tower: TowerUpgrade): [number, string[]] {
 	if (Number.isNaN(damage)) {
 		return [NaN, []];
 	}
-	let affectedMultipliers: string[] = [];
-	for (let multiplier of multipliers) {
+	const affectedMultipliers: string[] = [];
+	for (const multiplier of multipliers) {
 		if (tower[multiplier as keyof TowerUpgrade]) {
 			damage *= Number(tower[multiplier as keyof TowerUpgrade]);
 			affectedMultipliers.push(multiplier);
@@ -44,7 +44,7 @@ export function DamagePerShot_pre(tower: TowerUpgrade): [number, string[]] {
 	return [damage, affectedMultipliers];
 }
 export function DamagePerSecond(tower: TowerUpgrade): [number, string[]] {
-	let DPShotArray: [number, string[]] = DamagePerShot(tower);
+	const DPShotArray: [number, string[]] = DamagePerShot(tower);
 	const _cd: number = tower.cooldown || NaN;
 	if (Number.isNaN(_cd)) {
 		return [NaN, []];
