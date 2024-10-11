@@ -1,44 +1,3 @@
-import { type Tower } from '../types';
-export const shredder: Tower = [
-	{
-		damage: 3,
-		crit_chance: 0.1,
-		crit_dmg: 1,
-		cooldown: 0.2,
-		max_cooldown: 1,
-		min_cooldown: 0.2,
-		acceleration: 0.06,
-		range: 85,
-		exclusion: 35,
-		bleed: 1,
-		armor_destruction: 0.03,
-		aim: 100,
-		price: 3_650
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{},
-	// unknown which path
-	{
-		damage: 6_000,
-		crit_chance: 0.3,
-		crit_dmg: 50,
-		cooldown: 0.14,
-		max_cooldown: 0.3,
-		min_cooldown: 0.14,
-		acceleration: 0.1,
-		range: 145,
-		exclusion: 25,
-		bleed: 4_500,
-		boss_slayer: 3.2,
-		armor_destruction: 0.1,
-		camo: true,
-		aim: 100
-	}
-];
 export const assassin: Tower = [
 	{
 		damage: 3,
@@ -86,3 +45,44 @@ export const handler: Tower = [
 	{ income: 1_500, cooldown: 5, range: 80, bounty_amp: 0.3, bounty_add: 100, price: 56_000 },
 	{ income: 69_000, cooldown: 15, range: 111, bounty_amp: 4.8, bounty_add: 1_200, price: 740_000 }
 ];
+export const shredder: Tower = [
+	{
+		damage: 3,
+		crit_chance: 0.1,
+		crit_dmg: 1,
+		cooldown: 0.2,
+		max_cooldown: 1,
+		min_cooldown: 0.2,
+		acceleration: 0.06,
+		range: 85,
+		exclusion: 35,
+		bleed: 1,
+		armor_destruction: 0.03,
+		aim: 100,
+		price: 3_650
+	},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	// unknown which path
+	{
+		damage: 6_000,
+		crit_chance: 0.3,
+		crit_dmg: 50,
+		cooldown: 0.14,
+		max_cooldown: 0.3,
+		min_cooldown: 0.14,
+		acceleration: 0.1,
+		range: 145,
+		exclusion: 25,
+		bleed: 4_500,
+		boss_slayer: 3.2,
+		armor_destruction: 0.1,
+		camo: true,
+		aim: 100
+	}
+];
+import { type Tower } from '../types';

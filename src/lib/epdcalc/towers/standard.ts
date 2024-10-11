@@ -638,195 +638,6 @@ export const heavy: Tower = [
 	}
 ];
 
-export const scar: Tower = [
-	{
-		damage: 1,
-		cooldown: 0.3,
-		range: 40,
-		bleed: 1,
-		armor_piercing: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 3_200
-	},
-	{
-		damage: 1,
-		cooldown: 0.3,
-		range: 50,
-		bleed: 1,
-		armor_piercing: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 1_250
-	},
-	{
-		damage: 3,
-		cooldown: 0.27,
-		range: 55,
-		bleed: 1,
-		armor_piercing: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 4_200
-	},
-	{
-		damage: 8,
-		cooldown: 0.27,
-		range: 60,
-		bleed: 2,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 12_500
-	},
-	{
-		damage: 20,
-		cooldown: 0.22,
-		range: 65,
-		bleed: 4,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 36_000
-	},
-	{
-		damage: 50,
-		cooldown: 0.22,
-		range: 75,
-		bleed: 6,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 95_000
-	},
-	{
-		damage: 300,
-		cooldown: 0.05,
-		range: 75,
-		bleed: 10,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 1_000_000
-	},
-	{
-		damage: 2_500,
-		cooldown: 0.1,
-		range: 95,
-		bleed: 80,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 3,
-		price: 1_250_000
-	}
-];
-
-export const server_farm: Tower = [
-	{ income: 40, cooldown: 20, range: 5, price: 500 },
-	{ income: 70, cooldown: 20, range: 5, price: 300 },
-	{ income: 150, cooldown: 18, range: 5, price: 850 },
-	{ income: 375, cooldown: 18, range: 5, price: 1_900 },
-	{ income: 800, cooldown: 15, range: 5, price: 7_000 },
-	{ income: 2_350, cooldown: 6, range: 5, price: 21_000 },
-	{ income: 8_250, cooldown: 3, range: 5, price: 180_000 },
-	{ income: 16_500, cooldown: 6, range: 50, price: 255_000 }
-];
-
-export const sharpshooter: Tower = [
-	{
-		damage: 30,
-		cooldown: 5,
-		exclusion: 50,
-		stun: 2,
-		armor_piercing: true,
-		aim: 150,
-		shield_dmg: 5,
-		price: 1_350
-	},
-	{
-		damage: 40,
-		cooldown: 5,
-		exclusion: 45,
-		stun: 2,
-		armor_piercing: true,
-		camo: true,
-		aim: 150,
-		shield_dmg: 6,
-		price: 700
-	},
-	{
-		damage: 56,
-		cooldown: 4.2,
-		exclusion: 45,
-		stun: 2.5,
-		armor_piercing: true,
-		camo: true,
-		aim: 150,
-		shield_dmg: 7,
-		price: 1_600
-	},
-	{
-		damage: 120,
-		cooldown: 4.2,
-		exclusion: 40,
-		stun: 3,
-		armor_piercing: true,
-		camo: true,
-		aim: 150,
-		shield_dmg: 10,
-		price: 5_000
-	},
-	{
-		damage: 360,
-		cooldown: 3.7,
-		exclusion: 40,
-		stun: 3,
-		armor_piercing: true,
-		camo: true,
-		aim: 150,
-		shield_dmg: 13,
-		price: 16_400
-	},
-	{
-		damage: 1_200,
-		cooldown: 3.7,
-		exclusion: 35,
-		stun: 3.5,
-		armor_piercing: true,
-		camo: true,
-		aim: 150,
-		shield_dmg: 17,
-		price: 55_000
-	},
-	{
-		damage: 3_600,
-		cooldown: 2.1,
-		exclusion: 20,
-		stun: 3.5,
-		armor_piercing: true,
-		camo: true,
-		aim: 150,
-		shield_dmg: 17,
-		price: 540_000
-	},
-	{
-		damage: 8_000,
-		cooldown: 7,
-		exclusion: 35,
-		stun: 6.5,
-		armor_piercing: true,
-		camo: true,
-		aim: 150,
-		shield_dmg: 27,
-		price: 720_000
-	}
-];
-
 export const heckler: Tower = [
 	{
 		damage: 1,
@@ -1065,6 +876,62 @@ export const mercenary: Tower = [
 	}
 ];
 
+export const pistolman: Tower = [
+	{ damage: 1, cooldown: 1, range: 40, aim: 100, shield_dmg: 1, price: 200 },
+	{ damage: 2, cooldown: 1, range: 45, aim: 100, shield_dmg: 1, price: 120 },
+	{ damage: 2, cooldown: 0.8, range: 50, aim: 100, shield_dmg: 1, price: 300 },
+	{
+		damage: 4,
+		cooldown: 0.65,
+		range: 60,
+		aim: 100,
+		shield_dmg: 2,
+		price: 1_100
+	},
+	{
+		damage: 10,
+		cooldown: 0.55,
+		range: 60,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 2,
+		price: 3_600
+	},
+	{
+		damage: 15,
+		cooldown: 0.3,
+		range: 60,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 2,
+		price: 11_000
+	},
+	{
+		damage: 80,
+		cooldown: 0.3,
+		range: 95,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_bypass: 0.15,
+		shield_dmg: 4,
+		price: 80_000
+	},
+	{
+		damage: 20,
+		cooldown: 0.08,
+		range: 60,
+		hollow_point: 2.5,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 2,
+		price: 110_000
+	}
+];
+
 export const rogue: Tower = [
 	{
 		damage: 2,
@@ -1168,6 +1035,195 @@ export const rogue: Tower = [
 	}
 ];
 
+export const scar: Tower = [
+	{
+		damage: 1,
+		cooldown: 0.3,
+		range: 40,
+		bleed: 1,
+		armor_piercing: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 3_200
+	},
+	{
+		damage: 1,
+		cooldown: 0.3,
+		range: 50,
+		bleed: 1,
+		armor_piercing: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 1_250
+	},
+	{
+		damage: 3,
+		cooldown: 0.27,
+		range: 55,
+		bleed: 1,
+		armor_piercing: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 4_200
+	},
+	{
+		damage: 8,
+		cooldown: 0.27,
+		range: 60,
+		bleed: 2,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 12_500
+	},
+	{
+		damage: 20,
+		cooldown: 0.22,
+		range: 65,
+		bleed: 4,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 36_000
+	},
+	{
+		damage: 50,
+		cooldown: 0.22,
+		range: 75,
+		bleed: 6,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 95_000
+	},
+	{
+		damage: 300,
+		cooldown: 0.05,
+		range: 75,
+		bleed: 10,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 1_000_000
+	},
+	{
+		damage: 2_500,
+		cooldown: 0.1,
+		range: 95,
+		bleed: 80,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		shield_dmg: 3,
+		price: 1_250_000
+	}
+];
+
+export const server_farm: Tower = [
+	{ income: 40, cooldown: 20, range: 5, price: 500 },
+	{ income: 70, cooldown: 20, range: 5, price: 300 },
+	{ income: 150, cooldown: 18, range: 5, price: 850 },
+	{ income: 375, cooldown: 18, range: 5, price: 1_900 },
+	{ income: 800, cooldown: 15, range: 5, price: 7_000 },
+	{ income: 2_350, cooldown: 6, range: 5, price: 21_000 },
+	{ income: 8_250, cooldown: 3, range: 5, price: 180_000 },
+	{ income: 16_500, cooldown: 6, range: 50, price: 255_000 }
+];
+
+export const sharpshooter: Tower = [
+	{
+		damage: 30,
+		cooldown: 5,
+		exclusion: 50,
+		stun: 2,
+		armor_piercing: true,
+		aim: 150,
+		shield_dmg: 5,
+		price: 1_350
+	},
+	{
+		damage: 40,
+		cooldown: 5,
+		exclusion: 45,
+		stun: 2,
+		armor_piercing: true,
+		camo: true,
+		aim: 150,
+		shield_dmg: 6,
+		price: 700
+	},
+	{
+		damage: 56,
+		cooldown: 4.2,
+		exclusion: 45,
+		stun: 2.5,
+		armor_piercing: true,
+		camo: true,
+		aim: 150,
+		shield_dmg: 7,
+		price: 1_600
+	},
+	{
+		damage: 120,
+		cooldown: 4.2,
+		exclusion: 40,
+		stun: 3,
+		armor_piercing: true,
+		camo: true,
+		aim: 150,
+		shield_dmg: 10,
+		price: 5_000
+	},
+	{
+		damage: 360,
+		cooldown: 3.7,
+		exclusion: 40,
+		stun: 3,
+		armor_piercing: true,
+		camo: true,
+		aim: 150,
+		shield_dmg: 13,
+		price: 16_400
+	},
+	{
+		damage: 1_200,
+		cooldown: 3.7,
+		exclusion: 35,
+		stun: 3.5,
+		armor_piercing: true,
+		camo: true,
+		aim: 150,
+		shield_dmg: 17,
+		price: 55_000
+	},
+	{
+		damage: 3_600,
+		cooldown: 2.1,
+		exclusion: 20,
+		stun: 3.5,
+		armor_piercing: true,
+		camo: true,
+		aim: 150,
+		shield_dmg: 17,
+		price: 540_000
+	},
+	{
+		damage: 8_000,
+		cooldown: 7,
+		exclusion: 35,
+		stun: 6.5,
+		armor_piercing: true,
+		camo: true,
+		aim: 150,
+		shield_dmg: 27,
+		price: 720_000
+	}
+];
+
 export const stunner: Tower = [
 	{
 		damage: 1,
@@ -1241,62 +1297,6 @@ export const stunner: Tower = [
 		aim: 140,
 		shield_dmg: 25,
 		price: 260_000
-	}
-];
-
-export const pistolman: Tower = [
-	{ damage: 1, cooldown: 1, range: 40, aim: 100, shield_dmg: 1, price: 200 },
-	{ damage: 2, cooldown: 1, range: 45, aim: 100, shield_dmg: 1, price: 120 },
-	{ damage: 2, cooldown: 0.8, range: 50, aim: 100, shield_dmg: 1, price: 300 },
-	{
-		damage: 4,
-		cooldown: 0.65,
-		range: 60,
-		aim: 100,
-		shield_dmg: 2,
-		price: 1_100
-	},
-	{
-		damage: 10,
-		cooldown: 0.55,
-		range: 60,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 2,
-		price: 3_600
-	},
-	{
-		damage: 15,
-		cooldown: 0.3,
-		range: 60,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 2,
-		price: 11_000
-	},
-	{
-		damage: 80,
-		cooldown: 0.3,
-		range: 95,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_bypass: 0.15,
-		shield_dmg: 4,
-		price: 80_000
-	},
-	{
-		damage: 20,
-		cooldown: 0.08,
-		range: 60,
-		hollow_point: 2.5,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		shield_dmg: 2,
-		price: 110_000
 	}
 ];
 

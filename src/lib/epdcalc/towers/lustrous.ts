@@ -1,5 +1,56 @@
 import { type Tower } from '../types';
 
+// TODO: add stats
+export const code_0_0_2: Tower = [
+	{
+		damage: 3,
+		cooldown: 0.15,
+		range: 80,
+		leech: 0.08,
+		purify: 1.5,
+		camo: true,
+		aim: 175,
+		shield_dmg: 0.3,
+		price: 3_800 // not known but end value is similar to normal zt.
+	},
+	{ price: 1_700 },
+	{ price: 4_600 },
+	{ price: 21_700 },
+	{ price: 78_500 },
+	{
+		damage: 100,
+		cooldown: 0.12,
+		range: 105,
+		leech: 0.12,
+		purify: 2,
+		camo: true,
+		aim: 175,
+		shield_dmg: 0.3,
+		price: 294_000
+	},
+	{
+		damage: 250,
+		cooldown: 0.08,
+		range: 105,
+		leech: 0.15,
+		purify: 2,
+		camo: true,
+		aim: 175,
+		shield_dmg: 0.3,
+		price: 2_002_002
+	},
+	{
+		damage: 300,
+		cooldown: 0.05,
+		range: 130,
+		leech: 0.25,
+		purify: 2,
+		camo: true,
+		aim: 175,
+		shield_dmg: 0.3,
+		price: 3_002_002
+	}
+];
 export const engineer_archetype: Tower = [
 	{
 		spawns_damage: 5,
@@ -110,6 +161,11 @@ export const engineer_archetype: Tower = [
 		price: 87_102_000
 	}
 ];
+// TODO: add stats
+export const executive_founder: Tower = [{}, {}, {}, {}, {}, {}, {}];
+
+// TODO: add stats
+export const hellfire_conflagration: Tower = [{}, {}, {}, {}, {}, {}, {}];
 export const killzone_rookie: Tower = [
 	{
 		damage: 175,
@@ -358,61 +414,5 @@ export const raygunner_alpha: Tower = [
 		price: 112_193_000
 	}
 ];
-
-// TODO: add stats
-export const code_0_0_2: Tower = [
-	{
-		damage: 3,
-		cooldown: 0.15,
-		range: 80,
-		leech: 0.08,
-		purify: 1.5,
-		camo: true,
-		aim: 175,
-		shield_dmg: 0.3,
-		price: 3_800 // not known but end value is similar to normal zt.
-	},
-	{ price: 1_700 },
-	{ price: 4_600 },
-	{ price: 21_700 },
-	{ price: 78_500 },
-	{
-		damage: 100,
-		cooldown: 0.12,
-		range: 105,
-		leech: 0.12,
-		purify: 2,
-		camo: true,
-		aim: 175,
-		shield_dmg: 0.3,
-		price: 294_000
-	},
-	{
-		damage: 250,
-		cooldown: 0.08,
-		range: 105,
-		leech: 0.15,
-		purify: 2,
-		camo: true,
-		aim: 175,
-		shield_dmg: 0.3,
-		price: 2_002_002
-	},
-	{
-		damage: 300,
-		cooldown: 0.05,
-		range: 130,
-		leech: 0.25,
-		purify: 2,
-		camo: true,
-		aim: 175,
-		shield_dmg: 0.3,
-		price: 3_002_002
-	}
-];
-// TODO: add stats
-export const hellfire_conflagration: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
 export const turret_overclocked: Tower = [{}, {}, {}, {}, {}, {}, {}];
-// TODO: add stats
-export const executive_founder: Tower = [{}, {}, {}, {}, {}, {}, {}];

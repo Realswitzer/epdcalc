@@ -1,20 +1,95 @@
 import { type Tower } from '../types';
 
 // TODO: add stats
-export const liferender: Tower = [
+export const empyrean_jar_guard_eminence: Tower = [
 	{
-		damage: 75,
-		cooldown: 1,
-		max_cooldown: 7.5,
-		min_cooldown: 1,
-		acceleration: 0.15,
-		range: 150,
-		bleed: 20,
-		bleed_increase: 0.00375,
-		purify: 0.8,
-		boss_slayer: 0.8,
-		shield_dmg: 3,
-		price: 9_999
+		damage: 16,
+		crit_chance: 0.15,
+		crit_dmg: 2,
+		cooldown: 0.5,
+		max_cooldown: 1,
+		min_cooldown: 0.5,
+		acceleration: 0.08,
+		radius: 4,
+		valor: 1.2,
+		armor_destruction: 0.04,
+		camo: true,
+		soul_damage: 0.3,
+		shield_dmg: 4,
+		price: 2_250
+	},
+	{
+		damage: 24,
+		crit_chance: 0.15,
+		crit_dmg: 2.5,
+		cooldown: 0.9,
+		max_cooldown: 0.9,
+		min_cooldown: 0.45,
+		acceleration: 0.08,
+		radius: 4,
+		valor: 1.5,
+		armor_destruction: 0.04,
+		camo: true,
+		soul_damage: 0.3,
+		shield_dmg: 6,
+		price: 1_400
+	},
+	{},
+	{},
+	{},
+	{
+		// he does a jump cut here so who tf knows
+		damage: 450,
+		crit_chance: 0.25,
+		crit_dmg: 3.6,
+		cooldown: 0.8,
+		max_cooldown: 0.8,
+		min_cooldown: 0.4,
+		acceleration: 0.16,
+		radius: 8
+		// yeah no idea
+	},
+	{
+		// whatever the above is with the following:
+		/*+1_150 Damage
+        +0.6 critdmg,
+        -0.12cd/mxcd
+        -0.06mncd,
+        +6.15valor
+        +0.35soul
+        price:233_940 */
+	},
+	{},
+	{
+		damage: 500_000,
+		crit_chance: 0.25,
+		crit_dmg: 10,
+		cooldown: 4.1,
+		max_cooldown: 0.68,
+		min_cooldown: 0.34,
+		acceleration: 0.16,
+		radius: 8
+		// jalksdjflkjslkadfj he didnt scroll down
+	}
+];
+// TODO: add stats
+export const phantom_killzone: Tower = [
+	{
+		damage: 260,
+		crit_chance: 0.06,
+		crit_dmg: 1.4,
+		cooldown: 9,
+		exclusion: 200,
+		radius: 9,
+		rupture: 0.36,
+		rupture_duration: 7,
+		shredding: 0.15,
+		shredding_length: 7,
+		valor: 0.45,
+		shield_bypass: 0.4,
+		armor_piercing: true,
+		aim: 959, // it goes offscreen so need to check
+		price: 4_225
 	},
 	{},
 	{},
@@ -22,97 +97,6 @@ export const liferender: Tower = [
 	{},
 	{},
 	{}
-];
-// TODO: add stats
-export const limeade_stand: Tower = [
-	{
-		income: 12,
-		cooldown: 4,
-		range: 55,
-		bounty_amp: 0.05,
-		bounty_add: 2,
-		cooldown_buff: 0.05,
-		price: 1_380
-	},
-	{
-		income: 20,
-		cooldown: 4,
-		range: 65,
-		bounty_amp: 0.06,
-		bounty_add: 4,
-		cooldown_buff: 0.05,
-		price: 765
-	},
-	{
-		income: 32,
-		cooldown: 3.5,
-		range: 65,
-		bounty_amp: 0.075,
-		bounty_add: 8,
-		cooldown_buff: 0.075,
-		price: 1_660
-	},
-	{
-		income: 80,
-		cooldown: 3.5,
-		range: 75,
-		bounty_amp: 0.075,
-		bounty_add: 20,
-		damage_buff: 0.1,
-		cooldown_buff: 0.075,
-		price: 5_525
-	},
-	{
-		income: 200,
-		cooldown: 3,
-		range: 75,
-		bounty_amp: 0.1,
-		bounty_add: 50,
-		damage_buff: 0.15,
-		cooldown_buff: 0.075,
-		price: 18_360
-	},
-
-	{
-		income: 480,
-		cooldown: 3,
-		range: 85,
-		bounty_amp: 0.1,
-		bounty_add: 130,
-		damage_buff: 0.15,
-		cooldown_buff: 0.1,
-		price: 61_200
-	},
-	{
-		income: 2_600,
-		cooldown: 1.5,
-		range: 115,
-		bounty_amp: 0.16,
-		bounty_add: 1_500,
-		damage_buff: 0.15,
-		cooldown_buff: 0.1,
-		price: 660_450
-	},
-	{
-		income: 6_400,
-		cooldown: 3,
-		range: 90,
-		bounty_amp: 0.1,
-		bounty_add: 130,
-		damage_buff: 0.25,
-		cooldown_buff: 0.175,
-		price: 754_800
-	},
-	{
-		income: 8_000,
-		cooldown: 3,
-		range: 135,
-		bounty_amp: 0.1,
-		bounty_add: 1_800,
-		damage_buff: 0.35,
-		cooldown_buff: 0.1,
-		price: 849_150
-	}
 ];
 // TODO: add stats
 export const alien_raygunner: Tower = [
@@ -137,6 +121,55 @@ export const alien_raygunner: Tower = [
 	{},
 	{}
 ];
+// TODO: add stats
+export const arcane_blizzard: Tower = [
+	{
+		damage: 8,
+		cooldown: 18,
+		range: 155,
+		exclusion: 65,
+		frostbite: 0.021,
+		frost_time: 2.8,
+		bliz_length: 4.5,
+		bliz_radius: 14,
+		shield_bypass: 0.15,
+		shield_dmg: 0.05,
+		price: 11_600
+	},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{}
+];
+// TODO: add stats
+export const empyrean_jar_guard_alpha: Tower = [
+	{
+		damage: 16,
+		crit_chance: 0.15,
+		crit_dmg: 2,
+		cooldown: 0.5,
+		max_cooldown: 1,
+		min_cooldown: 0.5,
+		acceleration: 0.08,
+		radius: 4,
+		valor: 1.2,
+		armor_destruction: 0.04,
+		camo: true,
+		soul_damage: 0.3,
+		shield_dmg: 4,
+		price: 2_250
+	},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{}
+];
+// TODO: add stats
+export const empyrean_jar_guard_eminence_test: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
 export const empyrean_jar_guard_omega: Tower = [
 	{
@@ -277,23 +310,20 @@ export const empyrean_jar_guard_omega: Tower = [
 	}
 ];
 // TODO: add stats
-export const phantom_killzone: Tower = [
+export const liferender: Tower = [
 	{
-		damage: 260,
-		crit_chance: 0.06,
-		crit_dmg: 1.4,
-		cooldown: 9,
-		exclusion: 200,
-		radius: 9,
-		rupture: 0.36,
-		rupture_duration: 7,
-		shredding: 0.15,
-		shredding_length: 7,
-		valor: 0.45,
-		shield_bypass: 0.4,
-		armor_piercing: true,
-		aim: 959, // it goes offscreen so need to check
-		price: 4_225
+		damage: 75,
+		cooldown: 1,
+		max_cooldown: 7.5,
+		min_cooldown: 1,
+		acceleration: 0.15,
+		range: 150,
+		bleed: 20,
+		bleed_increase: 0.00375,
+		purify: 0.8,
+		boss_slayer: 0.8,
+		shield_dmg: 3,
+		price: 9_999
 	},
 	{},
 	{},
@@ -303,129 +333,99 @@ export const phantom_killzone: Tower = [
 	{}
 ];
 // TODO: add stats
-export const empyrean_jar_guard_alpha: Tower = [
+export const limeade_stand: Tower = [
 	{
-		damage: 16,
-		crit_chance: 0.15,
-		crit_dmg: 2,
-		cooldown: 0.5,
-		max_cooldown: 1,
-		min_cooldown: 0.5,
-		acceleration: 0.08,
-		radius: 4,
-		valor: 1.2,
-		armor_destruction: 0.04,
-		camo: true,
-		soul_damage: 0.3,
-		shield_dmg: 4,
-		price: 2_250
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
-];
-// TODO: add stats
-export const empyrean_jar_guard_eminence: Tower = [
-	{
-		damage: 16,
-		crit_chance: 0.15,
-		crit_dmg: 2,
-		cooldown: 0.5,
-		max_cooldown: 1,
-		min_cooldown: 0.5,
-		acceleration: 0.08,
-		radius: 4,
-		valor: 1.2,
-		armor_destruction: 0.04,
-		camo: true,
-		soul_damage: 0.3,
-		shield_dmg: 4,
-		price: 2_250
+		income: 12,
+		cooldown: 4,
+		range: 55,
+		bounty_amp: 0.05,
+		bounty_add: 2,
+		cooldown_buff: 0.05,
+		price: 1_380
 	},
 	{
-		damage: 24,
-		crit_chance: 0.15,
-		crit_dmg: 2.5,
-		cooldown: 0.9,
-		max_cooldown: 0.9,
-		min_cooldown: 0.45,
-		acceleration: 0.08,
-		radius: 4,
-		valor: 1.5,
-		armor_destruction: 0.04,
-		camo: true,
-		soul_damage: 0.3,
-		shield_dmg: 6,
-		price: 1_400
-	},
-	{},
-	{},
-	{},
-	{
-		// he does a jump cut here so who tf knows
-		damage: 450,
-		crit_chance: 0.25,
-		crit_dmg: 3.6,
-		cooldown: 0.8,
-		max_cooldown: 0.8,
-		min_cooldown: 0.4,
-		acceleration: 0.16,
-		radius: 8
-		// yeah no idea
+		income: 20,
+		cooldown: 4,
+		range: 65,
+		bounty_amp: 0.06,
+		bounty_add: 4,
+		cooldown_buff: 0.05,
+		price: 765
 	},
 	{
-		// whatever the above is with the following:
-		/*+1_150 Damage
-        +0.6 critdmg,
-        -0.12cd/mxcd
-        -0.06mncd,
-        +6.15valor
-        +0.35soul
-        price:233_940 */
+		income: 32,
+		cooldown: 3.5,
+		range: 65,
+		bounty_amp: 0.075,
+		bounty_add: 8,
+		cooldown_buff: 0.075,
+		price: 1_660
 	},
-	{},
 	{
-		damage: 500_000,
-		crit_chance: 0.25,
-		crit_dmg: 10,
-		cooldown: 4.1,
-		max_cooldown: 0.68,
-		min_cooldown: 0.34,
-		acceleration: 0.16,
-		radius: 8
-		// jalksdjflkjslkadfj he didnt scroll down
+		income: 80,
+		cooldown: 3.5,
+		range: 75,
+		bounty_amp: 0.075,
+		bounty_add: 20,
+		damage_buff: 0.1,
+		cooldown_buff: 0.075,
+		price: 5_525
+	},
+	{
+		income: 200,
+		cooldown: 3,
+		range: 75,
+		bounty_amp: 0.1,
+		bounty_add: 50,
+		damage_buff: 0.15,
+		cooldown_buff: 0.075,
+		price: 18_360
+	},
+
+	{
+		income: 480,
+		cooldown: 3,
+		range: 85,
+		bounty_amp: 0.1,
+		bounty_add: 130,
+		damage_buff: 0.15,
+		cooldown_buff: 0.1,
+		price: 61_200
+	},
+	{
+		income: 2_600,
+		cooldown: 1.5,
+		range: 115,
+		bounty_amp: 0.16,
+		bounty_add: 1_500,
+		damage_buff: 0.15,
+		cooldown_buff: 0.1,
+		price: 660_450
+	},
+	{
+		income: 6_400,
+		cooldown: 3,
+		range: 90,
+		bounty_amp: 0.1,
+		bounty_add: 130,
+		damage_buff: 0.25,
+		cooldown_buff: 0.175,
+		price: 754_800
+	},
+	{
+		income: 8_000,
+		cooldown: 3,
+		range: 135,
+		bounty_amp: 0.1,
+		bounty_add: 1_800,
+		damage_buff: 0.35,
+		cooldown_buff: 0.1,
+		price: 849_150
 	}
-];
-// TODO: add stats
-export const arcane_blizzard: Tower = [
-	{
-		damage: 8,
-		cooldown: 18,
-		range: 155,
-		exclusion: 65,
-		frostbite: 0.021,
-		frost_time: 2.8,
-		bliz_length: 4.5,
-		bliz_radius: 14,
-		shield_bypass: 0.15,
-		shield_dmg: 0.05,
-		price: 11_600
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
 ];
 // TODO: add stats
 export const luxurious_festive_tree_glorious: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
 export const luxurious_festive_tree_majestic: Tower = [{}, {}, {}, {}, {}, {}, {}];
-// TODO: add stats
-export const empyrean_jar_guard_eminence_test: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
 export const phantom_killzone_test: Tower = [{}, {}, {}, {}, {}, {}, {}];

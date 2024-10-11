@@ -1,46 +1,6 @@
 import { type Tower } from '../types';
 
 // TODO: add stats
-export const demolitions_expert: Tower = [
-	{
-		damage: 40,
-		cooldown: 15,
-		range: 30,
-		radius: 15,
-		stun: 2.5,
-		rupture: 0.1,
-		rupture_duration: 2.5,
-		price: 1_575
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
-];
-// TODO: add stats
-export const hitman: Tower = [
-	{
-		damage: 1,
-		crit_chance: 1,
-		crit_dmg: 55,
-		cooldown: 2,
-		range: 55,
-		first_strike: 12,
-		valor: 0.35,
-		shield_bypass: 0.75,
-		armor_piercing: true,
-		price: 7_000
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
-];
-// TODO: add stats
 export const abyssal: Tower = [
 	{
 		damage: 666,
@@ -91,4 +51,44 @@ export const abyssal: Tower = [
 		camo: true,
 		shield_dmg: 10
 	}
+];
+// TODO: add stats
+export const demolitions_expert: Tower = [
+	{
+		damage: 40,
+		cooldown: 15,
+		range: 30,
+		radius: 15,
+		stun: 2.5,
+		rupture: 0.1,
+		rupture_duration: 2.5,
+		price: 1_575
+	},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{}
+];
+// TODO: add stats
+export const hitman: Tower = [
+	{
+		damage: 1,
+		crit_chance: 1,
+		crit_dmg: 55,
+		cooldown: 2,
+		range: 55,
+		first_strike: 12,
+		valor: 0.35,
+		shield_bypass: 0.75,
+		armor_piercing: true,
+		price: 7_000
+	},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{}
 ];

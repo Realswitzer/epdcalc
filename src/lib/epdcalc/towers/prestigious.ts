@@ -503,6 +503,321 @@ export const raygunner: Tower = [
 	}
 ];
 
+export const shrine_of_apollo: Tower = [
+	{
+		damage: 4,
+		beams: 4,
+		cooldown: 0.5,
+		radius: 3,
+		rad_strength: 0.02,
+		rad_length: 1.5,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 9_300
+	},
+	{
+		damage: 7,
+		beams: 5,
+		cooldown: 0.5,
+		radius: 3,
+		rad_strength: 0.02,
+		rad_length: 2,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 4_600
+	},
+	{
+		damage: 16,
+		beams: 5,
+		cooldown: 0.5,
+		radius: 4,
+		rad_strength: 0.03,
+		rad_length: 2,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 11_000
+	},
+	{
+		damage: 40,
+		beams: 6,
+		cooldown: 0.5,
+		radius: 4,
+		rad_strength: 0.03,
+		rad_length: 2.5,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 41_800
+	},
+	{
+		damage: 100,
+		beams: 8,
+		cooldown: 0.5,
+		radius: 6,
+		rad_strength: 0.05,
+		rad_length: 2.5,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 154_000
+	},
+	{
+		damage: 280,
+		beams: 9,
+		cooldown: 0.4,
+		radius: 6,
+		rad_strength: 0.05,
+		rad_length: 3,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 540_600
+	},
+	{
+		damage: 1_000,
+		beams: 9,
+		cooldown: 0.4,
+		radius: 9,
+		rad_strength: 0.08,
+		rad_length: 3,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 4_890_000
+	},
+	{
+		damage: 800,
+		beams: 12,
+		cooldown: 0.35,
+		radius: 6,
+		rad_strength: 0.05,
+		rad_length: 4.5,
+		execution: 1.35,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.5,
+		price: 6_140_000
+	}
+];
+
+// TODO: add stats
+export const spirit_of_christmas: Tower = [{}, {}, {}, {}, {}, {}, {}];
+
+export const stryker: Tower = [
+	{
+		damage: 75,
+		cooldown: 15,
+		exclusion: 80,
+		radius: 65,
+		inaccuracy: 60,
+		rad_strength: 0.4,
+		rad_length: 4,
+		armor_piercing: true,
+		camo: true,
+		price: 6_400
+	},
+	{
+		damage: 75,
+		cooldown: 12,
+		exclusion: 70,
+		radius: 65,
+		inaccuracy: 60,
+		rad_strength: 0.4,
+		rad_length: 4,
+		armor_piercing: true,
+		camo: true,
+		price: 2_000
+	},
+	{
+		damage: 125,
+		cooldown: 12,
+		exclusion: 70,
+		radius: 75,
+		inaccuracy: 55,
+		rad_strength: 0.4,
+		rad_length: 5,
+		armor_piercing: true,
+		camo: true,
+		price: 7_500
+	},
+	{
+		damage: 225,
+		cooldown: 10,
+		exclusion: 60,
+		radius: 75,
+		inaccuracy: 50,
+		rad_strength: 0.6,
+		rad_length: 5,
+		armor_piercing: true,
+		camo: true,
+		price: 25_000
+	},
+	{
+		damage: 600,
+		cooldown: 10,
+		exclusion: 60,
+		radius: 85,
+		inaccuracy: 50,
+		rad_strength: 0.6,
+		rad_length: 5.5,
+		armor_piercing: true,
+		camo: true,
+		price: 80_000
+	},
+	{
+		damage: 1_500,
+		cooldown: 10,
+		exclusion: 60,
+		radius: 85,
+		inaccuracy: 40,
+		rad_strength: 0.9,
+		rad_length: 5.5,
+		armor_piercing: true,
+		camo: true,
+		price: 250_000
+	},
+	{
+		damage: 5_000,
+		cooldown: 10,
+		exclusion: 60,
+		radius: 100,
+		inaccuracy: 40,
+		rad_strength: 0.9,
+		rad_length: 7,
+		armor_piercing: true,
+		camo: true,
+		price: 1_550_000
+	},
+	{
+		damage: 5_000,
+		cooldown: 8.5,
+		exclusion: 30,
+		radius: 85,
+		inaccuracy: 25,
+		rad_strength: 1.2,
+		rad_length: 5.5,
+		armor_piercing: true,
+		camo: true,
+		price: 2_000_000
+	}
+];
+
+export const turret: Tower = [
+	{
+		damage: 18,
+		crit_chance: 0.15,
+		crit_dmg: 10,
+		cooldown: 0.8,
+		range: 75,
+		targeting_rate: 0.2,
+		radius: 1.5,
+		bleed: 1,
+		armor_piercing: true,
+		aim: 100,
+		price: 6_850
+	},
+	{
+		damage: 25,
+		crit_chance: 0.2,
+		crit_dmg: 11.5,
+		cooldown: 0.75,
+		range: 90,
+		targeting_rate: 0.2,
+		radius: 1.5,
+		bleed: 1,
+		armor_piercing: true,
+		aim: 100,
+		price: 4_650
+	},
+	{
+		damage: 45,
+		crit_chance: 0.2,
+		crit_dmg: 14,
+		cooldown: 0.75,
+		range: 90,
+		targeting_rate: 0.25,
+		radius: 1.75,
+		bleed: 2,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		price: 8_500
+	},
+	{
+		damage: 115,
+		crit_chance: 0.25,
+		crit_dmg: 17,
+		cooldown: 0.65,
+		range: 105,
+		targeting_rate: 0.25,
+		radius: 1.75,
+		bleed: 5,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		price: 41_500
+	},
+	{
+		damage: 350,
+		crit_chance: 0.3,
+		crit_dmg: 20,
+		cooldown: 0.65,
+		range: 105,
+		targeting_rate: 0.3,
+		radius: 2,
+		bleed: 12,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		price: 202_500
+	},
+	{
+		damage: 1_000,
+		crit_chance: 0.3,
+		crit_dmg: 25,
+		cooldown: 0.5,
+		range: 125,
+		targeting_rate: 0.3,
+		radius: 2,
+		bleed: 30,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		price: 987_500
+	},
+	{
+		damage: 6_000,
+		crit_chance: 0.3,
+		crit_dmg: 60,
+		cooldown: 0.5,
+		range: 165,
+		targeting_rate: 0.4,
+		radius: 3,
+		bleed: 200,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		price: 16_450_000
+	},
+	{
+		damage: 2_700,
+		crit_chance: 0.55,
+		crit_dmg: 25,
+		cooldown: 0.18,
+		range: 125,
+		targeting_rate: 0.9,
+		radius: 2,
+		bleed: 80,
+		armor_piercing: true,
+		camo: true,
+		aim: 100,
+		price: 18_645_000
+	}
+];
+
 export const vaporizer: Tower = [
 	{
 		damage: 10,
@@ -625,205 +940,6 @@ export const vaporizer: Tower = [
 	}
 ];
 
-export const shrine_of_apollo: Tower = [
-	{
-		damage: 4,
-		beams: 4,
-		cooldown: 0.5,
-		radius: 3,
-		rad_strength: 0.02,
-		rad_length: 1.5,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 9_300
-	},
-	{
-		damage: 7,
-		beams: 5,
-		cooldown: 0.5,
-		radius: 3,
-		rad_strength: 0.02,
-		rad_length: 2,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 4_600
-	},
-	{
-		damage: 16,
-		beams: 5,
-		cooldown: 0.5,
-		radius: 4,
-		rad_strength: 0.03,
-		rad_length: 2,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 11_000
-	},
-	{
-		damage: 40,
-		beams: 6,
-		cooldown: 0.5,
-		radius: 4,
-		rad_strength: 0.03,
-		rad_length: 2.5,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 41_800
-	},
-	{
-		damage: 100,
-		beams: 8,
-		cooldown: 0.5,
-		radius: 6,
-		rad_strength: 0.05,
-		rad_length: 2.5,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 154_000
-	},
-	{
-		damage: 280,
-		beams: 9,
-		cooldown: 0.4,
-		radius: 6,
-		rad_strength: 0.05,
-		rad_length: 3,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 540_600
-	},
-	{
-		damage: 1_000,
-		beams: 9,
-		cooldown: 0.4,
-		radius: 9,
-		rad_strength: 0.08,
-		rad_length: 3,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 4_890_000
-	},
-	{
-		damage: 800,
-		beams: 12,
-		cooldown: 0.35,
-		radius: 6,
-		rad_strength: 0.05,
-		rad_length: 4.5,
-		execution: 1.35,
-		armor_piercing: true,
-		camo: true,
-		shield_dmg: 0.5,
-		price: 6_140_000
-	}
-];
-
-export const stryker: Tower = [
-	{
-		damage: 75,
-		cooldown: 15,
-		exclusion: 80,
-		radius: 65,
-		inaccuracy: 60,
-		rad_strength: 0.4,
-		rad_length: 4,
-		armor_piercing: true,
-		camo: true,
-		price: 6_400
-	},
-	{
-		damage: 75,
-		cooldown: 12,
-		exclusion: 70,
-		radius: 65,
-		inaccuracy: 60,
-		rad_strength: 0.4,
-		rad_length: 4,
-		armor_piercing: true,
-		camo: true,
-		price: 2_000
-	},
-	{
-		damage: 125,
-		cooldown: 12,
-		exclusion: 70,
-		radius: 75,
-		inaccuracy: 55,
-		rad_strength: 0.4,
-		rad_length: 5,
-		armor_piercing: true,
-		camo: true,
-		price: 7_500
-	},
-	{
-		damage: 225,
-		cooldown: 10,
-		exclusion: 60,
-		radius: 75,
-		inaccuracy: 50,
-		rad_strength: 0.6,
-		rad_length: 5,
-		armor_piercing: true,
-		camo: true,
-		price: 25_000
-	},
-	{
-		damage: 600,
-		cooldown: 10,
-		exclusion: 60,
-		radius: 85,
-		inaccuracy: 50,
-		rad_strength: 0.6,
-		rad_length: 5.5,
-		armor_piercing: true,
-		camo: true,
-		price: 80_000
-	},
-	{
-		damage: 1_500,
-		cooldown: 10,
-		exclusion: 60,
-		radius: 85,
-		inaccuracy: 40,
-		rad_strength: 0.9,
-		rad_length: 5.5,
-		armor_piercing: true,
-		camo: true,
-		price: 250_000
-	},
-	{
-		damage: 5_000,
-		cooldown: 10,
-		exclusion: 60,
-		radius: 100,
-		inaccuracy: 40,
-		rad_strength: 0.9,
-		rad_length: 7,
-		armor_piercing: true,
-		camo: true,
-		price: 1_550_000
-	},
-	{
-		damage: 5_000,
-		cooldown: 8.5,
-		exclusion: 30,
-		radius: 85,
-		inaccuracy: 25,
-		rad_strength: 1.2,
-		rad_length: 5.5,
-		armor_piercing: true,
-		camo: true,
-		price: 2_000_000
-	}
-];
-
 export const zero_two: Tower = [
 	{
 		damage: 2,
@@ -917,119 +1033,3 @@ export const zero_two: Tower = [
 		price: 3_002_002
 	}
 ];
-
-export const turret: Tower = [
-	{
-		damage: 18,
-		crit_chance: 0.15,
-		crit_dmg: 10,
-		cooldown: 0.8,
-		range: 75,
-		targeting_rate: 0.2,
-		radius: 1.5,
-		bleed: 1,
-		armor_piercing: true,
-		aim: 100,
-		price: 6_850
-	},
-	{
-		damage: 25,
-		crit_chance: 0.2,
-		crit_dmg: 11.5,
-		cooldown: 0.75,
-		range: 90,
-		targeting_rate: 0.2,
-		radius: 1.5,
-		bleed: 1,
-		armor_piercing: true,
-		aim: 100,
-		price: 4_650
-	},
-	{
-		damage: 45,
-		crit_chance: 0.2,
-		crit_dmg: 14,
-		cooldown: 0.75,
-		range: 90,
-		targeting_rate: 0.25,
-		radius: 1.75,
-		bleed: 2,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		price: 8_500
-	},
-	{
-		damage: 115,
-		crit_chance: 0.25,
-		crit_dmg: 17,
-		cooldown: 0.65,
-		range: 105,
-		targeting_rate: 0.25,
-		radius: 1.75,
-		bleed: 5,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		price: 41_500
-	},
-	{
-		damage: 350,
-		crit_chance: 0.3,
-		crit_dmg: 20,
-		cooldown: 0.65,
-		range: 105,
-		targeting_rate: 0.3,
-		radius: 2,
-		bleed: 12,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		price: 202_500
-	},
-	{
-		damage: 1_000,
-		crit_chance: 0.3,
-		crit_dmg: 25,
-		cooldown: 0.5,
-		range: 125,
-		targeting_rate: 0.3,
-		radius: 2,
-		bleed: 30,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		price: 987_500
-	},
-	{
-		damage: 6_000,
-		crit_chance: 0.3,
-		crit_dmg: 60,
-		cooldown: 0.5,
-		range: 165,
-		targeting_rate: 0.4,
-		radius: 3,
-		bleed: 200,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		price: 16_450_000
-	},
-	{
-		damage: 2_700,
-		crit_chance: 0.55,
-		crit_dmg: 25,
-		cooldown: 0.18,
-		range: 125,
-		targeting_rate: 0.9,
-		radius: 2,
-		bleed: 80,
-		armor_piercing: true,
-		camo: true,
-		aim: 100,
-		price: 18_645_000
-	}
-];
-
-// TODO: add stats
-export const spirit_of_christmas: Tower = [{}, {}, {}, {}, {}, {}, {}];

@@ -126,7 +126,7 @@ export interface TowerUpgrade {
 }
 export type Blueprint = {
 	[key in TowerName]?: number;
-}
+};
 
 export type SalvageCategory = {
 	[key in TowerName]?: [number, number];

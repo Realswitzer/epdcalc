@@ -1,114 +1,5 @@
 import { type Tower } from '../types';
 
-export const zero_two_supreme: Tower = [
-	{
-		damage: 2,
-		crit_chance: 0.15,
-		crit_dmg: 1,
-		cooldown: 0.18,
-		range: 100,
-		bleed: 1,
-		purify: 4.4,
-		hollow_point: 1.5,
-		execution: 1.2,
-		shield_dmg: 0.3,
-		price: 3_800
-	},
-	{
-		damage: 3,
-		crit_chance: 0.15,
-		crit_dmg: 1.25,
-		cooldown: 0.18,
-		range: 115,
-		bleed: 2,
-		purify: 4.4,
-		hollow_point: 2,
-		execution: 1.2,
-		shield_dmg: 0.3,
-		price: 1_700
-	},
-	{
-		damage: 6,
-		crit_chance: 0.2,
-		crit_dmg: 1.25,
-		cooldown: 0.18,
-		range: 120,
-		bleed: 3,
-		purify: 4.4,
-		hollow_point: 2,
-		execution: 1.5,
-		shield_dmg: 0.3,
-		price: 4_600
-	},
-	{
-		damage: 15,
-		crit_chance: 0.25,
-		crit_dmg: 1.65,
-		cooldown: 0.18,
-		range: 120,
-		bleed: 6,
-		purify: 4.4,
-		hollow_point: 3.5,
-		execution: 1.5,
-		shield_dmg: 0.3,
-		price: 21_700
-	},
-	{
-		damage: 40,
-		crit_chance: 0.25,
-		crit_dmg: 2.25,
-		cooldown: 0.15,
-		range: 140,
-		bleed: 15,
-		purify: 4.4,
-		hollow_point: 3.5,
-		execution: 1.9,
-		shield_dmg: 0.3,
-		price: 78_500
-	},
-	{
-		damage: 100,
-		crit_chance: 0.35,
-		crit_dmg: 2.25,
-		cooldown: 0.15,
-		range: 165,
-		bleed: 30,
-		purify: 4.4,
-		hollow_point: 3.5,
-		execution: 2.7,
-		shield_dmg: 0.3,
-		camo: true,
-		price: 294_000
-	},
-	{
-		damage: 7_500,
-		crit_chance: 0.35,
-		crit_dmg: 54,
-		cooldown: 0.15,
-		range: 165,
-		bleed: 900,
-		purify: 4.4,
-		hollow_point: 3.5,
-		execution: 25,
-		camo: true,
-		shield_dmg: 0.3,
-		price: 2_002_002
-	},
-	{
-		damage: 2_500,
-		crit_chance: 0.75,
-		crit_dmg: 2.25,
-		cooldown: 0.09,
-		range: 205,
-		bleed: 20_000,
-		purify: 4.4,
-		hollow_point: 5,
-		execution: 2.7,
-		shield_dmg: 0.3,
-		camo: true,
-		price: 3_002_002
-	}
-];
 export const mystic_vaporizer: Tower = [
 	{
 		damage: 4,
@@ -369,116 +260,6 @@ export const phase_turret: Tower = [
 		price: 46_050_000
 	}
 ];
-
-// TODO: add stats
-export const sanctified_stryker: Tower = [
-	{
-		damage: 75,
-		cooldown: 10,
-		exclusion: 180,
-		radius: 65,
-		inaccuracy: 100,
-		rad_strength: 0.8,
-		rad_length: 4,
-		shredding: 0.08,
-		shredding_length: 1,
-		armor_destruction: 1,
-		armor_piercing: true,
-		camo: true,
-		price: 10_400
-	},
-	{
-		damage: 75,
-		cooldown: 10,
-		exclusion: 180,
-		radius: 65,
-		inaccuracy: 100,
-		rad_strength: 0.8,
-		rad_length: 4,
-		shredding: 0.08,
-		shredding_length: 1,
-		armor_destruction: 1,
-		armor_piercing: true,
-		camo: true,
-		price: 10_400
-	},
-	{
-		damage: 75,
-		cooldown: 10,
-		exclusion: 180,
-		radius: 65,
-		inaccuracy: 100,
-		rad_strength: 0.8,
-		rad_length: 4,
-		shredding: 0.08,
-		shredding_length: 1,
-		armor_destruction: 1,
-		armor_piercing: true,
-		camo: true,
-		price: 10_400
-	},
-	{
-		damage: 75,
-		cooldown: 10,
-		exclusion: 180,
-		radius: 65,
-		inaccuracy: 100,
-		rad_strength: 0.8,
-		rad_length: 4,
-		shredding: 0.08,
-		shredding_length: 1,
-		armor_destruction: 1,
-		armor_piercing: true,
-		camo: true,
-		price: 10_400
-	},
-	{
-		damage: 75,
-		cooldown: 10,
-		exclusion: 180,
-		radius: 65,
-		inaccuracy: 100,
-		rad_strength: 0.8,
-		rad_length: 4,
-		shredding: 0.08,
-		shredding_length: 1,
-		armor_destruction: 1,
-		armor_piercing: true,
-		camo: true,
-		price: 10_400
-	},
-	{
-		damage: 75,
-		cooldown: 10,
-		exclusion: 180,
-		radius: 65,
-		inaccuracy: 100,
-		rad_strength: 0.8,
-		rad_length: 4,
-		shredding: 0.08,
-		shredding_length: 1,
-		armor_destruction: 1,
-		armor_piercing: true,
-		camo: true,
-		price: 10_400
-	},
-	{
-		damage: 75,
-		cooldown: 10,
-		exclusion: 180,
-		radius: 65,
-		inaccuracy: 100,
-		rad_strength: 0.8,
-		rad_length: 4,
-		shredding: 0.08,
-		shredding_length: 1,
-		armor_destruction: 1,
-		armor_piercing: true,
-		camo: true,
-		price: 10_400
-	}
-];
-
 export const samurai_sentinel: Tower = [
 	{
 		damage: 4,
@@ -601,5 +382,224 @@ export const samurai_sentinel: Tower = [
 		shield_dmg: 2_465,
 		oblivion: 6_300,
 		price: 6_354_215_478
+	}
+];
+
+// TODO: add stats
+export const sanctified_stryker: Tower = [
+	{
+		damage: 75,
+		cooldown: 10,
+		exclusion: 180,
+		radius: 65,
+		inaccuracy: 100,
+		rad_strength: 0.8,
+		rad_length: 4,
+		shredding: 0.08,
+		shredding_length: 1,
+		armor_destruction: 1,
+		armor_piercing: true,
+		camo: true,
+		price: 10_400
+	},
+	{
+		damage: 75,
+		cooldown: 10,
+		exclusion: 180,
+		radius: 65,
+		inaccuracy: 100,
+		rad_strength: 0.8,
+		rad_length: 4,
+		shredding: 0.08,
+		shredding_length: 1,
+		armor_destruction: 1,
+		armor_piercing: true,
+		camo: true,
+		price: 10_400
+	},
+	{
+		damage: 75,
+		cooldown: 10,
+		exclusion: 180,
+		radius: 65,
+		inaccuracy: 100,
+		rad_strength: 0.8,
+		rad_length: 4,
+		shredding: 0.08,
+		shredding_length: 1,
+		armor_destruction: 1,
+		armor_piercing: true,
+		camo: true,
+		price: 10_400
+	},
+	{
+		damage: 75,
+		cooldown: 10,
+		exclusion: 180,
+		radius: 65,
+		inaccuracy: 100,
+		rad_strength: 0.8,
+		rad_length: 4,
+		shredding: 0.08,
+		shredding_length: 1,
+		armor_destruction: 1,
+		armor_piercing: true,
+		camo: true,
+		price: 10_400
+	},
+	{
+		damage: 75,
+		cooldown: 10,
+		exclusion: 180,
+		radius: 65,
+		inaccuracy: 100,
+		rad_strength: 0.8,
+		rad_length: 4,
+		shredding: 0.08,
+		shredding_length: 1,
+		armor_destruction: 1,
+		armor_piercing: true,
+		camo: true,
+		price: 10_400
+	},
+	{
+		damage: 75,
+		cooldown: 10,
+		exclusion: 180,
+		radius: 65,
+		inaccuracy: 100,
+		rad_strength: 0.8,
+		rad_length: 4,
+		shredding: 0.08,
+		shredding_length: 1,
+		armor_destruction: 1,
+		armor_piercing: true,
+		camo: true,
+		price: 10_400
+	},
+	{
+		damage: 75,
+		cooldown: 10,
+		exclusion: 180,
+		radius: 65,
+		inaccuracy: 100,
+		rad_strength: 0.8,
+		rad_length: 4,
+		shredding: 0.08,
+		shredding_length: 1,
+		armor_destruction: 1,
+		armor_piercing: true,
+		camo: true,
+		price: 10_400
+	}
+];
+
+export const zero_two_supreme: Tower = [
+	{
+		damage: 2,
+		crit_chance: 0.15,
+		crit_dmg: 1,
+		cooldown: 0.18,
+		range: 100,
+		bleed: 1,
+		purify: 4.4,
+		hollow_point: 1.5,
+		execution: 1.2,
+		shield_dmg: 0.3,
+		price: 3_800
+	},
+	{
+		damage: 3,
+		crit_chance: 0.15,
+		crit_dmg: 1.25,
+		cooldown: 0.18,
+		range: 115,
+		bleed: 2,
+		purify: 4.4,
+		hollow_point: 2,
+		execution: 1.2,
+		shield_dmg: 0.3,
+		price: 1_700
+	},
+	{
+		damage: 6,
+		crit_chance: 0.2,
+		crit_dmg: 1.25,
+		cooldown: 0.18,
+		range: 120,
+		bleed: 3,
+		purify: 4.4,
+		hollow_point: 2,
+		execution: 1.5,
+		shield_dmg: 0.3,
+		price: 4_600
+	},
+	{
+		damage: 15,
+		crit_chance: 0.25,
+		crit_dmg: 1.65,
+		cooldown: 0.18,
+		range: 120,
+		bleed: 6,
+		purify: 4.4,
+		hollow_point: 3.5,
+		execution: 1.5,
+		shield_dmg: 0.3,
+		price: 21_700
+	},
+	{
+		damage: 40,
+		crit_chance: 0.25,
+		crit_dmg: 2.25,
+		cooldown: 0.15,
+		range: 140,
+		bleed: 15,
+		purify: 4.4,
+		hollow_point: 3.5,
+		execution: 1.9,
+		shield_dmg: 0.3,
+		price: 78_500
+	},
+	{
+		damage: 100,
+		crit_chance: 0.35,
+		crit_dmg: 2.25,
+		cooldown: 0.15,
+		range: 165,
+		bleed: 30,
+		purify: 4.4,
+		hollow_point: 3.5,
+		execution: 2.7,
+		shield_dmg: 0.3,
+		camo: true,
+		price: 294_000
+	},
+	{
+		damage: 7_500,
+		crit_chance: 0.35,
+		crit_dmg: 54,
+		cooldown: 0.15,
+		range: 165,
+		bleed: 900,
+		purify: 4.4,
+		hollow_point: 3.5,
+		execution: 25,
+		camo: true,
+		shield_dmg: 0.3,
+		price: 2_002_002
+	},
+	{
+		damage: 2_500,
+		crit_chance: 0.75,
+		crit_dmg: 2.25,
+		cooldown: 0.09,
+		range: 205,
+		bleed: 20_000,
+		purify: 4.4,
+		hollow_point: 5,
+		execution: 2.7,
+		shield_dmg: 0.3,
+		camo: true,
+		price: 3_002_002
 	}
 ];
