@@ -12,6 +12,7 @@ export const blueprints: ShopCategory = {
 	high_engineer: 1_650,
 	huge_heckerman: 16_950,
 	huge_zero_two_school: 8_025,
+	killzone: 320,
 	killzone_rookie: 3_100,
 	mechanic: 2_100,
 	mystic_apollo: 7_780,

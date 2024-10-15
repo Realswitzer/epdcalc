@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^5.1.0"
+		"@fontsource/fira-mono": "^5.1.0",
+		"romans": "^2.0.16"
 	}
 }

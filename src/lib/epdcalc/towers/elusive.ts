@@ -19,7 +19,32 @@ export const blizzard: Tower = [
 	{},
 	{},
 	{},
-	{}
+	{
+		damage: 1_100,
+		cooldown: 15,
+		range: 265,
+		exclusion: 75,
+		frostbite: 0.025,
+		frost_time: 9,
+		bliz_length: 8,
+		bliz_radius: 55,
+		armor_destruction: 0.05,
+		camo: true,
+		shield_dmg: 0.05
+	},
+	{
+		damage: 900,
+		cooldown: 8,
+		range: 210,
+		exclusion: 65,
+		frostbite: 0.035,
+		frost_time: 5.5,
+		bliz_length: 5.5,
+		bliz_radius: 35,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 0.05
+	}
 ];
 //TODO: add stats
 export const mystic_heavy: Tower = [
@@ -148,7 +173,12 @@ export const festive_tree_sapling: Tower = [
 	{},
 	{},
 	{},
-	{}
+	{
+		income: 150_000,
+		range: 40,
+		damage_buff: 0.15,
+		range_buff: 0.225
+	}
 ];
 //TODO: add stats
 export const festive_tree: Tower = [
@@ -160,7 +190,7 @@ export const festive_tree: Tower = [
 	{},
 	{}
 ];
-//TODO: add stats
+
 export const golden_shotgunner: Tower = [
 	{
 		damage: 50,
@@ -172,12 +202,75 @@ export const golden_shotgunner: Tower = [
 		shield_dmg: 2,
 		price: 1_000
 	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
+	{
+		damage: 100,
+		cooldown: 3,
+		radius: 9,
+		armor_piercing: true,
+		camo: true,
+		aim: 190,
+		shield_dmg: 2
+	},
+	{
+		damage: 150,
+		cooldown: 2.5,
+		radius: 9,
+		armor_piercing: true,
+		camo: true,
+		aim: 190,
+		shield_dmg: 2
+	},
+	{
+		damage: 300,
+		cooldown: 2.5,
+		radius: 9,
+		armor_piercing: true,
+		camo: true,
+		aim: 190,
+		shield_dmg: 2
+	},
+	{
+		damage: 500,
+		cooldown: 1.5,
+		radius: 9,
+		valor: 1.2,
+		armor_piercing: true,
+		camo: true,
+		aim: 190,
+		shield_dmg: 2
+	},
+	{
+		damage: 2_000,
+		cooldown: 1,
+		radius: 9,
+		valor: 2.55,
+		armor_piercing: true,
+		camo: true,
+		aim: 190,
+		shield_dmg: 2
+	},
+	{
+		damage: 10_000,
+		cooldown: 3,
+		radius: 30,
+		stun: 10,
+		corrosion: 0.005,
+		valor: 2.55,
+		armor_piercing: true,
+		camo: true,
+		aim: 190,
+		shield_dmg: 2
+	},
+	{
+		damage: 2_000,
+		cooldown: 0.1,
+		radius: 12,
+		valor: 2.55,
+		armor_piercing: true,
+		camo: true,
+		aim: 190,
+		shield_dmg: 2
+	}
 ];
 //TODO: add stats
 export const hellfire: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -216,7 +309,46 @@ export const huge_festive_tree: Tower = [
 	{ income: 1_650_000, range: 100, damage_buff: 0.2, range_buff: 0.3, price: 18_775_839 }
 ];
 //TODO: add stats
-export const huge_jar_guard: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const huge_jar_guard: Tower = [
+	{
+		damage: 120,
+		cooldown: 1,
+		range: 150,
+		exclusion: 150,
+		valor: 0.4,
+		camo: true,
+		soul_damage: 0.3,
+		aim: 150
+	},
+	{},
+	{},
+	{},
+	{},
+	{
+		damage: 12_000,
+		cooldown: 0.68,
+		range: 210,
+		exclusion: 50,
+		valor: 1.1,
+		armor_piercing: true,
+		camo: true,
+		soul_damage: 0.7,
+		aim: 150,
+		shield_dmg: 40
+	},
+	{
+		damage: 150_000,
+		cooldown: 0.68,
+		range: 250,
+		exclusion: 50,
+		valor: 2,
+		armor_piercing: true,
+		camo: true,
+		soul_damage: 1.15,
+		aim: 150,
+		shield_dmg: 96
+	}
+];
 //TODO: add stats
 export const invisible_man: Tower = [{}, {}, {}, {}, {}, {}, {}];
 //TODO: add stats
@@ -366,9 +498,32 @@ export const lucifer: Tower = [
 	{},
 	{},
 	{},
-	{}
+	{
+		damage: 480,
+		cooldown: 0.08,
+		range: 115,
+		burst: 50,
+		burst_cd: 1.5,
+		boss_slayer: 1.55,
+		valor: 7.8,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	},
+	{
+		damage: 415,
+		cooldown: 0.07,
+		range: 135,
+		burst: 30,
+		burst_cd: 1.05,
+		boss_slayer: 4.2,
+		valor: 4,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	}
 ];
-//TODO: add stats
+
 export const operative: Tower = [
 	{
 		damage: 2,
@@ -381,17 +536,114 @@ export const operative: Tower = [
 		aim: 125,
 		price: 1_600
 	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
+	{
+		damage: 2,
+		cooldown: 0.12,
+		range: 85,
+		burst: 20,
+		burst_cd: 2.4,
+		valor: 1.9,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	},
+	{
+		damage: 3,
+		cooldown: 0.12,
+		range: 85,
+		burst: 20,
+		burst_cd: 2.1,
+		boss_slayer: 1.25,
+		valor: 2.4,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	},
+	{
+		damage: 6,
+		cooldown: 0.1,
+		range: 95,
+		burst: 30,
+		burst_cd: 2.1,
+		boss_slayer: 1.25,
+		valor: 3,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	},
+	{
+		damage: 18,
+		cooldown: 0.1,
+		range: 115,
+		burst: 30,
+		burst_cd: 1.8,
+		boss_slayer: 1.55,
+		valor: 3,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	},
+	{
+		damage: 45,
+		cooldown: 0.08,
+		range: 115,
+		burst: 30,
+		burst_cd: 1.5,
+		boss_slayer: 1.55,
+		valor: 4,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	},
+	{
+		damage: 480,
+		cooldown: 0.08,
+		range: 115,
+		burst: 50,
+		burst_cd: 1.5,
+		boss_slayer: 1.55,
+		valor: 7.8,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	},
+	{
+		damage: 415,
+		cooldown: 0.07,
+		range: 135,
+		burst: 30,
+		burst_cd: 1.05,
+		boss_slayer: 3.2,
+		valor: 4,
+		armor_piercing: true,
+		camo: true,
+		aim: 125
+	}
 ];
 // TODO: add stats
 export const scorcher: Tower = [{}, {}, {}, {}, {}, {}, {}];
 //TODO: add stats
-export const scrambler: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const scrambler: Tower = [
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{
+		// dont know the path, i swear there was another that was just like an ashigaru on coke
+		damage: 5_000,
+		cooldown: 3.9,
+		range: 170,
+		exclusion: 20,
+		radius: 65,
+		purify: 5,
+		armor_piercing: true,
+		camo: true,
+		cash_conv: 0.2,
+		shield_dmg: 21
+	}
+];
 //TODO: add stats
 export const silver_rogue: Tower = [
 	{
@@ -406,12 +658,91 @@ export const silver_rogue: Tower = [
 		shield_dmg: 0.7,
 		price: 3_900
 	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
+	{
+		damage: 8,
+		cooldown: 0.15,
+		max_cooldown: 0.27,
+		min_cooldown: 0.15,
+		acceleration: 0.1,
+		range: 113,
+		armor_piercing: true,
+		camo: true,
+		aim: 55,
+		shield_dmg: 0.7
+	},
+	{
+		damage: 16,
+		cooldown: 0.15,
+		max_cooldown: 0.27,
+		min_cooldown: 0.15,
+		acceleration: 0.14,
+		range: 120,
+		armor_piercing: true,
+		camo: true,
+		aim: 55,
+		shield_dmg: 0.7
+	},
+	{
+		damage: 32,
+		cooldown: 0.125,
+		max_cooldown: 0.27,
+		min_cooldown: 0.125,
+		acceleration: 0.14,
+		range: 120,
+		armor_piercing: true,
+		camo: true,
+		aim: 55,
+		shield_dmg: 0.7
+	},
+	{
+		damage: 96,
+		cooldown: 0.125,
+		max_cooldown: 0.27,
+		min_cooldown: 0.125,
+		acceleration: 0.2,
+		range: 135,
+		armor_piercing: true,
+		camo: true,
+		aim: 55,
+		shield_dmg: 0.7
+	},
+	{
+		damage: 280,
+		cooldown: 0.125,
+		max_cooldown: 0.24,
+		min_cooldown: 0.125,
+		acceleration: 0.24,
+		range: 135,
+		armor_piercing: true,
+		camo: true,
+		aim: 55,
+		shield_dmg: 0.7
+	},
+	{
+		damage: 24_000,
+		cooldown: 0.125,
+		max_cooldown: 0.002,
+		min_cooldown: 0.125,
+		acceleration: 0.24,
+		range: 180,
+		armor_piercing: true,
+		camo: true,
+		aim: 55,
+		shield_dmg: 0.7
+	},
+	{
+		damage: 14_400,
+		cooldown: 0.09,
+		max_cooldown: 0.24,
+		min_cooldown: 0.09,
+		acceleration: 0.24,
+		range: 135,
+		purify: 8,
+		armor_piercing: true,
+		camo: true,
+		aim: 55,
+		shield_dmg: 0.7
+	}
 ];
 //TODO: add stats
 export const void_pistolman: Tower = [
@@ -424,12 +755,63 @@ export const void_pistolman: Tower = [
 		aim: 100,
 		price: 2_500
 	},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
+	{
+		damage: 10,
+		cooldown: 0.45,
+		range: 90,
+		armor_destruction: 0.2,
+		camo: true,
+		aim: 100
+	},
+	{
+		damage: 20,
+		cooldown: 0.375,
+		range: 100,
+		armor_destruction: 0.2,
+		camo: true,
+		aim: 100
+	},
+	{
+		damage: 40,
+		cooldown: 0.3,
+		range: 120,
+		armor_destruction: 0.2,
+		camo: true,
+		aim: 100
+	},
+	{
+		damage: 100,
+		cooldown: 0.25,
+		range: 120,
+		armor_destruction: 0.25,
+		camo: true,
+		aim: 100
+	},
+	{
+		damage: 180,
+		cooldown: 0.15,
+		range: 120,
+		armor_destruction: 0.25,
+		camo: true,
+		aim: 100
+	},
+	{
+		damage: 800,
+		cooldown: 0.15,
+		range: 160,
+		armor_destruction: 0.35,
+		camo: true,
+		aim: 100
+	},
+	{
+		damage: 250,
+		cooldown: 0.06,
+		range: 120,
+		execution: 1,
+		armor_destruction: 0.25,
+		camo: true,
+		aim: 100
+	}
 ];
 //TODO: add stats
 export const workshop: Tower = [

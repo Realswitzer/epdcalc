@@ -22,12 +22,48 @@ export const huge_shotgunner: Tower = [
 // TODO: add stats
 export const huge_coordinator: Tower = [
 	{ damage: 30, cooldown: 1.6, range: 60, damage_buff: 0.15, camo: true, aim: 100, price: 9_500 },
+	{ damage: 30, cooldown: 1.6, range: 75, damage_buff: 0.15, camo: true, aim: 100, price: 3_000 },
 	{},
 	{},
-	{},
-	{},
-	{},
-	{}
+	{
+		damage: 500,
+		cooldown: 1.6,
+		range: 100,
+		damage_buff: 0.25,
+		range_buff: 0.15,
+		camo: true,
+		aim: 100
+	},
+	{
+		damage: 1_500,
+		cooldown: 1.2,
+		range: 115,
+		damage_buff: 0.25,
+		range_buff: 0.15,
+		camo: true,
+		aim: 100,
+		price: 290_000
+	},
+	{
+		damage: 1_500,
+		cooldown: 1.2,
+		range: 115,
+		damage_buff: 0.25,
+		range_buff: 0.15,
+		camo: true,
+		aim: 100,
+		price: 2_300_000
+	},
+	{
+		damage: 1_000,
+		cooldown: 0.2,
+		range: 115,
+		damage_buff: 0.4,
+		range_buff: 0.15,
+		camo: true,
+		aim: 100,
+		price: 3_000_000
+	}
 ];
 // TODO: add stats
 export const huge_demolisher: Tower = [

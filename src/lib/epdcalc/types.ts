@@ -93,6 +93,7 @@ export interface TowerUpgrade {
 	max_dmg_increase?: number;
 	max_interest?: number;
 	max_spawns?: number;
+	melt?: number;
 	min_cooldown?: number;
 	min_dmg_increase?: number;
 	oblivion?: number;

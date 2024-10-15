@@ -96,7 +96,26 @@ export const phantom_killzone: Tower = [
 	{},
 	{},
 	{},
-	{}
+	{},
+	{
+		//unsure of the path
+		damage: 4_444_000,
+		crit_chance: 0.13,
+		crit_dmg: 3.4,
+		cooldown: 19.1,
+		exclusion: 200,
+		radius: 36,
+		rupture: 0.66,
+		rupture_duration: 7,
+		shredding: 0.25,
+		shredding_length: 16,
+		valor: 2.25,
+		shield_bypass: 0.95,
+		armor_piercing: true,
+		camo: true,
+		aim: 250
+		//another stat after that but its cut off. maybe ibreak?
+	}
 ];
 // TODO: add stats
 export const alien_raygunner: Tower = [
@@ -141,7 +160,22 @@ export const arcane_blizzard: Tower = [
 	{},
 	{},
 	{},
-	{}
+	{},
+	{
+		// unsure of path
+		damage: 3_200,
+		cooldown: 15,
+		range: 210,
+		exclusion: 55,
+		frostbite: 0.035,
+		frost_time: 4.4,
+		bliz_length: 4,
+		bliz_radius: 70,
+		shield_bypass: 0.8,
+		armor_piercing: true,
+		camo: true,
+		shield_dmg: 8
+	}
 ];
 // TODO: add stats
 export const empyrean_jar_guard_alpha: Tower = [
@@ -166,7 +200,23 @@ export const empyrean_jar_guard_alpha: Tower = [
 	{},
 	{},
 	{},
-	{}
+	{},
+	{
+		// unknown on path, some level 7
+		damage: 200_000,
+		crit_chance: 0.25,
+		crit_dmg: 8,
+		cooldown: 2.55,
+		max_cooldown: 5.1,
+		min_cooldown: 2.55,
+		acceleration: 0.24,
+		radius: 8,
+		valor: 8.7,
+		armor_destruction: 0.08,
+		camo: true,
+		soul_damage: 0.9,
+		shield_dmg: 300
+	}
 ];
 // TODO: add stats
 export const empyrean_jar_guard_eminence_test: Tower = [{}, {}, {}, {}, {}, {}, {}];

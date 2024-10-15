@@ -433,6 +433,20 @@ export const cursed_blizzard_fake: Tower = [
 	{},
 	{},
 	{
+		damage: 1_100,
+		cooldown: 20,
+		range: 285,
+		exclusion: 95,
+		bliz_length: 12,
+		bliz_radius: 65,
+		shredding: 0.04,
+		shredding_length: 15,
+		purify: 1.55,
+		armor_destruction: 0.08,
+		camo: true,
+		shield_dmg: 0.5
+	},
+	{
 		damage: 900,
 		cooldown: 12,
 		range: 240,
@@ -612,7 +626,21 @@ export const jar_guard_progenitor: Tower = [
 	{},
 	{},
 	{},
-	{}
+	{
+		// unsure of path
+		damage: 2_500,
+		cooldown: 0.045,
+		max_cooldown: 0.34,
+		min_cooldown: 0.045,
+		acceleration: 0.05,
+		range: 105,
+		exclusion: 20,
+		valor: 2.9,
+		camo: true,
+		soul_damage: 0.9,
+		aim: 135,
+		shield_dmg: 3
+	}
 ];
 // TODO: add stats
 export const jar_guard_shiniest: Tower = [
@@ -639,9 +667,52 @@ export const jar_guard_shiniest: Tower = [
 // TODO: add stats
 export const jar_guard_singularity_test: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
-export const jar_guard_singularity: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const jar_guard_singularity: Tower = [
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{
+		// unsure of path
+		damage: 100_000,
+		crit_chance: 0.3,
+		crit_dmg: 5,
+		cooldown: 5.1,
+		range: 320,
+		exclusion: 50,
+		valor: 2.9,
+		camo: true,
+		soul_damage: 0.9,
+		aim: 210,
+		shield_dmg: 150
+	}
+];
 // TODO: add stats
-export const molten_turret: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const molten_turret: Tower = [
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{
+		damage: 3_000,
+		crit_chance: 0.3,
+		crit_dmg: 120,
+		cooldown: 0.75,
+		range: 250,
+		targeting_rate: 1,
+		radius: 6,
+		bleed: 400,
+		paralyze: 0.14,
+		melt: 3.2,
+		armor_piercing: true,
+		camo: true,
+		aim: 100
+	}
+];
 // TODO: add stats
 export const radiant_raygunner: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats

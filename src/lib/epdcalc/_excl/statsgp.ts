@@ -32,9 +32,32 @@ export function DPM(tower: TowerUpgrade): number | undefined {
 
 // DPM(Mult) // DPSMult*60
 
-// DpS (Bleed) // No idea how this is truly calculated, will need to review more footage.
+// DpS (Bleed) // No idea how this is truly calculated, will need to review more footage. :: Seems to be bleed/5 so it only accounts for a single proc. ?????
+// iirc it's also been mentioned that bleed was 3 seconds so im a little confused about this part but bleed kinda sucks anyways so nobody will notice a calculation error.
+export function BleedDamagePerSecond(tower: TowerUpgrade): number | undefined {
+	// having a roken b key here makes this more inconsistent.
+	if (!tower.bleed) {
+		return undefined;
+	}
+	return tower.bleed / 5;
+}
+
 // DPM (Bleed)
-// Crit Avg // This is also calculated in a weird way from what I can tell. 60x crit = 19x crit avg
+export function BleedDamagePerMinute(tower: TowerUpgrade): number | undefined {
+	const _bdps: number | undefined = BleedDamagePerSecond(tower);
+	if (_bdps) {
+		return _bdps * 60;
+	} else {
+		return undefined;
+	}
+}
+// Crit Avg // This is also calculated in a weird way from what I can tell. 60x crit = 19x crit avg -- nvm im dumb. i just had to check 2 screenshots to figure it out.
+export function CritAvg(tower: TowerUpgrade): number | undefined {
+	if (!(tower.crit_chance && tower.crit_dmg)) {
+		return undefined;
+	}
+	return 1 + tower.crit_chance * tower.crit_dmg;
+}
 // RPS ///firerate per second // 1/firerate
 export function RPS(tower: TowerUpgrade): number | undefined {
 	if (tower.cooldown) {
@@ -102,7 +125,14 @@ export function CashPerMinute(tower: TowerUpgrade): number | undefined {
 	return undefined;
 }
 // Cost/CPS
-
+export function CostPerCPS(tower: Tower, upgrade: Upgrade): number | undefined {
+	const _price: number | undefined = CumulativePrice(tower, upgrade);
+	const _cps: number | undefined = CashPerSecond(tower[upgrade] || {});
+	if (_price && _cps) {
+		return _price / _cps;
+	}
+	return undefined;
+}
 // -- ENGIS
 // Spawn DPS
 export function SpawnDamagePerSecond(tower: TowerUpgrade): number | undefined {
@@ -142,4 +172,5 @@ export function SpawnMaxDamagePerMinute(tower: TowerUpgrade): number | undefined
 	return _spawndpm * tower.max_spawns;
 }
 // Cost/spawn dps
+export function CostPerSpawnDPS(tower: Tower, upgrade: Upgrade) {}
 // Cost/max dps

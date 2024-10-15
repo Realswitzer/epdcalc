@@ -175,7 +175,26 @@ export const mechanic: Tower = [
 	}
 ];
 // TODO: add stats
-export const mystic_zero_two: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const mystic_zero_two: Tower = [
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{},
+	{
+		damage: 10_000,
+		cooldown: 0.09,
+		range: 270,
+		bleed: 10_000,
+		hollow_point: 50,
+		execution: 27,
+		camo: true,
+		aim: 120,
+		shield_dmg: 0.9
+	}
+];
 export const quantum_turret: Tower = [
 	{
 		damage: 18,
