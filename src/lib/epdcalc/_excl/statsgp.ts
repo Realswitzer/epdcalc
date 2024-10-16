@@ -172,5 +172,21 @@ export function SpawnMaxDamagePerMinute(tower: TowerUpgrade): number | undefined
 	return _spawndpm * tower.max_spawns;
 }
 // Cost/spawn dps
-export function CostPerSpawnDPS(tower: Tower, upgrade: Upgrade) {}
+export function CostPerSpawnDPS(tower: Tower, upgrade: Upgrade): number | undefined {
+	const towerupgrade = tower[upgrade] || {};
+	const _spawndps: number | undefined = SpawnDamagePerSecond(towerupgrade);
+	if (_spawndps !== undefined) {
+		return undefined;
+	}
+	return _spawndps;
+}
+
 // Cost/max dps
+export function CostPerMaxDPS(tower: Tower, upgrade: Upgrade): number | undefined {
+	const towerupgrade = tower[upgrade] || {};
+	const _maxdps: number | undefined = SpawnMaxDamagePerSecond(towerupgrade);
+	if (!(towerupgrade.max_spawns && _maxdps !== undefined)) {
+		return undefined;
+	}
+	return _maxdps;
+}
