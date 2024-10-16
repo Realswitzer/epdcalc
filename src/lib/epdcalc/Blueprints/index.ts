@@ -1,5 +1,6 @@
-export const adamant_styker: Blueprint = { stryker: 10, shrine_of_apollo: 1 };
+import type { Blueprint } from '../types';
 
+export const adamant_styker: Blueprint = { stryker: 10, shrine_of_apollo: 1 };
 export const alchemist: Blueprint = { executive: 5, shrine_of_apollo: 5 };
 export const apollos_blessing: Blueprint = { shrine_of_apollo: 12 };
 export const casual_zero_two: Blueprint = { zero_two: 13 };
@@ -18,10 +19,10 @@ export const mechanic: Blueprint = { engineer: 12, executive: 1 };
 export const mystic_apollo: Blueprint = { apollos_blessing: 3 };
 export const mystic_vaporizer: Blueprint = {};
 export const mystic_zero_two: Blueprint = {
-	zero_two_school: 3,
-	casual_zero_two: 2,
-	zero_two_supreme: 1,
-	zero_two: 11
+  zero_two_school: 3,
+  casual_zero_two: 2,
+  zero_two_supreme: 1,
+  zero_two: 11
 };
 export const phase_turret: Blueprint = { quantum_turret: 1, engineer: 9 };
 export const quantum_stryker: Blueprint = { quantum_turret: 1, super_stryker: 1, high_engineer: 1 };
@@ -43,4 +44,3 @@ export const virtual_turret: Blueprint = { titanium_turret: 1, jar_guard_dull: 1
 export const visible_man: Blueprint = { invisible_man: 1, heckerman: 4 };
 export const zero_two_school: Blueprint = { zero_two: 11, executive: 2 };
 export const zero_two: Blueprint = { executive: 1, vaporizer: 1 };
-import type { Blueprint } from '../types';

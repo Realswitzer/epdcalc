@@ -16,20 +16,20 @@ import * as prototype from './prototype';
 import * as unknown2 from './unknown2';
 
 export {
-	standard,
-	exotic,
-	elusive,
-	elusivestandard,
-	prestigious,
-	lustrous,
-	majestic,
-	synthesized,
-	exalted,
-	legendary,
-	prime,
-	illustrious,
-	fabled,
-	unknown,
-	prototype,
-	unknown2
+  standard,
+  exotic,
+  elusive,
+  elusivestandard,
+  prestigious,
+  lustrous,
+  majestic,
+  synthesized,
+  exalted,
+  legendary,
+  prime,
+  illustrious,
+  fabled,
+  unknown,
+  prototype,
+  unknown2
 };
