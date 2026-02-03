@@ -14,10 +14,11 @@ export interface Debuffs {
 
 export class Enemy implements _Enemy {
   public static blankEnemy() {
-    return Enemy({
+    return new Enemy({
       id: "Test",
       name: "Test",
       health: 0,
+      armor: true,
     } as _Enemy);
   }
 

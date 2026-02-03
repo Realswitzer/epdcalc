@@ -58,7 +58,7 @@ export interface Enemy {
   id: string;
   name: string;
   health: number;
-  shield: number;
+  shield?: number;
   boss?: boolean;
   armor?: boolean;
   corrupted?: boolean;
