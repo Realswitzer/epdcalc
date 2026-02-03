@@ -5,6 +5,7 @@ export interface Tower {
   rarity: TowerRarity;
   type: TowerType[];
   paths: TowerPath[];
+  generatorType?: generatorType;
 }
 
 export interface TowerLevel {
@@ -13,6 +14,7 @@ export interface TowerLevel {
   price: number;
   stats: Record<string, number | boolean>;
   abilities?: Ability[];
+  generatorType?: generatorType; // TODO: add ref to ${{Tower}}
 }
 
 export interface TowerPath extends TowerLevel {
@@ -62,4 +64,9 @@ export interface Enemy {
   corrupted?: boolean;
   // speed: number
   // cash?: number
+}
+
+export enum generatorType {
+  Wave = "wave",
+  Time = "time",
 }

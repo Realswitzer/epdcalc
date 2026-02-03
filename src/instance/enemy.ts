@@ -13,6 +13,14 @@ export interface Debuffs {
 }
 
 export class Enemy implements _Enemy {
+  public static blankEnemy() {
+    return Enemy({
+      id: "Test",
+      name: "Test",
+      health: 0,
+    } as _Enemy);
+  }
+
   public id!: string;
   public name!: string;
   public health!: number;
