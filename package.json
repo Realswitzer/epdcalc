@@ -11,7 +11,5 @@
   },
   "dependencies": {
     "prettier": "^3.8.1"
-  },
-  "scripts": {"_stackblitzStart": "pnpm install -g bun && bun i"},
-  "stackblitz": {"installDependencies": false, "startCommand": "_stackblitzStart"}
+  }
 }
