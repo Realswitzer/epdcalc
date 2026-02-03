@@ -309,3 +309,27 @@ type TowerName =
   | 'zero_two_supreme'
   | 'zero_two_unknown'
   | 'zero_two';
+
+export interface Enemy {
+  name: string;
+  displayName?: string;
+  health: number;
+  shield?: number;
+  boss?: boolean;
+  armor?: boolean;
+  corrupted?: boolean;
+  // speed: number -- no way to easily tell
+  cash?: number;
+}
+
+export type AbilityTarget ="self"|"enemies"
+export interface Ability {
+  name: string
+  price: number
+  target: AbilityTarget
+  duration: number
+  id: number
+  // how am i going to do thanatos's caliber thing
+  effect: (tower: TowerUpgrade) => TowerUpgrade
+  cooldown: number,
+}

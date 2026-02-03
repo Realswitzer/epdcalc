@@ -1,4 +1,4 @@
-import { apollos_blessing } from '../towers/exalted';
+import { apollos_blessing } from '../Towers/exalted';
 import { Upgrade, type Tower, type TowerUpgrade } from '../types';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
