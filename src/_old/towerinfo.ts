@@ -1,4 +1,4 @@
-import { Rarity, type TowerInfo, TowerType, GeneratorType } from "./src/types";
+import { Rarity, type TowerInfo, TowerType, GeneratorType } from "./types";
 
 export const abyssal: TowerInfo = {
   Name: "Abyssal",

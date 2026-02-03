@@ -1,0 +1,53 @@
+export interface Tower {
+  id: string;
+  name: string;
+  levels: TowerLevel[];
+  rarity: TowerRarity;
+  type: TowerType[];
+  paths: TowerPath[];
+}
+
+export interface TowerLevel {
+  level: number;
+  name?: string;
+  price: number;
+  stats: Record<string, number | boolean>;
+  abilities?: Ability[];
+}
+
+export interface TowerPath extends TowerLevel {
+  id: "a" | "b" | "c";
+}
+
+export enum TowerRarity {
+  Elusive = "Elusive",
+  ElusiveStandard = "Elusive/Standard",
+  Exalted = "Exalted",
+  Exotic = "Exotic",
+  Fabled = "Fabled",
+  Fusion = "Fusion",
+  Illustrious = "Illustrious",
+  Legendary = "Legendary",
+  Lustrous = "Lustrous",
+  Majestic = "Majestic",
+  Prestigious = "Prestigious",
+  Prime = "Prime",
+  Prototype = "Prototype",
+  Standard = "Standard",
+  Synthesized = "Synthesized",
+  Unknown = "Unknown",
+  Unknown2 = "???",
+}
+
+export enum TowerType {
+  Defense = "Defense",
+  Generator = "Generator",
+  Offense = "Offense",
+  Support = "Support",
+  UNKNOWN_TYPE = "UNKNOWN_TYPE",
+}
+
+export interface Ability {
+  id: number;
+  type: "add";
+}
