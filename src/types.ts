@@ -51,3 +51,15 @@ export interface Ability {
   id: number;
   type: "add";
 }
+
+export interface Enemy {
+  id: string;
+  name: string;
+  health: number;
+  shield: number;
+  boss?: boolean;
+  armor?: boolean;
+  corrupted?: boolean;
+  // speed: number
+  // cash?: number
+}
