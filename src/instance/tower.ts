@@ -1,4 +1,5 @@
-import { TowerLevel } from "../types";
+import { elder_godfather } from "../towers";
+import { KnownStatKeys, Tower, TowerLevel, TowerStats } from "../types";
 
 // maybe rework due to buff stacking
 export interface Buffs {
@@ -11,14 +12,17 @@ export interface Buffs {
   // bountyAmp?: number
 }
 
-export class Tower {
+export class TowerInstance {
   public buffs: Required<Buffs> = {
     dmg: 0,
     cd: 0,
     range: 0,
     upgReduction: 0,
   };
-  public constructor(readonly tower: TowerLevel) {}
+  public constructor(
+    readonly tower: Tower,
+    readonly level: TowerLevel
+  ) {}
   // TODO: Fix damage and CD buffs
   // When using multipliers, remember to just use them. It's not 1+getDamageMultiplier(), it is just getDamageMultiplier()
   public getDamageBuff(): number {
@@ -41,4 +45,26 @@ export class Tower {
   public getUpgradeReductionBuff(): number {
     return this.buffs.upgReduction;
   }
+
+  public getStatNumber(key: KnownStatKeys): number | null;
+  public getStatNumber(key: string): number | null;
+  public getStatNumber(key: string): number | null {
+    const value = this.level.stats[key];
+    if (typeof value === "number") {
+      return value;
+    } else {
+      return null;
+    }
+  }
+  public getStatBoolean(key: KnownStatKeys): boolean;
+  public getStatBoolean(key: string): boolean;
+  public getStatBoolean(key: string): boolean {
+    const value = this.level.stats[key];
+    return value === true;
+  }
 }
+
+new TowerInstance(
+  elder_godfather,
+  elder_godfather.paths.find((v) => v.id === "a")!
+).getStatBoolean("camo");

@@ -1,14 +1,20 @@
-import { Tower } from "../../instance/tower";
+import { TowerInstance } from "../../instance/tower";
 import { Enemy } from "../../instance/enemy";
 
-export function damagePerAction(tower: Tower, enemy?: Enemy): number | null {
+export function damagePerAction(
+  tower: TowerInstance,
+  enemy?: Enemy
+): number | null {
   if (!enemy) {
     enemy = Enemy.blankEnemy();
 
-    const { stats } = tower.tower;
-    const { buffs } = tower;
+    const { stats } = tower.level;
 
-    return stats.damage as number;
+    return (
+      (stats.damage as number) *
+      tower.getDamageMultiplier() *
+      enemy.getRadMultiplier()
+    );
   }
   return null;
 }
