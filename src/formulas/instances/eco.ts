@@ -1,33 +1,26 @@
 import { generatorType } from "../../types";
-import { Tower } from "../../instance/tower";
+import { TowerInstance } from "../../instance/tower";
 
-export function moneyPerWave(tower: Tower): number | null {
-  if (
-    tower.tower.stats.income &&
-    tower.tower.generatorType === generatorType.Wave
-  ) {
-    const dmgBuff = tower.getDamageBuff();
-    const { income } = tower.tower.stats;
-    return (income as number) * dmgBuff;
-  } else {
+export function moneyPerWave(tower: TowerInstance): number | null {
+  const income = tower.getStatNumber("income");
+  if (income === null || tower.tower.generatorType !== generatorType.Wave) {
     return null;
   }
+  const dmgMulti = tower.getDamageMultiplier();
+  return income * dmgMulti;
 }
 
-export function moneyPerSecond(tower: Tower): number | null {
+export function moneyPerSecond(tower: TowerInstance): number | null {
+  const income = tower.getStatNumber("income");
+  const cooldown = tower.getStatNumber("cooldown");
   if (
-    tower.tower.generatorType === generatorType.Time &&
-    tower.tower.stats.income &&
-    tower.tower.stats.cooldown
+    tower.tower.generatorType !== generatorType.Time ||
+    !income ||
+    !cooldown
   ) {
-    const dmgBuff = tower.getDamageBuff();
-    const cdBuff = tower.getCooldownBuff();
-    const { income, cooldown } = tower.tower.stats;
-    // TODO: confirm formula??
-    return (
-      ((income as number) * dmgBuff) / ((cooldown as number) * (1 - cdBuff))
-    );
-  } else {
     return null;
   }
+  const dmgMulti = tower.getDamageMultiplier();
+  const cdMulti = tower.getCooldownMultiplier();
+  return (income * dmgMulti) / (cooldown * cdMulti);
 }
