@@ -5,16 +5,13 @@ export function damagePerAction(
   tower: TowerInstance,
   enemy?: Enemy
 ): number | null {
+  const damage = tower.getStatNumber("damage");
+  if (!damage) {
+    return null;
+  }
   if (!enemy) {
     enemy = Enemy.blankEnemy();
-
-    const { stats } = tower.level;
-
-    return (
-      (stats.damage as number) *
-      tower.getDamageMultiplier() *
-      enemy.getRadMultiplier()
-    );
   }
-  return null;
+
+  return damage * tower.getDamageMultiplier() * enemy.getRadMultiplier();
 }

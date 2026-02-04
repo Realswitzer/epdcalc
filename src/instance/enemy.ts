@@ -26,10 +26,11 @@ export class Enemy implements _Enemy {
   public name!: string;
   public health!: number;
   public maxHealth: number;
-  public shield!: number;
+  public shield?: number;
   public boss?: boolean;
   public armor?: boolean;
   public corrupted?: boolean;
+  public camo?: any;
 
   public debuffs: Required<Debuffs> = {
     rad: 0,
