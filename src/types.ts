@@ -217,3 +217,15 @@ export type KnownStatKeys =
   | "targeting_rate"
   | "upgrade_reduction"
   | "valor";
+
+export enum Level {
+  Level1,
+  Level2,
+  Level3,
+  Level4,
+  Level5,
+  Level6,
+  Level7a,
+  Level7b,
+  Level7c,
+}
