@@ -1,4 +1,11 @@
 {
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "prettier.prettierPath": "./node_modules/prettier",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "svelte.enable-ts-plugin": true
 }

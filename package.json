@@ -1,6 +1,5 @@
 {
-  "name": "epdcalc",
-  "module": "src/index.ts",
+  "name": "epdcalc-root",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
@@ -11,5 +10,7 @@
   },
   "dependencies": {
     "prettier": "^3.8.1"
-  }
+  },
+  "private":true,
+  "workspaces": [ "src", "web" ]
 }
