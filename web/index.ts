@@ -1,4 +1,4 @@
-import { Elysia, env } from "elysia";
+import { Elysia } from "elysia";
 import { staticPlugin } from "@elysiajs/static";
 
 const app = new Elysia()
