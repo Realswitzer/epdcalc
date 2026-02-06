@@ -7,5 +7,6 @@
     },
     "prettier.prettierPath": "./node_modules/prettier",
     "editor.formatOnSave": true,
-    "svelte.enable-ts-plugin": true
+    "svelte.enable-ts-plugin": true,
+    "editor.cursorSmoothCaretAnimation": "on"
 }
