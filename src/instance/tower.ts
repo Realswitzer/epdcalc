@@ -12,7 +12,12 @@ export interface Buffs {
   // bountyAmp?: number
 }
 
+let i = 0;
+function nextId() {
+  return i++;
+}
 export class TowerInstance {
+  public id: number;
   public buffs: Required<Buffs> = {
     dmg: 0,
     cd: 0,
@@ -22,7 +27,9 @@ export class TowerInstance {
   public constructor(
     readonly tower: Tower,
     readonly level: TowerLevel
-  ) {}
+  ) {
+    this.id = nextId();
+  }
   // TODO: Fix damage and CD buffs
   // When using multipliers, remember to just use them. It's not 1+getDamageMultiplier(), it is just getDamageMultiplier()
   public getDamageBuff(): number {

@@ -9,7 +9,8 @@ export interface Debuffs {
   bleed?: number;
   burn?: number;
   rupture?: number;
-  // first_strike, implement lengths. possibly via setTimeout?
+  first_strike_ids?: number[];
+  // manage burn stacks to calc melt
 }
 
 export class Enemy implements _Enemy {

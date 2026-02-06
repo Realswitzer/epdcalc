@@ -36,8 +36,12 @@ export function damagePerAction(
     totalDamage *= 1 + mult;
     multiplierCount++;
   }
-  //   mult = tower.getStatNumber("first_strike");
-  //   if (mult && enemy.[???]){}
+  mult = tower.getStatNumber("first_strike");
+  if (mult && !enemy.debuffs.first_strike_ids.includes(tower.id)) {
+    totalDamage *= mult;
+    multiplierCount++;
+    enemy.debuffs.first_strike_ids.push(tower.id);
+  }
   mult = tower.getStatNumber("hollow_point");
   if (mult && !enemy.armor) {
     totalDamage *= mult++;
