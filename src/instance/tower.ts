@@ -26,7 +26,7 @@ export class TowerInstance {
   };
   public constructor(
     readonly tower: Tower,
-    readonly level: TowerLevel
+    readonly level: TowerLevel,
   ) {
     this.id = nextId();
   }
@@ -69,9 +69,16 @@ export class TowerInstance {
     const value = this.level.stats[key];
     return value === true;
   }
+
+  public has(key: KnownStatKeys): boolean;
+  public has(key: string): boolean;
+  public has(key: string): boolean {
+    if (this.getStatBoolean(key) || this.getStatNumber(key)) return true;
+    return false;
+  }
 }
 
 new TowerInstance(
   elder_godfather,
-  elder_godfather.paths.find((v) => v.id === "a")!
+  elder_godfather.paths.find((v) => v.id === "a")!,
 ).getStatBoolean("camo");
