@@ -13,6 +13,12 @@ const config = {
       precompress: false,
       strict: true,
     }),
+    alias: {
+      epdcalc: "../src",
+      "epdcalc/*": "../src/*",
+      $lib: "./src/lib",
+      "$lib/*": "./src/lib/*",
+    },
   },
   compilerOptions: { runes: true },
 };

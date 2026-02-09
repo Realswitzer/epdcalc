@@ -5,7 +5,7 @@ export interface Tower {
   rarity: TowerRarity;
   type: TowerType[];
   paths: TowerPath[];
-  generatorType?: generatorType;
+  generatorType?: GeneratorType;
 }
 
 export interface TowerLevel {
@@ -68,7 +68,7 @@ export interface Enemy {
   // cash?: number
 }
 
-export enum generatorType {
+export enum GeneratorType {
   Wave = "wave",
   Time = "time",
 }

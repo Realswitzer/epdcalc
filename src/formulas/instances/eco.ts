@@ -1,9 +1,9 @@
-import { generatorType } from "../../types";
+import { GeneratorType } from "../../types";
 import { TowerInstance } from "../../instance/tower";
 
 export function moneyPerWave(tower: TowerInstance): number | null {
   const income = tower.getStatNumber("income");
-  if (income === null || tower.tower.generatorType !== generatorType.Wave) {
+  if (income === null || tower.tower.generatorType !== GeneratorType.Wave) {
     return null;
   }
   const dmgMulti = tower.getDamageMultiplier();
@@ -14,7 +14,7 @@ export function moneyPerSecond(tower: TowerInstance): number | null {
   const income = tower.getStatNumber("income");
   const cooldown = tower.getStatNumber("cooldown");
   if (
-    tower.tower.generatorType !== generatorType.Time ||
+    tower.tower.generatorType !== GeneratorType.Time ||
     !income ||
     !cooldown
   ) {
