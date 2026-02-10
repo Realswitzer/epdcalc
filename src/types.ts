@@ -6,7 +6,44 @@ export interface Tower {
   type: TowerType[];
   paths: TowerPath[];
   generatorType?: GeneratorType;
+  variantOf?: VariantTower;
 }
+
+// NOTE that VariantTower ONLY encompasses towers that have distinct variants.
+// Ones excluded are HUGEs and examples like Elder,
+// which while they are modeled after the Godfather,
+// is too distinct to be considered a variant of it
+// Effectively, 3+ significant variants to be considered
+export type VariantTower =
+  | "zero_two"
+  | "shrine_of_apollo"
+  | "raygunner"
+  | "vaporizer"
+  | "executive"
+  | "scorcher"
+  | "stryker"
+  | "blizzard"
+  | "lucifer"
+  | "jar_guard"
+  | "lemonade_stand";
+
+// basically just a cheap excuse for localization for the frontend, though may be fully removed at some point
+// will need a similar obj/function to convert tower stats to expected, however.
+export const friendlyName = {
+  VariantTower: {
+    zero_two: "Zero Two",
+    shrine_of_apollo: "Shrine of Apollo",
+    raygunner: "Raygunner",
+    vaporizer: "Vaporizer",
+    executive: "Executive",
+    scorcher: "Scorcher",
+    stryker: "Stryker",
+    blizzard: "Blizzard",
+    lucifer: "Lucifer",
+    jar_guard: "Jar Guard",
+    lemonade_stand: "Lemonade Stand",
+  },
+};
 
 export interface TowerLevel {
   level: number;
