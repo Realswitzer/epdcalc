@@ -12,6 +12,7 @@ export interface Debuffs {
   first_strike_ids?: number[];
   // manage burn stacks to calc melt
 }
+type NumericDebuff = Exclude<keyof Debuffs, "first_strike_ids">;
 
 export class Enemy implements _Enemy {
   public static blankEnemy() {
@@ -42,6 +43,7 @@ export class Enemy implements _Enemy {
     bleed: 0,
     burn: 0,
     rupture: 0,
+    first_strike_ids: [],
   };
 
   public constructor(enemy: _Enemy) {
@@ -49,12 +51,12 @@ export class Enemy implements _Enemy {
     this.maxHealth = enemy.health;
   }
 
-  public setDebuff(debuff: { type: keyof Debuffs; strength: number }) {
+  public setDebuff(debuff: { type: NumericDebuff; strength: number }) {
     this.debuffs[debuff.type] += debuff.strength;
   }
 
   public setTimedDebuff(debuff: {
-    type: keyof Debuffs;
+    type: NumericDebuff;
     strength: number;
     duration: number;
   }) {

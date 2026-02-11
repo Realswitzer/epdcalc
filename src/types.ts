@@ -1,5 +1,7 @@
+import { towers } from ".";
+
 export interface Tower {
-  id: string;
+  id: TowerId;
   name: string;
   levels: TowerLevel[];
   rarity: TowerRarity;
@@ -8,6 +10,8 @@ export interface Tower {
   generatorType?: GeneratorType;
   variantOf?: VariantTower;
 }
+
+export type TowerId = keyof typeof towers;
 
 // NOTE that VariantTower ONLY encompasses towers that have distinct variants.
 // Ones excluded are HUGEs and examples like Elder,

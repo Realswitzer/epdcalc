@@ -1,4 +1,3 @@
-import { elder_godfather } from "../towers";
 import { KnownStatKeys, Tower, TowerLevel, TowerStats } from "../types";
 
 // maybe rework due to buff stacking
@@ -26,7 +25,7 @@ export class TowerInstance {
   };
   public constructor(
     readonly tower: Tower,
-    readonly level: TowerLevel,
+    readonly level: TowerLevel
   ) {
     this.id = nextId();
   }
@@ -78,7 +77,7 @@ export class TowerInstance {
   }
 }
 
-new TowerInstance(
-  elder_godfather,
-  elder_godfather.paths.find((v) => v.id === "a")!,
-).getStatBoolean("camo");
+// new TowerInstance(
+//   elder_godfather,
+//   elder_godfather.paths.find((v) => v.id === "a")!,
+// ).getStatBoolean("camo");

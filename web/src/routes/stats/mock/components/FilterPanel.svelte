@@ -4,11 +4,16 @@
   let openSections = $state({
     type: false,
     rarity: false,
+    variant: false,
+    meta: false,
   });
 
-  let filteredTypes = $state(new Set<string>());
-  let filteredRarities = $state(new Set<string>());
-  // let filteredVariants = $state(new Set<string>()); -- later.
+  let filterState = $state({
+    type: new Set<string>(),
+    rarity: new Set<string>(),
+    variant: new Set<string>(),
+    meta: new Set<string>(),
+  });
 
   const TowerType = ["Offense", "Defense", "Generator", "Support"];
   const TowerRarity = [
@@ -30,81 +35,81 @@
     "Unknown",
     "???",
   ];
+  const TowerVariants = [
+    "zero_two",
+    "shrine_of_apollo",
+    "raygunner",
+    "vaporizer",
+    "executive",
+    "scorcher",
+    "stryker",
+    "blizzard",
+    "lucifer",
+    "jar_guard",
+    "lemonade_stand",
+  ];
+  const MetaKeys = [
+    "eco",
+    "shield_dps",
+    "rad",
+    "scorch",
+    "frostbite",
+    "rupture",
+    "win_condition",
+    "stun",
+  ];
 
-  function toggleType(type: string, checked: boolean) {
-    const next = new Set(filteredTypes);
-    if (checked) next.add(type);
-    else next.delete(type);
-    filteredTypes = next;
-  }
+  const filterSections = [
+    { key: "type", label: "Type", items: TowerType },
+    { key: "rarity", label: "Rarity", items: TowerRarity },
+    { key: "variant", label: "Variant", items: TowerVariants },
+    { key: "meta", label: "Metas", items: MetaKeys },
+  ] as const;
 
-  function toggleRarity(rarity: string, checked: boolean) {
-    const next = new Set(filteredRarities);
-    if (checked) next.add(rarity);
-    else next.delete(rarity);
-    filteredRarities = next;
+  function toggleSet(set: Set<string>, value: string, checked: boolean) {
+    const next = new Set(set);
+    checked ? next.add(value) : next.delete(value);
+    return next;
   }
 </script>
 
 <div class="h-fit rounded w-fit m-4">
   <div id="filterOptions" class="flex gap-2 h-fit flex-col">
-    <div class="w-full flex flex-col border p-2 rounded">
-      <button
-        class="font-bold mb-2 cursor-pointer text-left bg-transparent border-none p-0"
-        onclick={(e) => {
-          openSections.type = !openSections.type;
-        }}
-        >Type {#if [...filteredTypes].length}
-          ({[...filteredTypes].length}){/if}</button
-      >
-      {#if openSections.type}
-        <ul class="overflow-y-auto max-h-64">
-          {#each TowerType as type}
-            <li>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={filteredTypes.has(type)}
-                  onchange={(e) =>
-                    toggleType(type, (e.target as HTMLInputElement).checked)}
-                />
-                {type}
-              </label>
-            </li>
-          {/each}
-        </ul>
-      {/if}
-    </div>
+    {#each filterSections as section}
+      <div class="w-56 flex flex-col border p-2 rounded">
+        <button
+          class="font-bold mb-2 cursor-pointer text-left bg-transparent border-none p-0"
+          onclick={() =>
+            (openSections[section.key] = !openSections[section.key])}
+        >
+          {section.label}
+          {#if filterState[section.key].size}
+            ({filterState[section.key].size})
+          {/if}
+        </button>
 
-    <div class="w-56 flex flex-col border p-2 rounded">
-      <button
-        class="font-bold mb-2 cursor-pointer text-left bg-transparent border-none p-0"
-        onclick={() => {
-          openSections.rarity = !openSections.rarity;
-        }}
-        >Rarity {#if [...filteredRarities].length}
-          ({[...filteredRarities].length}){/if}</button
-      >
-      {#if openSections.rarity}
-        <ul class="overflow-y-auto">
-          {#each TowerRarity as rarity}
-            <li>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={filteredRarities.has(rarity)}
-                  onchange={(e) =>
-                    toggleRarity(
-                      rarity,
-                      (e.target as HTMLInputElement).checked
-                    )}
-                />
-                {rarity}
-              </label>
-            </li>
-          {/each}
-        </ul>
-      {/if}
-    </div>
+        {#if openSections[section.key]}
+          <ul class="overflow-y-auto max-h-64">
+            {#each section.items as item}
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={filterState[section.key].has(item)}
+                    onchange={(e) =>
+                      (filterState[section.key] = toggleSet(
+                        filterState[section.key],
+                        item,
+                        (e.target as HTMLInputElement).checked
+                      ))}
+                  />
+                  {item}
+                </label>
+              </li>
+            {/each}
+          </ul>
+        {/if}
+      </div>
+    {/each}
   </div>
 </div>
