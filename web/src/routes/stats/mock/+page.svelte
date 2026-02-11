@@ -2,6 +2,7 @@
   import type { Tower } from "epdcalc/types";
   import FilterPanel from "./components/FilterPanel.svelte";
   // import TowerGrid from "./components/TowerGrid.svelte";
+  import TowerCard from "./components/TowerCard.svelte";
   import TowerDetails from "./components/TowerDetails.svelte";
   import SearchBar from "./components/SearchBar.svelte";
 
@@ -23,6 +24,7 @@
 
   <main class="flex-1 overflow-y-auto">
     <!-- <TowerGrid /> -->
+    <TowerCard />
   </main>
 
   {#if selectedTower}
