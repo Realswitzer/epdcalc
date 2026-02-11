@@ -1,3 +1,17 @@
+<script module lang="ts">
+  // Future: Move to $lib and optimize better
+  export function humanize(s: string): string {
+    return s
+      .replace(/_/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .replace(/\b\w/g, (c) => c.toUpperCase())
+      .replace("Dps", "DPS")
+      .replace(/\NOf/, "of")
+      .replace(/^Huge/, "HUGE");
+  }
+</script>
+
 <script lang="ts">
   let { filters = $bindable() } = $props();
 
@@ -70,18 +84,6 @@
     const next = new Set(set);
     checked ? next.add(value) : next.delete(value);
     return next;
-  }
-
-  // Future: Move to $lib and optimize better
-  function humanize(s: string): string {
-    return s
-      .replace(/_/g, " ")
-      .replace(/\s+/g, " ")
-      .trim()
-      .replace(/\b\w/g, (c) => c.toUpperCase())
-      .replace("Dps", "DPS")
-      .replace(/\NOf/, "of")
-      .replace(/^Huge/, "HUGE");
   }
 
   $effect(() => {
