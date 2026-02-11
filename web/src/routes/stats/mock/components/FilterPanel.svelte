@@ -71,6 +71,27 @@
     checked ? next.add(value) : next.delete(value);
     return next;
   }
+
+  // Future: Move to $lib and optimize better
+  function humanize(s: string): string {
+    return s
+      .replace(/_/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .replace(/\b\w/g, (c) => c.toUpperCase())
+      .replace("Dps", "DPS")
+      .replace(/\NOf/, "of")
+      .replace(/^Huge/, "HUGE");
+  }
+
+  $effect(() => {
+    filters = {
+      types: filterState.type,
+      rarity: filterState.rarity,
+      variant: filterState.variant,
+      meta: filterState.meta,
+    };
+  });
 </script>
 
 <div class="h-fit rounded w-fit m-4">
@@ -103,7 +124,7 @@
                         (e.target as HTMLInputElement).checked
                       ))}
                   />
-                  {item}
+                  {humanize(item)}
                 </label>
               </li>
             {/each}
