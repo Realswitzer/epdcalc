@@ -1,3 +1,4 @@
+// TODO: Recheck stats
 import { Tower, TowerRarity, TowerType } from "../types";
 
 export const elder_godfather: Tower = {

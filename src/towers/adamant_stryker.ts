@@ -1,3 +1,4 @@
+// TODO: Recheck stats
 import { TowerRarity, TowerType, type Tower } from "../types";
 
 export const adamant_stryker: Tower = {
