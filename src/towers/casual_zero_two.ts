@@ -1,3 +1,4 @@
+//TODO: Recheck stats
 import { TowerRarity, TowerType, type Tower } from "../types";
 
 export const casual_zero_two: Tower = {
@@ -5,6 +6,7 @@ export const casual_zero_two: Tower = {
   name: "Casual Zero Two",
   rarity: TowerRarity.Exalted,
   type: [TowerType.Offense],
+  variantOf: "zero_two",
   levels: [
     {
       level: 1,

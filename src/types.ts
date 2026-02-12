@@ -29,7 +29,8 @@ export type VariantTower =
   | "blizzard"
   | "lucifer"
   | "jar_guard"
-  | "lemonade_stand";
+  | "lemonade_stand"
+  | "engineer";
 
 // basically just a cheap excuse for localization for the frontend, though may be fully removed at some point
 // will need a similar obj/function to convert tower stats to expected, however.
