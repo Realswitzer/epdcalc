@@ -1,4 +1,4 @@
-interface stats {
+export interface stats {
   name: string;
   stats: string[];
   formula: string;
@@ -12,5 +12,5 @@ export const Support = {
     description:
       "Rad is a multiplicative damage multiplier, applied by Stryker and Apollo variants. On Apollo variants, each beam attack will apply Rad to any enemies in its Radius.",
   },
-} satisfies { [k: string]: stats };
+} as const satisfies Record<string, stats>;
 export const Stats = { Support };
