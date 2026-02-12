@@ -1,7 +1,6 @@
 <script lang="ts">
   let { selectedTower = $bindable() } = $props();
-  import { humanize } from "./FilterPanel.svelte";
-  // TODO: make a $lib to get tower + meta
+  import humanize from "$lib/humanize";
 </script>
 
 <div id="TowerDetails" class="w-full h-full p-2">

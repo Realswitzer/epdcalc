@@ -1,20 +1,6 @@
-<script module lang="ts">
-  // Future: Move to $lib and optimize better
-  export function humanize(s: string): string {
-    return s
-      .replace(/_/g, " ")
-      .replace(/\s+/g, " ")
-      .trim()
-      .replace(/\b\w/g, (c) => c.toUpperCase())
-      .replace("Dps", "DPS")
-      .replace(/\NOf/, "of")
-      .replace(/^Huge/, "HUGE");
-  }
-</script>
-
 <script lang="ts">
   let { filters = $bindable() } = $props();
-
+  import humanize from "$lib/humanize";
   let openSections = $state({
     type: false,
     rarity: false,
@@ -123,7 +109,7 @@
                       (filterState[section.key] = toggleSet(
                         filterState[section.key],
                         item,
-                        (e.target as HTMLInputElement).checked
+                        (e.target as HTMLInputElement).checked,
                       ))}
                   />
                   {humanize(item)}
