@@ -15,7 +15,7 @@ export const elder_godfather: Tower = {
         range: 90,
         radius: 1,
         bleed: 1,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
     {
@@ -28,7 +28,7 @@ export const elder_godfather: Tower = {
         radius: 1,
         bleed: 1,
         camo: true,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
     {
@@ -42,7 +42,7 @@ export const elder_godfather: Tower = {
         bleed: 2,
         camo: true,
         armor_piercing: true,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
     {
@@ -56,7 +56,7 @@ export const elder_godfather: Tower = {
         bleed: 4,
         camo: true,
         armor_piercing: true,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
     {
@@ -70,7 +70,7 @@ export const elder_godfather: Tower = {
         bleed: 8,
         camo: true,
         armor_piercing: true,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
     {
@@ -84,7 +84,7 @@ export const elder_godfather: Tower = {
         bleed: 15,
         camo: true,
         armor_piercing: true,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
   ],
@@ -101,7 +101,7 @@ export const elder_godfather: Tower = {
         bleed: 25,
         camo: true,
         armor_piercing: true,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
     {
@@ -117,7 +117,7 @@ export const elder_godfather: Tower = {
         execution: 1,
         camo: true,
         armor_piercing: true,
-        shield_dmg: 0.2,
+        shield_dmg: 1,
       },
     },
   ],
