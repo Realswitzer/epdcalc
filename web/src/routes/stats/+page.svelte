@@ -1,11 +1,13 @@
 <script lang="ts">
-  import type { Tower } from "epdcalc/types";
   import FilterPanel from "./components/FilterPanel.svelte";
   import TowerGrid from "./components/TowerGrid.svelte";
   import TowerDetails from "./components/TowerDetails.svelte";
   import SearchBar from "./components/SearchBar.svelte";
+  import type { Tower, TowerId } from "epdcalc/types";
+  import { towers } from "epdcalc";
 
-  let selectedTower: string | null = $state(null);
+  let selectedTowerKey: TowerId | null = $state(null);
+
   let filters = $state({
     types: new Set<string>(),
     rarity: new Set<string>(),
@@ -13,7 +15,6 @@
     meta: new Set<string>(),
     searchQuery: <string>"",
   });
-  $effect(() => $inspect(selectedTower).with(console.log));
 </script>
 
 <div class="flex h-screen">
@@ -23,13 +24,13 @@
   </aside>
 
   <main class="flex-1 overflow-y-auto">
-    <TowerGrid bind:filters bind:selectedTower />
+    <TowerGrid bind:filters bind:selectedTowerKey />
     <!-- <TowerCard /> -->
   </main>
 
-  {#if selectedTower}
+  {#if selectedTowerKey}
     <aside class="w-80 border-l rounded overflow-y-auto">
-      <TowerDetails {selectedTower} />
+      <TowerDetails {selectedTowerKey} />
     </aside>
   {/if}
 </div>

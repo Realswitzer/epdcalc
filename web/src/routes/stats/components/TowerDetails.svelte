@@ -1,14 +1,16 @@
 <script lang="ts">
-  let { selectedTower = $bindable() } = $props();
+  let { selectedTowerKey = $bindable() as TowerId } = $props();
   import humanize from "$lib/humanize";
+  import type { Tower, TowerId } from "epdcalc/types";
+  import * as towers from "epdcalc/towers";
+
+  let tower: Tower = $state(towers[selectedTowerKey]);
 </script>
 
 <div id="TowerDetails" class="w-full h-full p-2">
   <div class="grid grid-cols-2 grid-rows-[auto_1fr_1fr_auto] gap-2 h-full">
     <div class="col-span-2 h-8 flex items-center px-3 rounded">
-      <span class="font-bold text-lg text-center w-full"
-        >{humanize("Tower Name")}</span
-      >
+      <span class="font-bold text-lg text-center w-full">{tower.name}</span>
     </div>
 
     <div class="rounded flex items-center justify-center">
