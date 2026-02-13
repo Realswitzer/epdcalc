@@ -1,3 +1,4 @@
+// TODO: check for ability
 import { TowerRarity, TowerType, type Tower } from "../types";
 
 export const zero_two: Tower = {
