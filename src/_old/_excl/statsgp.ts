@@ -1,5 +1,5 @@
-import { apollos_blessing } from '../Towers/exalted';
-import { Upgrade, type Tower, type TowerUpgrade } from '../../types';
+import { apollos_blessing } from "../Towers/exalted";
+import { Upgrade, type Tower, type TowerUpgrade } from "../../types";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const _tower: TowerUpgrade = apollos_blessing[Upgrade.Level7a];
@@ -74,10 +74,13 @@ export function RPM(tower: TowerUpgrade): number | undefined {
   return 60 * _rps;
 }
 // Cost/DPS // Find cumulative tower cost and then divide that by DPS()
-export function CumulativePrice(tower: Tower, upgrade: Upgrade): number | undefined {
+export function CumulativePrice(
+  tower: Tower,
+  upgrade: Upgrade,
+): number | undefined {
   const _towerUpgrade: TowerUpgrade = tower[upgrade] || {};
   let cost: number = 0;
-  if (typeof upgrade === 'number') {
+  if (typeof upgrade === "number") {
     // TODO: add TowerUpgrade support
     if (
       [
@@ -85,7 +88,7 @@ export function CumulativePrice(tower: Tower, upgrade: Upgrade): number | undefi
         Upgrade.Level7b,
         Upgrade.Level7c,
         Upgrade.Level7d,
-        Upgrade.Level7e
+        Upgrade.Level7e,
       ].includes(upgrade)
     ) {
       cost += _towerUpgrade.price || 0;
@@ -150,7 +153,9 @@ export function SpawnDamagePerMinute(tower: TowerUpgrade): number | undefined {
   return _spawndps * 60;
 }
 // Max DPS (spawndps*maxspawn)
-export function SpawnMaxDamagePerSecond(tower: TowerUpgrade): number | undefined {
+export function SpawnMaxDamagePerSecond(
+  tower: TowerUpgrade,
+): number | undefined {
   const _spawndps: number = SpawnDamagePerSecond(tower) || NaN;
   if (Number.isNaN(_spawndps)) {
     return undefined;
@@ -161,7 +166,9 @@ export function SpawnMaxDamagePerSecond(tower: TowerUpgrade): number | undefined
   return _spawndps * tower.max_spawns;
 }
 // Max DPM
-export function SpawnMaxDamagePerMinute(tower: TowerUpgrade): number | undefined {
+export function SpawnMaxDamagePerMinute(
+  tower: TowerUpgrade,
+): number | undefined {
   const _spawndpm: number = SpawnDamagePerMinute(tower) || NaN;
   if (Number.isNaN(_spawndpm)) {
     return undefined;
@@ -172,7 +179,10 @@ export function SpawnMaxDamagePerMinute(tower: TowerUpgrade): number | undefined
   return _spawndpm * tower.max_spawns;
 }
 // Cost/spawn dps
-export function CostPerSpawnDPS(tower: Tower, upgrade: Upgrade): number | undefined {
+export function CostPerSpawnDPS(
+  tower: Tower,
+  upgrade: Upgrade,
+): number | undefined {
   const towerupgrade = tower[upgrade] || {};
   const _spawndps: number | undefined = SpawnDamagePerSecond(towerupgrade);
   if (_spawndps !== undefined) {
@@ -182,7 +192,10 @@ export function CostPerSpawnDPS(tower: Tower, upgrade: Upgrade): number | undefi
 }
 
 // Cost/max dps
-export function CostPerMaxDPS(tower: Tower, upgrade: Upgrade): number | undefined {
+export function CostPerMaxDPS(
+  tower: Tower,
+  upgrade: Upgrade,
+): number | undefined {
   const towerupgrade = tower[upgrade] || {};
   const _maxdps: number | undefined = SpawnMaxDamagePerSecond(towerupgrade);
   if (!(towerupgrade.max_spawns && _maxdps !== undefined)) {

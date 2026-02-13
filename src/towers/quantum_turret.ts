@@ -6,6 +6,7 @@ export const quantum_turret: Tower = {
   name: "Quantum Turret",
   rarity: TowerRarity.Fabled,
   type: [TowerType.Offense],
+  variantOf: "turret",
   levels: [
     {
       level: 1,

@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 export const assassin: Tower = [
   {
@@ -11,7 +11,7 @@ export const assassin: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 180,
-    price: 1_100
+    price: 1_100,
   },
   {
     damage: 3,
@@ -22,7 +22,7 @@ export const assassin: Tower = [
     execution: 0.2,
     armor_piercing: true,
     camo: true,
-    aim: 180
+    aim: 180,
   },
   {
     damage: 5,
@@ -33,7 +33,7 @@ export const assassin: Tower = [
     execution: 0.25,
     armor_piercing: true,
     camo: true,
-    aim: 180
+    aim: 180,
   },
   {
     damage: 15,
@@ -44,7 +44,7 @@ export const assassin: Tower = [
     execution: 0.25,
     armor_piercing: true,
     camo: true,
-    aim: 180
+    aim: 180,
   },
   {
     damage: 35,
@@ -55,7 +55,7 @@ export const assassin: Tower = [
     execution: 0.3,
     armor_piercing: true,
     camo: true,
-    aim: 180
+    aim: 180,
   },
   {
     damage: 75,
@@ -66,7 +66,7 @@ export const assassin: Tower = [
     execution: 0.4,
     armor_piercing: true,
     camo: true,
-    aim: 180
+    aim: 180,
   },
   {
     damage: 500,
@@ -77,7 +77,7 @@ export const assassin: Tower = [
     execution: 0.4,
     armor_piercing: true,
     camo: true,
-    aim: 180
+    aim: 180,
   },
   {
     damage: 2_500,
@@ -88,8 +88,8 @@ export const assassin: Tower = [
     execution: 0.65,
     armor_piercing: true,
     camo: true,
-    aim: 180
-  }
+    aim: 180,
+  },
 ];
 
 export const capitalist: Tower = [
@@ -101,23 +101,72 @@ export const capitalist: Tower = [
     cash_conv: 0.7,
     aim: 115,
     shield_dmg: 2,
-    price: 720
+    price: 720,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 export const handler: Tower = [
-  { income: 100, cooldown: 5, range: 40, bounty_amp: 0.11, bounty_add: 1.2, price: 500 },
-  { income: 200, cooldown: 5, range: 40, bounty_amp: 0.15, bounty_add: 3, price: 1_000 },
-  { income: 300, cooldown: 10, range: 40, bounty_amp: 0.2, bounty_add: 6, price: 3_000 },
-  { income: 500, cooldown: 10, range: 60, bounty_amp: 0.2, bounty_add: 15, price: 10_000 },
-  { income: 1_000, cooldown: 8, range: 70, bounty_amp: 0.3, bounty_add: 40, price: 21_000 },
-  { income: 1_500, cooldown: 5, range: 80, bounty_amp: 0.3, bounty_add: 100, price: 56_000 },
-  { income: 69_000, cooldown: 15, range: 111, bounty_amp: 4.8, bounty_add: 1_200, price: 740_000 }
+  {
+    income: 100,
+    cooldown: 5,
+    range: 40,
+    bounty_amp: 0.11,
+    bounty_add: 1.2,
+    price: 500,
+  },
+  {
+    income: 200,
+    cooldown: 5,
+    range: 40,
+    bounty_amp: 0.15,
+    bounty_add: 3,
+    price: 1_000,
+  },
+  {
+    income: 300,
+    cooldown: 10,
+    range: 40,
+    bounty_amp: 0.2,
+    bounty_add: 6,
+    price: 3_000,
+  },
+  {
+    income: 500,
+    cooldown: 10,
+    range: 60,
+    bounty_amp: 0.2,
+    bounty_add: 15,
+    price: 10_000,
+  },
+  {
+    income: 1_000,
+    cooldown: 8,
+    range: 70,
+    bounty_amp: 0.3,
+    bounty_add: 40,
+    price: 21_000,
+  },
+  {
+    income: 1_500,
+    cooldown: 5,
+    range: 80,
+    bounty_amp: 0.3,
+    bounty_add: 100,
+    price: 56_000,
+  },
+  {
+    income: 69_000,
+    cooldown: 15,
+    range: 111,
+    bounty_amp: 4.8,
+    bounty_add: 1_200,
+    price: 740_000,
+  },
 ];
 export const shredder: Tower = [
   {
@@ -133,7 +182,7 @@ export const shredder: Tower = [
     bleed: 1,
     armor_destruction: 0.03,
     aim: 100,
-    price: 3_650
+    price: 3_650,
   },
   {
     damage: 4,
@@ -147,7 +196,7 @@ export const shredder: Tower = [
     exclusion: 30,
     bleed: 2,
     armor_destruction: 0.03,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 8,
@@ -161,7 +210,7 @@ export const shredder: Tower = [
     exclusion: 30,
     bleed: 4,
     armor_destruction: 0.04,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 25,
@@ -176,7 +225,7 @@ export const shredder: Tower = [
     bleed: 10,
     armor_destruction: 0.08,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 65,
@@ -192,7 +241,7 @@ export const shredder: Tower = [
     boss_slayer: 1.4,
     armor_destruction: 0.06,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 200,
@@ -208,7 +257,7 @@ export const shredder: Tower = [
     boss_slayer: 1.4,
     armor_destruction: 0.06,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 2_500,
@@ -224,7 +273,7 @@ export const shredder: Tower = [
     boss_slayer: 1.4,
     armor_destruction: 0.06,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 6_000,
@@ -240,6 +289,6 @@ export const shredder: Tower = [
     boss_slayer: 3.2,
     armor_destruction: 0.1,
     camo: true,
-    aim: 100
-  }
+    aim: 100,
+  },
 ];

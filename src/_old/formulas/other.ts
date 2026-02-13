@@ -1,4 +1,4 @@
-import { type TowerUpgrade } from '../types';
+import { type TowerUpgrade } from "../types";
 
 /** TODO: Test, rewrite formula*/
 export function Acceleration(tower: TowerUpgrade): number | undefined {

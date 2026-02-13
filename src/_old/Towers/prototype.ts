@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 export const abyssal: Tower = [
   {
@@ -9,7 +9,7 @@ export const abyssal: Tower = [
     radius: 30,
     armor_piercing: true,
     shield_dmg: 10,
-    price: 6_666
+    price: 6_666,
   },
   {
     damage: 1_444,
@@ -19,7 +19,7 @@ export const abyssal: Tower = [
     radius: 30,
     valor: 0.5,
     armor_piercing: true,
-    shield_dmg: 10
+    shield_dmg: 10,
   },
   {
     damage: 3_000,
@@ -29,7 +29,7 @@ export const abyssal: Tower = [
     radius: 35,
     valor: 0.5,
     armor_piercing: true,
-    shield_dmg: 10
+    shield_dmg: 10,
   },
   {
     damage: 10_000,
@@ -39,7 +39,7 @@ export const abyssal: Tower = [
     radius: 35,
     valor: 0.5,
     armor_piercing: true,
-    shield_dmg: 10
+    shield_dmg: 10,
   },
   {
     damage: 16_900,
@@ -50,7 +50,7 @@ export const abyssal: Tower = [
     valor: 0.5,
     armor_piercing: true,
     camo: true,
-    shield_dmg: 10
+    shield_dmg: 10,
   },
   {
     damage: 53_000,
@@ -61,7 +61,7 @@ export const abyssal: Tower = [
     valor: 0.5,
     armor_piercing: true,
     camo: true,
-    shield_dmg: 10
+    shield_dmg: 10,
   },
   {
     damage: 536_000,
@@ -73,7 +73,7 @@ export const abyssal: Tower = [
     valor: 2.8,
     armor_piercing: true,
     camo: true,
-    shield_dmg: 10
+    shield_dmg: 10,
   },
   {
     damage: 254_000,
@@ -85,8 +85,8 @@ export const abyssal: Tower = [
     valor: 1,
     armor_piercing: true,
     camo: true,
-    shield_dmg: 10
-  }
+    shield_dmg: 10,
+  },
 ];
 
 export const demolitions_expert: Tower = [
@@ -98,7 +98,7 @@ export const demolitions_expert: Tower = [
     stun: 2.5,
     rupture: 0.1,
     rupture_duration: 2.5,
-    price: 1_575
+    price: 1_575,
   },
   {
     damage: 60,
@@ -107,7 +107,7 @@ export const demolitions_expert: Tower = [
     radius: 15,
     stun: 3,
     rupture: 0.1,
-    rupture_duration: 3
+    rupture_duration: 3,
   },
   {
     damage: 120,
@@ -116,7 +116,7 @@ export const demolitions_expert: Tower = [
     radius: 15,
     stun: 3.5,
     rupture: 0.12,
-    rupture_duration: 3.5
+    rupture_duration: 3.5,
   },
   {
     damage: 300,
@@ -125,7 +125,7 @@ export const demolitions_expert: Tower = [
     radius: 20,
     stun: 3.5,
     rupture: 0.15,
-    rupture_duration: 3.5
+    rupture_duration: 3.5,
   },
   {
     damage: 1_000,
@@ -134,7 +134,7 @@ export const demolitions_expert: Tower = [
     radius: 20,
     stun: 4.5,
     rupture: 0.15,
-    rupture_duration: 4.5
+    rupture_duration: 4.5,
   },
   {
     damage: 3_600,
@@ -143,7 +143,7 @@ export const demolitions_expert: Tower = [
     radius: 25,
     stun: 4.5,
     rupture: 0.2,
-    rupture_duration: 4.5
+    rupture_duration: 4.5,
   },
   {
     damage: 12_000,
@@ -152,7 +152,7 @@ export const demolitions_expert: Tower = [
     radius: 25,
     stun: 4.5,
     rupture: 0.25,
-    rupture_duration: 4.5
+    rupture_duration: 4.5,
   },
   {
     damage: 36_000,
@@ -162,8 +162,8 @@ export const demolitions_expert: Tower = [
     stun: 6,
     rupture: 0.2,
     rupture_duration: 6,
-    armor_piercing: true
-  }
+    armor_piercing: true,
+  },
 ];
 
 export const hitman: Tower = [
@@ -177,7 +177,7 @@ export const hitman: Tower = [
     valor: 0.35,
     shield_bypass: 0.75,
     armor_piercing: true,
-    price: 7_000
+    price: 7_000,
   },
   {
     damage: 1,
@@ -188,7 +188,7 @@ export const hitman: Tower = [
     first_strike: 14,
     valor: 0.4,
     shield_bypass: 0.75,
-    armor_piercing: true
+    armor_piercing: true,
   },
   {
     damage: 1,
@@ -199,7 +199,7 @@ export const hitman: Tower = [
     first_strike: 17,
     valor: 0.45,
     shield_bypass: 0.8,
-    armor_piercing: true
+    armor_piercing: true,
   },
   {
     damage: 1,
@@ -211,7 +211,7 @@ export const hitman: Tower = [
     valor: 0.45,
     shield_bypass: 0.8,
     armor_piercing: true,
-    camo: true
+    camo: true,
   },
   {
     damage: 1,
@@ -223,7 +223,7 @@ export const hitman: Tower = [
     valor: 0.5,
     shield_bypass: 0.8,
     armor_piercing: true,
-    camo: true
+    camo: true,
   },
   {
     damage: 1,
@@ -235,7 +235,7 @@ export const hitman: Tower = [
     valor: 0.6,
     shield_bypass: 0.85,
     armor_piercing: true,
-    camo: true
+    camo: true,
   },
   {
     damage: 1,
@@ -247,7 +247,7 @@ export const hitman: Tower = [
     valor: 1.2,
     shield_bypass: 0.85,
     armor_piercing: true,
-    camo: true
+    camo: true,
   },
   {
     damage: 1,
@@ -259,6 +259,6 @@ export const hitman: Tower = [
     valor: 0.6,
     shield_bypass: 1,
     armor_piercing: true,
-    camo: true
-  }
+    camo: true,
+  },
 ];

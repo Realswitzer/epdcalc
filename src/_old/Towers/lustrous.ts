@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 // TODO: add stats
 export const code_0_0_2: Tower = [
@@ -11,7 +11,7 @@ export const code_0_0_2: Tower = [
     camo: true,
     aim: 175,
     shield_dmg: 0.3,
-    price: 3_800 // not known but end value is similar to normal zt.
+    price: 3_800, // not known but end value is similar to normal zt.
   },
   { price: 1_700 },
   { price: 4_600 },
@@ -26,7 +26,7 @@ export const code_0_0_2: Tower = [
     camo: true,
     aim: 175,
     shield_dmg: 0.3,
-    price: 294_000
+    price: 294_000,
   },
   {
     damage: 250,
@@ -37,7 +37,7 @@ export const code_0_0_2: Tower = [
     camo: true,
     aim: 175,
     shield_dmg: 0.3,
-    price: 2_002_002
+    price: 2_002_002,
   },
   {
     damage: 300,
@@ -48,8 +48,8 @@ export const code_0_0_2: Tower = [
     camo: true,
     aim: 175,
     shield_dmg: 0.3,
-    price: 3_002_002
-  }
+    price: 3_002_002,
+  },
 ];
 export const engineer_archetype: Tower = [
   {
@@ -62,7 +62,7 @@ export const engineer_archetype: Tower = [
     max_spawns: 5,
     aim: 200,
     shield_dmg: 3,
-    price: 3_400
+    price: 3_400,
   },
   {
     spawns_damage: 8,
@@ -75,7 +75,7 @@ export const engineer_archetype: Tower = [
     camo: true,
     aim: 200,
     shield_dmg: 3,
-    price: 3_200
+    price: 3_200,
   },
   {
     spawns_damage: 40,
@@ -88,7 +88,7 @@ export const engineer_archetype: Tower = [
     camo: true,
     aim: 200,
     shield_dmg: 3,
-    price: 18_870
+    price: 18_870,
   },
   {
     spawns_damage: 160,
@@ -102,7 +102,7 @@ export const engineer_archetype: Tower = [
     camo: true,
     aim: 200,
     shield_dmg: 5,
-    price: 104_730
+    price: 104_730,
   },
   {
     spawns_damage: 650,
@@ -116,7 +116,7 @@ export const engineer_archetype: Tower = [
     camo: true,
     aim: 200,
     shield_dmg: 5,
-    price: 581_250
+    price: 581_250,
   },
   {
     spawns_damage: 2_500,
@@ -130,7 +130,7 @@ export const engineer_archetype: Tower = [
     camo: true,
     aim: 200,
     shield_dmg: 8,
-    price: 3_226_000
+    price: 3_226_000,
   },
   {
     spawns_damage: 33_333,
@@ -144,7 +144,7 @@ export const engineer_archetype: Tower = [
     camo: true,
     aim: 200,
     shield_dmg: 8,
-    price: 70_972_000
+    price: 70_972_000,
   },
   {
     spawns_damage: 99_999,
@@ -158,8 +158,8 @@ export const engineer_archetype: Tower = [
     camo: true,
     aim: 200,
     shield_dmg: 8,
-    price: 87_102_000
-  }
+    price: 87_102_000,
+  },
 ];
 // TODO: add stats
 export const executive_founder: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -181,7 +181,7 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 25,
     instabreak: 0.05,
-    price: 4_300
+    price: 4_300,
   },
   {
     damage: 300,
@@ -197,7 +197,7 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 35,
     instabreak: 0.055,
-    price: 3_700
+    price: 3_700,
   },
   {
     damage: 1_050,
@@ -213,7 +213,7 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 35,
     instabreak: 0.06,
-    price: 13_690
+    price: 13_690,
   },
   {
     damage: 3_600,
@@ -230,7 +230,7 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 50,
     instabreak: 0.065,
-    price: 50_600
+    price: 50_600,
   },
   {
     damage: 12_500,
@@ -247,7 +247,7 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 50,
     instabreak: 0.07,
-    price: 187_200
+    price: 187_200,
   },
   {
     damage: 44_000,
@@ -264,7 +264,7 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 70,
     instabreak: 0.07,
-    price: 694_200
+    price: 694_200,
   },
   {
     damage: 200_000,
@@ -281,7 +281,7 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 150,
     instabreak: 0.08,
-    price: 7_800_800
+    price: 7_800_800,
   },
   {
     damage: 4_400_000,
@@ -298,121 +298,8 @@ export const killzone_rookie: Tower = [
     aim: 100,
     shield_dmg: 70,
     instabreak: 0.07,
-    price: 8_500_500
-  }
-];
-export const raygunner_alpha: Tower = [
-  {
-    damage: 8,
-    damage_cap: 2_000_000,
-    min_dmg_increase: 0.6,
-    max_dmg_increase: 1.2,
-    cooldown: 1.2,
-    range: 85,
-    aim: 75,
-    shield_dmg: 3,
-    price: 1_550
+    price: 8_500_500,
   },
-  {
-    damage: 20,
-    damage_cap: 3_000_000,
-    min_dmg_increase: 0.6,
-    max_dmg_increase: 1.5,
-    cooldown: 1.2,
-    range: 100,
-    aim: 75,
-    shield_dmg: 3,
-    price: 4_750
-  },
-  {
-    damage: 90,
-    damage_cap: 3_000_000,
-    min_dmg_increase: 0.9,
-    max_dmg_increase: 1.5,
-    cooldown: 1.08,
-    range: 100,
-    camo: true,
-    aim: 75,
-    shield_dmg: 3,
-    price: 26_200
-  },
-  {
-    damage: 400,
-    damage_cap: 6_000_000,
-    min_dmg_increase: 0.9,
-    max_dmg_increase: 2,
-    cooldown: 1.08,
-    range: 115,
-    camo: true,
-    aim: 75,
-    shield_dmg: 3,
-    price: 144_100
-  },
-  {
-    damage: 2_000,
-    damage_cap: 15_000_000,
-    min_dmg_increase: 0.9,
-    max_dmg_increase: 2,
-    cooldown: 0.84,
-    range: 115,
-    armor_piercing: true,
-    camo: true,
-    aim: 75,
-    shield_dmg: 3,
-    price: 792_200
-  },
-  {
-    damage: 9_200,
-    damage_cap: 45_000_000,
-    min_dmg_increase: 1.25,
-    max_dmg_increase: 2.75,
-    cooldown: 0.84,
-    range: 135,
-    armor_piercing: true,
-    camo: true,
-    aim: 75,
-    shield_dmg: 3,
-    price: 4_357_000
-  },
-  {
-    damage: 140_000,
-    damage_cap: 500_000_000,
-    min_dmg_increase: 1.85,
-    max_dmg_increase: 3.75,
-    cooldown: 0.84,
-    range: 135,
-    armor_piercing: true,
-    camo: true,
-    aim: 75,
-    shield_dmg: 3,
-    price: 82_783_000
-  },
-  {
-    damage: 27_000,
-    damage_cap: 45_000_000,
-    min_dmg_increase: 1.25,
-    max_dmg_increase: 1.5,
-    cooldown: 0.5,
-    range: 135,
-    armor_piercing: true,
-    camo: true,
-    aim: 75,
-    shield_dmg: 3,
-    price: 95_854_000
-  },
-  {
-    damage: 500_000,
-    damage_cap: 9_999_999_999,
-    min_dmg_increase: 1.25,
-    max_dmg_increase: 7.77,
-    cooldown: 4,
-    range: 175,
-    armor_piercing: true,
-    camo: true,
-    aim: 75,
-    shield_dmg: 3,
-    price: 112_193_000
-  }
 ];
 // TODO: add stats
 export const turret_overclocked: Tower = [{}, {}, {}, {}, {}, {}, {}];

@@ -39,12 +39,33 @@ export interface TowerMeta {
    * Whether a tower has stun
    */
   stun?: boolean;
+  /**
+   * "Leech fodder" is a term to describe towers that leech would be extremely
+   * good with. Effectively, it'll probably just be the top 5 base dmg towers.
+   * Leech is already good without necessarily needing fodder, but this sets it
+   * so far over the edge
+   */
+  leech_fodder?: boolean;
+  /**
+   * Some things for types of buffs, only *good* towers will be factored in.
+   * Engi does not count. Nor does High Engi.
+   */
+  cd_buff?: boolean;
+  dmg_buff?: boolean;
+  range_buff?: boolean;
+  upg_reduction_buff?: boolean;
 }
 
 export const towerMeta: Partial<Record<TowerId, TowerMeta>> = {
-  apollos_blessing: { rad: true },
   adamant_stryker: { rad: true },
-  lemonade_stand: { eco: true },
+  apollos_blessing: { rad: true },
+  chief_executive_officer: { upg_reduction_buff: true, range_buff: true },
+  huge_heavy: { leech_fodder: true },
+  huge_heckerman: { shieldDps: true, win_condition: true },
+  huge_zero_two_school: { shieldDps: true, win_condition: true },
+  lemonade_stand: { eco: true, cd_buff: true, dmg_buff: true },
+  raygunner_alpha: { win_condition: true, leech_fodder: true },
+  summer_stryker: { rad: true, scorch: true, leech_fodder: true },
   super_stryker: { rad: true },
   true_vaporizer: { shieldDps: true, stun: true },
 };

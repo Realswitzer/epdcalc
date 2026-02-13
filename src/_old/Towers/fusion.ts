@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 // TODO: add stats
 export const quantum_stryker: Tower = [
@@ -17,7 +17,7 @@ export const quantum_stryker: Tower = [
     shredding: 0.15,
     shredding_length: 2.5,
     all_seeing: 1e100, // no idea on this or stats after it.
-    price: 13_660
+    price: 13_660,
   },
   {},
   {},
@@ -34,7 +34,7 @@ export const quantum_stryker: Tower = [
     range: 999,
     exclusion: 180,
     radius: 45,
-    inaccuracy: 5
+    inaccuracy: 5,
     // ok nvm he didnt scroll down either.
-  }
+  },
 ];

@@ -1,5 +1,5 @@
-import { type TowerUpgrade } from '../../types';
-import { Cooldown } from '../shared';
+import { type TowerUpgrade } from "../../types";
+import { Cooldown } from "../shared";
 
 export function Rad(tower: TowerUpgrade): number | undefined {
   if (!(tower.rad_length && tower.rad_strength)) {

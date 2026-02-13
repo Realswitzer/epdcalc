@@ -1,7 +1,7 @@
-import { Rad } from '../formulas';
-import { apollos_blessing } from '../Towers/exalted';
-import { uranium_stryker } from '../Towers/fabled';
-import { Upgrade } from '../types';
+import { Rad } from "../formulas";
+import { apollos_blessing } from "../Towers/exalted";
+import { uranium_stryker } from "../Towers/fabled";
+import { Upgrade } from "../types";
 
 console.log(Rad(apollos_blessing[Upgrade.Level7a]));
 console.log(Rad(apollos_blessing[Upgrade.Level7b]));

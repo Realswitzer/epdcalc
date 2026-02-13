@@ -2,7 +2,7 @@ import { Level, Tower, TowerLevel } from "../../types";
 
 export function cumulativePrice(
   tower: Tower,
-  level: TowerLevel | Level
+  level: TowerLevel | Level,
 ): number {
   // idk
 }

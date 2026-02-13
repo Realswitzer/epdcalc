@@ -1,7 +1,6 @@
 {
-    "name": "epdcalc",
-    "version": "1.0.0",
-    "main": "index.ts",
-    "type": "module"
-  }
-  
+  "name": "epdcalc",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module"
+}

@@ -3,7 +3,7 @@ import { Enemy } from "../../instance/enemy";
 
 export function damagePerAction(
   tower: TowerInstance,
-  enemy?: Enemy
+  enemy?: Enemy,
 ): number | null {
   const damage = tower.getStatNumber("damage");
   if (!damage) {

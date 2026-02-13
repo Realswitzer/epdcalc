@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 // TODO: add stats
 export const empyrean_jar_guard_eminence: Tower = [
@@ -16,7 +16,7 @@ export const empyrean_jar_guard_eminence: Tower = [
     camo: true,
     soul_damage: 0.3,
     shield_dmg: 4,
-    price: 2_250
+    price: 2_250,
   },
   {
     damage: 24,
@@ -32,7 +32,7 @@ export const empyrean_jar_guard_eminence: Tower = [
     camo: true,
     soul_damage: 0.3,
     shield_dmg: 6,
-    price: 1_400
+    price: 1_400,
   },
   {},
   {},
@@ -46,7 +46,7 @@ export const empyrean_jar_guard_eminence: Tower = [
     max_cooldown: 0.8,
     min_cooldown: 0.4,
     acceleration: 0.16,
-    radius: 8
+    radius: 8,
     // yeah no idea
   },
   {
@@ -68,9 +68,9 @@ export const empyrean_jar_guard_eminence: Tower = [
     max_cooldown: 0.68,
     min_cooldown: 0.34,
     acceleration: 0.16,
-    radius: 8
+    radius: 8,
     // jalksdjflkjslkadfj he didnt scroll down
-  }
+  },
 ];
 // TODO: add stats
 export const phantom_killzone: Tower = [
@@ -89,7 +89,7 @@ export const phantom_killzone: Tower = [
     shield_bypass: 0.4,
     armor_piercing: true,
     aim: 959, // it goes offscreen so need to check
-    price: 4_225
+    price: 4_225,
   },
   {},
   {},
@@ -113,9 +113,9 @@ export const phantom_killzone: Tower = [
     shield_bypass: 0.95,
     armor_piercing: true,
     camo: true,
-    aim: 250
+    aim: 250,
     //another stat after that but its cut off. maybe ibreak?
-  }
+  },
 ];
 // TODO: add stats
 export const alien_raygunner: Tower = [
@@ -131,14 +131,14 @@ export const alien_raygunner: Tower = [
     armor_destruction: 0.12,
     aim: 75,
     shield_dmg: 15,
-    price: 5_100
+    price: 5_100,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const arcane_blizzard: Tower = [
@@ -153,7 +153,7 @@ export const arcane_blizzard: Tower = [
     bliz_radius: 14,
     shield_bypass: 0.15,
     shield_dmg: 0.05,
-    price: 11_600
+    price: 11_600,
   },
   {},
   {},
@@ -174,8 +174,8 @@ export const arcane_blizzard: Tower = [
     shield_bypass: 0.8,
     armor_piercing: true,
     camo: true,
-    shield_dmg: 8
-  }
+    shield_dmg: 8,
+  },
 ];
 // TODO: add stats
 export const empyrean_jar_guard_alpha: Tower = [
@@ -193,7 +193,7 @@ export const empyrean_jar_guard_alpha: Tower = [
     camo: true,
     soul_damage: 0.3,
     shield_dmg: 4,
-    price: 2_250
+    price: 2_250,
   },
   {},
   {},
@@ -215,11 +215,19 @@ export const empyrean_jar_guard_alpha: Tower = [
     armor_destruction: 0.08,
     camo: true,
     soul_damage: 0.9,
-    shield_dmg: 300
-  }
+    shield_dmg: 300,
+  },
 ];
 // TODO: add stats
-export const empyrean_jar_guard_eminence_test: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const empyrean_jar_guard_eminence_test: Tower = [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+];
 // TODO: add stats
 export const empyrean_jar_guard_omega: Tower = [
   {
@@ -237,7 +245,7 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.3,
     shield_dmg: 4,
-    price: 2_250
+    price: 2_250,
   },
   {
     damage: 12,
@@ -254,7 +262,7 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.3,
     shield_dmg: 6,
-    price: 1_400
+    price: 1_400,
   },
   {
     damage: 20,
@@ -271,7 +279,7 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.4,
     shield_dmg: 6,
-    price: 2_900
+    price: 2_900,
   },
   {
     damage: 65,
@@ -288,7 +296,7 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.55,
     shield_dmg: 8,
-    price: 12_530
+    price: 12_530,
   },
   {
     damage: 225,
@@ -305,7 +313,7 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.55,
     shield_dmg: 10,
-    price: 54_140
+    price: 54_140,
   },
   {
     damage: 800,
@@ -322,7 +330,7 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.9,
     shield_dmg: 10,
-    price: 233_940
+    price: 233_940,
   },
   {
     damage: 24_000,
@@ -339,7 +347,7 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.9,
     shield_dmg: 160,
-    price: 3_676_500
+    price: 3_676_500,
   },
   {
     damage: 5_250,
@@ -356,8 +364,8 @@ export const empyrean_jar_guard_omega: Tower = [
     camo: true,
     soul_damage: 0.9,
     shield_dmg: 16,
-    price: 5_805_000
-  }
+    price: 5_805_000,
+  },
 ];
 // TODO: add stats
 export const liferender: Tower = [
@@ -373,14 +381,14 @@ export const liferender: Tower = [
     purify: 0.8,
     boss_slayer: 0.8,
     shield_dmg: 3,
-    price: 9_999
+    price: 9_999,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const limeade_stand: Tower = [
@@ -391,7 +399,7 @@ export const limeade_stand: Tower = [
     bounty_amp: 0.05,
     bounty_add: 2,
     cooldown_buff: 0.05,
-    price: 1_380
+    price: 1_380,
   },
   {
     income: 20,
@@ -400,7 +408,7 @@ export const limeade_stand: Tower = [
     bounty_amp: 0.06,
     bounty_add: 4,
     cooldown_buff: 0.05,
-    price: 765
+    price: 765,
   },
   {
     income: 32,
@@ -409,7 +417,7 @@ export const limeade_stand: Tower = [
     bounty_amp: 0.075,
     bounty_add: 8,
     cooldown_buff: 0.075,
-    price: 1_660
+    price: 1_660,
   },
   {
     income: 80,
@@ -419,7 +427,7 @@ export const limeade_stand: Tower = [
     bounty_add: 20,
     damage_buff: 0.1,
     cooldown_buff: 0.075,
-    price: 5_525
+    price: 5_525,
   },
   {
     income: 200,
@@ -429,7 +437,7 @@ export const limeade_stand: Tower = [
     bounty_add: 50,
     damage_buff: 0.15,
     cooldown_buff: 0.075,
-    price: 18_360
+    price: 18_360,
   },
 
   {
@@ -440,7 +448,7 @@ export const limeade_stand: Tower = [
     bounty_add: 130,
     damage_buff: 0.15,
     cooldown_buff: 0.1,
-    price: 61_200
+    price: 61_200,
   },
   {
     income: 2_600,
@@ -450,7 +458,7 @@ export const limeade_stand: Tower = [
     bounty_add: 1_500,
     damage_buff: 0.15,
     cooldown_buff: 0.1,
-    price: 660_450
+    price: 660_450,
   },
   {
     income: 6_400,
@@ -460,7 +468,7 @@ export const limeade_stand: Tower = [
     bounty_add: 130,
     damage_buff: 0.25,
     cooldown_buff: 0.175,
-    price: 754_800
+    price: 754_800,
   },
   {
     income: 8_000,
@@ -470,12 +478,28 @@ export const limeade_stand: Tower = [
     bounty_add: 1_800,
     damage_buff: 0.35,
     cooldown_buff: 0.1,
-    price: 849_150
-  }
+    price: 849_150,
+  },
 ];
 // TODO: add stats
-export const luxurious_festive_tree_glorious: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const luxurious_festive_tree_glorious: Tower = [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+];
 // TODO: add stats
-export const luxurious_festive_tree_majestic: Tower = [{}, {}, {}, {}, {}, {}, {}];
+export const luxurious_festive_tree_majestic: Tower = [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+];
 // TODO: add stats
 export const phantom_killzone_test: Tower = [{}, {}, {}, {}, {}, {}, {}];

@@ -1,19 +1,22 @@
-import { type TowerUpgrade } from '../types';
-import { Cooldown } from './shared';
+import { type TowerUpgrade } from "../types";
+import { Cooldown } from "./shared";
 
 const multipliers: string[] = [
-  'all_seeing',
-  'boss_slayer',
-  'execution',
-  'hollow_point',
-  'purify',
-  'valor'
+  "all_seeing",
+  "boss_slayer",
+  "execution",
+  "hollow_point",
+  "purify",
+  "valor",
 ];
 export function AvgCritRateDamagePerSecond(
   tower: TowerUpgrade,
-  rupture: number = 0
+  rupture: number = 0,
 ): number | undefined {
-  const _crdpshot: number | undefined = AvgCritRateDamagePerShot(tower, rupture);
+  const _crdpshot: number | undefined = AvgCritRateDamagePerShot(
+    tower,
+    rupture,
+  );
   const _cd: number | undefined = Cooldown(tower);
   if (_crdpshot === undefined || _cd === undefined) {
     return undefined;
@@ -22,7 +25,7 @@ export function AvgCritRateDamagePerSecond(
 }
 export function AvgCritRateDamagePerShot(
   tower: TowerUpgrade,
-  rupture: number = 0
+  rupture: number = 0,
 ): number | undefined {
   if (!(tower.damage && tower.crit_chance && tower.crit_dmg)) {
     return undefined;
@@ -78,7 +81,9 @@ export function DamagePerShot(tower: TowerUpgrade): [number, string[]] {
       continue;
     }
     // fjlaksdjfkl typescript please stop complaining about errors
-    if (['execution'].includes(String(tower[multiplier as keyof TowerUpgrade]))) {
+    if (
+      ["execution"].includes(String(tower[multiplier as keyof TowerUpgrade]))
+    ) {
       damage *= 1 + Number(tower[multiplier as keyof TowerUpgrade]);
     } else {
       damage *= Number(tower[multiplier as keyof TowerUpgrade]);
@@ -89,9 +94,12 @@ export function DamagePerShot(tower: TowerUpgrade): [number, string[]] {
 }
 export function MaxCritRateDamagePerSecond(
   tower: TowerUpgrade,
-  rupture: number = 0
+  rupture: number = 0,
 ): number | undefined {
-  const _mcrdpshot: number | undefined = MaxCritRateDamagePerShot(tower, rupture);
+  const _mcrdpshot: number | undefined = MaxCritRateDamagePerShot(
+    tower,
+    rupture,
+  );
   const _cd: number | undefined = Cooldown(tower);
   if (_mcrdpshot === undefined || _cd === undefined) {
     return undefined;
@@ -100,7 +108,7 @@ export function MaxCritRateDamagePerSecond(
 }
 export function MaxCritRateDamagePerShot(
   tower: TowerUpgrade,
-  rupture: number = 0
+  rupture: number = 0,
 ): number | undefined {
   if (!(tower.damage && tower.crit_dmg)) {
     return undefined;

@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 export const ashigaru: Tower = [
   {
@@ -9,7 +9,7 @@ export const ashigaru: Tower = [
     purify: 3,
     armor_piercing: true,
     shield_dmg: 7,
-    price: 1_700
+    price: 1_700,
   },
   {
     damage: 120,
@@ -19,7 +19,7 @@ export const ashigaru: Tower = [
     purify: 3.4,
     armor_piercing: true,
     shield_dmg: 9,
-    price: 1_400
+    price: 1_400,
   },
   {
     damage: 200,
@@ -29,7 +29,7 @@ export const ashigaru: Tower = [
     purify: 3.4,
     armor_piercing: true,
     shield_dmg: 11,
-    price: 3_200
+    price: 3_200,
   },
   {
     damage: 420,
@@ -39,7 +39,7 @@ export const ashigaru: Tower = [
     purify: 3.6,
     armor_piercing: true,
     shield_dmg: 14,
-    price: 11_600
+    price: 11_600,
   },
   {
     damage: 950,
@@ -50,7 +50,7 @@ export const ashigaru: Tower = [
     armor_piercing: true,
     camo: true,
     shield_dmg: 17,
-    price: 38_200
+    price: 38_200,
   },
   {
     damage: 2_000,
@@ -61,7 +61,7 @@ export const ashigaru: Tower = [
     armor_piercing: true,
     camo: true,
     shield_dmg: 21,
-    price: 112_000
+    price: 112_000,
   },
   {
     damage: 8_500,
@@ -72,8 +72,8 @@ export const ashigaru: Tower = [
     armor_piercing: true,
     camo: true,
     shield_dmg: 29,
-    price: 1_060_000
-  }
+    price: 1_060_000,
+  },
 ];
 export const hatred_gokenin: Tower = [
   {
@@ -85,7 +85,7 @@ export const hatred_gokenin: Tower = [
     armor_piercing: true,
     shield_dmg: 7,
     intimidation: 12,
-    price: 1_700
+    price: 1_700,
   },
   {
     damage: 120,
@@ -96,7 +96,7 @@ export const hatred_gokenin: Tower = [
     armor_piercing: true,
     shield_dmg: 9,
     intimidation: 12,
-    price: 1_400
+    price: 1_400,
   },
   {
     damage: 200,
@@ -107,7 +107,7 @@ export const hatred_gokenin: Tower = [
     armor_piercing: true,
     shield_dmg: 11,
     intimidation: 12,
-    price: 3_200
+    price: 3_200,
   },
   {
     damage: 420,
@@ -118,7 +118,7 @@ export const hatred_gokenin: Tower = [
     armor_piercing: true,
     shield_dmg: 14,
     intimidation: 12,
-    price: 11_600
+    price: 11_600,
   },
   {
     damage: 950,
@@ -130,7 +130,7 @@ export const hatred_gokenin: Tower = [
     camo: true,
     shield_dmg: 17,
     intimidation: 12,
-    price: 38_200
+    price: 38_200,
   },
   {
     damage: 2_000,
@@ -142,7 +142,7 @@ export const hatred_gokenin: Tower = [
     camo: true,
     shield_dmg: 21,
     intimidation: 12,
-    price: 112_000
+    price: 112_000,
   },
   {
     damage: 8_500,
@@ -154,6 +154,6 @@ export const hatred_gokenin: Tower = [
     camo: true,
     shield_dmg: 29,
     intimidation: 12,
-    price: 1_060_000
-  }
+    price: 1_060_000,
+  },
 ];

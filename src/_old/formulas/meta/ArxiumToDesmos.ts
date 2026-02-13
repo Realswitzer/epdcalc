@@ -1,15 +1,18 @@
 // exports all of this stuff into lists that can be pasted in desmos with relatively little setup.
 
-import { arxtable } from './Arxium';
+import { arxtable } from "./Arxium";
 
-let prestigeNumbers: string = '';
-let arxiumPerPrestigeNumbers: string = '';
+let prestigeNumbers: string = "";
+let arxiumPerPrestigeNumbers: string = "";
 for (const key in arxtable) {
-  prestigeNumbers += key + ',';
-  arxiumPerPrestigeNumbers += arxtable[key] + ',';
+  prestigeNumbers += key + ",";
+  arxiumPerPrestigeNumbers += arxtable[key] + ",";
 }
 prestigeNumbers = prestigeNumbers.slice(0, prestigeNumbers.length - 1);
-arxiumPerPrestigeNumbers = arxiumPerPrestigeNumbers.slice(0, arxiumPerPrestigeNumbers.length - 1);
+arxiumPerPrestigeNumbers = arxiumPerPrestigeNumbers.slice(
+  0,
+  arxiumPerPrestigeNumbers.length - 1,
+);
 
 console.log(`p_{restiges}=[${prestigeNumbers}]`);
 console.log(`a_{rxiumgain}=[${arxiumPerPrestigeNumbers}]`);

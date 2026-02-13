@@ -25,7 +25,7 @@ export class TowerInstance {
   };
   public constructor(
     readonly tower: Tower,
-    readonly level: TowerLevel
+    readonly level: TowerLevel,
   ) {
     this.id = nextId();
   }

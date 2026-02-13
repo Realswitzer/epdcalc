@@ -1,3 +1,3 @@
-export * from './Arxium';
-export * from './exaltedChance';
-export * from '../rev/ValueReverse';
+export * from "./Arxium";
+export * from "./exaltedChance";
+export * from "../rev/ValueReverse";

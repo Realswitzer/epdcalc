@@ -4,7 +4,6 @@ import * as elusive from "./elusive";
 import * as elusivestandard from "./elusivestandard";
 import * as prestigious from "./prestigious";
 import * as lustrous from "./lustrous";
-import * as majestic from "../../towers/heckerman";
 import * as synthesized from "./synthesized";
 import * as legendary from "./legendary";
 import * as prime from "./prime";
@@ -21,9 +20,7 @@ export {
   elusivestandard,
   prestigious,
   lustrous,
-  majestic,
   synthesized,
-  exalted,
   legendary,
   prime,
   illustrious,

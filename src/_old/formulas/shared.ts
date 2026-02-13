@@ -1,4 +1,4 @@
-import { type TowerUpgrade } from '../types';
+import { type TowerUpgrade } from "../types";
 
 export function Cooldown(tower: TowerUpgrade): number | undefined {
   if (!tower.cooldown) {

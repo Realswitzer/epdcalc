@@ -1,4 +1,4 @@
-import type { SalvageCategory } from '../src/types';
+import type { SalvageCategory } from "../src/types";
 
 export const prices: SalvageCategory = {
   adamant_styker: [3_745, 6_340],
@@ -20,5 +20,5 @@ export const prices: SalvageCategory = {
   turret: [470, 800],
   vaporizer: [230, 390],
   zero_two_school: [4_160, 7_040],
-  zero_two: [385, 665]
+  zero_two: [385, 665],
 };

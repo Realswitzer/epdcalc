@@ -1,5 +1,5 @@
-import { type TowerUpgrade } from '../types';
-import { Time, Wave } from './income';
+import { type TowerUpgrade } from "../types";
+import { Time, Wave } from "./income";
 
 export function TimeUpgrade(tower: TowerUpgrade): number | undefined {
   const _time: number | undefined = Time(tower);

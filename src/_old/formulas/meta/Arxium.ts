@@ -221,5 +221,5 @@ export const arxtable: { [key: number]: number } = {
   1268: 5493,
   1269: 5498,
   1270: 5503,
-  1271: 5508
+  1271: 5508,
 };

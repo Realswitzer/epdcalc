@@ -1,4 +1,4 @@
-import { type ShopCategory } from '../types';
+import { type ShopCategory } from "../types";
 
 export const blueprints: ShopCategory = {
   adamant_styker: 2_150,
@@ -32,7 +32,7 @@ export const blueprints: ShopCategory = {
   // TODO: find price
   uranium_stryker: 999999,
   zero_two_school: 2_725,
-  zero_two: 220
+  zero_two: 220,
 };
 export const exalteds: ShopCategory = {
   adamant_styker: 16_300,
@@ -45,10 +45,10 @@ export const exalteds: ShopCategory = {
   titanium_turret: 25_600,
   // todo: find price
   true_vaporizer: 9999999,
-  zero_two_school: 18_100
+  zero_two_school: 18_100,
 };
 export const majestic: ShopCategory = {
-  heckerman: 1_420
+  heckerman: 1_420,
 };
 export const prestigious: ShopCategory = {
   alchemist: 5_555,
@@ -60,10 +60,10 @@ export const prestigious: ShopCategory = {
   stryker: 1_525,
   turret: 2_050,
   vaporizer: 1_000,
-  zero_two: 1_675
+  zero_two: 1_675,
 };
 
 export const regular: ShopCategory = {
   ...prestigious,
-  ...majestic
+  ...majestic,
 };
