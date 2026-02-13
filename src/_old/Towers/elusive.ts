@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 //TODO: add stats
 export const blizzard: Tower = [
@@ -12,7 +12,7 @@ export const blizzard: Tower = [
     bliz_length: 2, // check: see above.
     bliz_radius: 20,
     shield_dmg: 0.05,
-    price: 8_700
+    price: 8_700,
   },
   {},
   {},
@@ -30,7 +30,7 @@ export const blizzard: Tower = [
     bliz_radius: 55,
     armor_destruction: 0.05,
     camo: true,
-    shield_dmg: 0.05
+    shield_dmg: 0.05,
   },
   {
     damage: 900,
@@ -43,8 +43,8 @@ export const blizzard: Tower = [
     bliz_radius: 35,
     armor_piercing: true,
     camo: true,
-    shield_dmg: 0.05
-  }
+    shield_dmg: 0.05,
+  },
 ];
 //TODO: add stats
 export const mystic_heavy: Tower = [
@@ -52,7 +52,7 @@ export const mystic_heavy: Tower = [
     damage: 40,
     cooldown: 0.12,
     range: 110,
-    hollow_point: 1.5
+    hollow_point: 1.5,
     //ahhh he upgraded them wtf
   },
   {},
@@ -61,7 +61,7 @@ export const mystic_heavy: Tower = [
     damage: 2_000,
     cooldown: 0.12,
     range: 140,
-    hollow_point: 1.5
+    hollow_point: 1.5,
     // god damn it
   },
   {
@@ -72,7 +72,7 @@ export const mystic_heavy: Tower = [
     armor_destruction: 0.2,
     camo: true,
     aim: 85,
-    shield_dmg: 0.75
+    shield_dmg: 0.75,
   },
   {
     damage: 12_000,
@@ -82,7 +82,7 @@ export const mystic_heavy: Tower = [
     armor_destruction: 0.2,
     camo: true,
     aim: 85,
-    shield_dmg: 0.75
+    shield_dmg: 0.75,
   },
   {
     damage: 80_000,
@@ -92,7 +92,7 @@ export const mystic_heavy: Tower = [
     armor_destruction: 0.25,
     camo: true,
     aim: 85,
-    shield_dmg: 0.75
+    shield_dmg: 0.75,
   },
   {
     damage: 50_000,
@@ -102,8 +102,8 @@ export const mystic_heavy: Tower = [
     armor_destruction: 0.2,
     camo: true,
     aim: 85,
-    shield_dmg: 0.75
-  }
+    shield_dmg: 0.75,
+  },
 ];
 //TODO: add stats
 export const poacher: Tower = [
@@ -124,8 +124,8 @@ export const poacher: Tower = [
     armor_destruction: 1,
     camo: true,
     cash_conv: 0.55,
-    shield_dmg: 8
-  }
+    shield_dmg: 8,
+  },
 ];
 //TODO: add stats
 export const bloodsucker: Tower = [
@@ -140,14 +140,14 @@ export const bloodsucker: Tower = [
     purify: 0.8,
     boss_slayer: 0.8,
     shield_dmg: 3,
-    price: 6_666
+    price: 6_666,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 //TODO: add stats
 export const festive_tree_grand: Tower = [
@@ -157,7 +157,7 @@ export const festive_tree_grand: Tower = [
   { income: 4_200, range: 45, upgrade_reduction: 0.1, price: 27_023 },
   {},
   { income: 30_000, range: 45, upgrade_reduction: 0.16, price: 243_023 },
-  { income: 300_000, range: 50, upgrade_reduction: 0.2, price: 3_755_167 }
+  { income: 300_000, range: 50, upgrade_reduction: 0.2, price: 3_755_167 },
 ];
 //TODO: add stats
 export const festive_tree_sapling: Tower = [
@@ -166,7 +166,7 @@ export const festive_tree_sapling: Tower = [
     range: 25,
     damage_buff: 0.06,
     range_buff: 0.09,
-    price: 2_023
+    price: 2_023,
   },
   {},
   {},
@@ -177,8 +177,8 @@ export const festive_tree_sapling: Tower = [
     income: 150_000,
     range: 40,
     damage_buff: 0.15,
-    range_buff: 0.225
-  }
+    range_buff: 0.225,
+  },
 ];
 //TODO: add stats
 export const festive_tree: Tower = [
@@ -188,7 +188,7 @@ export const festive_tree: Tower = [
   {},
   {},
   {},
-  {}
+  {},
 ];
 
 export const golden_shotgunner: Tower = [
@@ -200,7 +200,7 @@ export const golden_shotgunner: Tower = [
     camo: true,
     aim: 190,
     shield_dmg: 2,
-    price: 1_000
+    price: 1_000,
   },
   {
     damage: 100,
@@ -209,7 +209,7 @@ export const golden_shotgunner: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 190,
-    shield_dmg: 2
+    shield_dmg: 2,
   },
   {
     damage: 150,
@@ -218,7 +218,7 @@ export const golden_shotgunner: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 190,
-    shield_dmg: 2
+    shield_dmg: 2,
   },
   {
     damage: 300,
@@ -227,7 +227,7 @@ export const golden_shotgunner: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 190,
-    shield_dmg: 2
+    shield_dmg: 2,
   },
   {
     damage: 500,
@@ -237,7 +237,7 @@ export const golden_shotgunner: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 190,
-    shield_dmg: 2
+    shield_dmg: 2,
   },
   {
     damage: 2_000,
@@ -247,7 +247,7 @@ export const golden_shotgunner: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 190,
-    shield_dmg: 2
+    shield_dmg: 2,
   },
   {
     damage: 10_000,
@@ -259,7 +259,7 @@ export const golden_shotgunner: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 190,
-    shield_dmg: 2
+    shield_dmg: 2,
   },
   {
     damage: 2_000,
@@ -269,8 +269,8 @@ export const golden_shotgunner: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 190,
-    shield_dmg: 2
-  }
+    shield_dmg: 2,
+  },
 ];
 //TODO: add stats
 export const hellfire: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -281,32 +281,50 @@ export const huge_festive_tree: Tower = [
     range: 70,
     damage_buff: 0.08,
     range_buff: 0.12,
-    price: 10_115
+    price: 10_115,
   },
   {
     income: 4_500,
     range: 80,
     damage_buff: 0.08,
     range_buff: 0.15,
-    price: 15_115
+    price: 15_115,
   },
   {
     income: 7_500,
     range: 80,
     damage_buff: 0.1,
     range_buff: 0.15,
-    price: 45_115
+    price: 45_115,
   },
   {
     income: 21_000,
     range: 90,
     damage_buff: 0.1,
     range_buff: 0.18,
-    price: 135_115
+    price: 135_115,
   },
-  { income: 60_000, range: 90, damage_buff: 0.12, range_buff: 0.24, price: 405_115 },
-  { income: 150_000, range: 90, damage_buff: 0.16, range_buff: 0.24, price: 1_215_115 },
-  { income: 1_650_000, range: 100, damage_buff: 0.2, range_buff: 0.3, price: 18_775_839 }
+  {
+    income: 60_000,
+    range: 90,
+    damage_buff: 0.12,
+    range_buff: 0.24,
+    price: 405_115,
+  },
+  {
+    income: 150_000,
+    range: 90,
+    damage_buff: 0.16,
+    range_buff: 0.24,
+    price: 1_215_115,
+  },
+  {
+    income: 1_650_000,
+    range: 100,
+    damage_buff: 0.2,
+    range_buff: 0.3,
+    price: 18_775_839,
+  },
 ];
 //TODO: add stats
 export const huge_jar_guard: Tower = [
@@ -318,7 +336,7 @@ export const huge_jar_guard: Tower = [
     valor: 0.4,
     camo: true,
     soul_damage: 0.3,
-    aim: 150
+    aim: 150,
   },
   {},
   {},
@@ -334,7 +352,7 @@ export const huge_jar_guard: Tower = [
     camo: true,
     soul_damage: 0.7,
     aim: 150,
-    shield_dmg: 40
+    shield_dmg: 40,
   },
   {
     damage: 150_000,
@@ -346,8 +364,8 @@ export const huge_jar_guard: Tower = [
     camo: true,
     soul_damage: 1.15,
     aim: 150,
-    shield_dmg: 96
-  }
+    shield_dmg: 96,
+  },
 ];
 //TODO: add stats
 export const invisible_man: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -362,14 +380,14 @@ export const jar_guard_dull: Tower = [
     soul_damage: 0.15,
     aim: 120,
     shield_dmg: 2,
-    price: 1_450
+    price: 1_450,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 //TODO: add stats
 export const jar_guard_polished: Tower = [
@@ -383,101 +401,19 @@ export const jar_guard_polished: Tower = [
     soul_damage: 0.3,
     aim: 150,
     shield_dmg: 2,
-    price: 2_250
+    price: 2_250,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 //TODO: add stats
 export const jar_guard_unknown: Tower = [{}, {}, {}, {}, {}, {}, {}];
 //TODO: add stats
 export const jar_guard: Tower = [{}, {}, {}, {}, {}, {}, {}];
-export const lemonade_stand: Tower = [
-  {
-    income: 15,
-    cooldown: 4,
-    range: 45,
-    bounty_amp: 0.1,
-    bounty_add: 1,
-    cooldown_buff: 0.05,
-    price: 1_725
-  },
-  {
-    income: 25,
-    cooldown: 4,
-    range: 50,
-    bounty_amp: 0.12,
-    bounty_add: 2,
-    cooldown_buff: 0.05,
-    price: 900
-  },
-  {
-    income: 40,
-    cooldown: 3.5,
-    range: 50,
-    bounty_amp: 0.15,
-    bounty_add: 4,
-    cooldown_buff: 0.075,
-    price: 1_950
-  },
-  {
-    income: 100,
-    cooldown: 3.5,
-    range: 60,
-    bounty_amp: 0.15,
-    bounty_add: 10,
-    damage_buff: 0.1,
-    cooldown_buff: 0.075,
-    price: 6_500
-  },
-  {
-    income: 250,
-    cooldown: 3,
-    range: 60,
-    bounty_amp: 0.2,
-    bounty_add: 25,
-    damage_buff: 0.15,
-    cooldown_buff: 0.075,
-    price: 21_600
-  },
-  {
-    income: 600,
-    cooldown: 3,
-    range: 70,
-    bounty_amp: 0.2,
-    bounty_add: 65,
-    damage_buff: 0.15,
-    cooldown_buff: 0.1,
-    price: 72_000
-  },
-  {
-    income: 3_250,
-    cooldown: 1.5,
-    range: 95,
-    bounty_amp: 0.32,
-    bounty_add: 750,
-    interest: 0.02,
-    max_interest: 1_000_000,
-    damage_buff: 0.15,
-    cooldown_buff: 0.1,
-    price: 777_000
-  },
-  {
-    income: 8_000,
-    cooldown: 3,
-    range: 75,
-    bounty_amp: 0.2,
-    bounty_add: 65,
-    damage_buff: 0.25,
-    cooldown_buff: 0.175,
-    taxxing: 0.02,
-    price: 888_000
-  }
-];
 //TODO: add stats
 export const lucifer: Tower = [
   {
@@ -491,7 +427,7 @@ export const lucifer: Tower = [
     execution: 0.45,
     aim: 165,
     shield_dmg: 0.25,
-    price: 4_444
+    price: 4_444,
   },
   {},
   {},
@@ -508,7 +444,7 @@ export const lucifer: Tower = [
     valor: 7.8,
     armor_piercing: true,
     camo: true,
-    aim: 125
+    aim: 125,
   },
   {
     damage: 415,
@@ -520,8 +456,8 @@ export const lucifer: Tower = [
     valor: 4,
     armor_piercing: true,
     camo: true,
-    aim: 125
-  }
+    aim: 125,
+  },
 ];
 
 export const operative: Tower = [
@@ -534,7 +470,7 @@ export const operative: Tower = [
     valor: 1.5,
     armor_piercing: true,
     aim: 125,
-    price: 1_600
+    price: 1_600,
   },
   {
     damage: 2,
@@ -545,7 +481,7 @@ export const operative: Tower = [
     valor: 1.9,
     armor_piercing: true,
     camo: true,
-    aim: 125
+    aim: 125,
   },
   {
     damage: 3,
@@ -557,7 +493,7 @@ export const operative: Tower = [
     valor: 2.4,
     armor_piercing: true,
     camo: true,
-    aim: 125
+    aim: 125,
   },
   {
     damage: 6,
@@ -569,7 +505,7 @@ export const operative: Tower = [
     valor: 3,
     armor_piercing: true,
     camo: true,
-    aim: 125
+    aim: 125,
   },
   {
     damage: 18,
@@ -581,7 +517,7 @@ export const operative: Tower = [
     valor: 3,
     armor_piercing: true,
     camo: true,
-    aim: 125
+    aim: 125,
   },
   {
     damage: 45,
@@ -593,7 +529,7 @@ export const operative: Tower = [
     valor: 4,
     armor_piercing: true,
     camo: true,
-    aim: 125
+    aim: 125,
   },
   {
     damage: 480,
@@ -605,7 +541,7 @@ export const operative: Tower = [
     valor: 7.8,
     armor_piercing: true,
     camo: true,
-    aim: 125
+    aim: 125,
   },
   {
     damage: 415,
@@ -617,8 +553,8 @@ export const operative: Tower = [
     valor: 4,
     armor_piercing: true,
     camo: true,
-    aim: 125
-  }
+    aim: 125,
+  },
 ];
 // TODO: add stats
 export const scorcher: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -641,8 +577,8 @@ export const scrambler: Tower = [
     armor_piercing: true,
     camo: true,
     cash_conv: 0.2,
-    shield_dmg: 21
-  }
+    shield_dmg: 21,
+  },
 ];
 //TODO: add stats
 export const silver_rogue: Tower = [
@@ -656,7 +592,7 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     aim: 55,
     shield_dmg: 0.7,
-    price: 3_900
+    price: 3_900,
   },
   {
     damage: 8,
@@ -668,7 +604,7 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 55,
-    shield_dmg: 0.7
+    shield_dmg: 0.7,
   },
   {
     damage: 16,
@@ -680,7 +616,7 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 55,
-    shield_dmg: 0.7
+    shield_dmg: 0.7,
   },
   {
     damage: 32,
@@ -692,7 +628,7 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 55,
-    shield_dmg: 0.7
+    shield_dmg: 0.7,
   },
   {
     damage: 96,
@@ -704,7 +640,7 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 55,
-    shield_dmg: 0.7
+    shield_dmg: 0.7,
   },
   {
     damage: 280,
@@ -716,7 +652,7 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 55,
-    shield_dmg: 0.7
+    shield_dmg: 0.7,
   },
   {
     damage: 24_000,
@@ -728,7 +664,7 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 55,
-    shield_dmg: 0.7
+    shield_dmg: 0.7,
   },
   {
     damage: 14_400,
@@ -741,8 +677,8 @@ export const silver_rogue: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 55,
-    shield_dmg: 0.7
-  }
+    shield_dmg: 0.7,
+  },
 ];
 //TODO: add stats
 export const void_pistolman: Tower = [
@@ -753,7 +689,7 @@ export const void_pistolman: Tower = [
     armor_destruction: 0.15,
     camo: true,
     aim: 100,
-    price: 2_500
+    price: 2_500,
   },
   {
     damage: 10,
@@ -761,7 +697,7 @@ export const void_pistolman: Tower = [
     range: 90,
     armor_destruction: 0.2,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 20,
@@ -769,7 +705,7 @@ export const void_pistolman: Tower = [
     range: 100,
     armor_destruction: 0.2,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 40,
@@ -777,7 +713,7 @@ export const void_pistolman: Tower = [
     range: 120,
     armor_destruction: 0.2,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 100,
@@ -785,7 +721,7 @@ export const void_pistolman: Tower = [
     range: 120,
     armor_destruction: 0.25,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 180,
@@ -793,7 +729,7 @@ export const void_pistolman: Tower = [
     range: 120,
     armor_destruction: 0.25,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 800,
@@ -801,7 +737,7 @@ export const void_pistolman: Tower = [
     range: 160,
     armor_destruction: 0.35,
     camo: true,
-    aim: 100
+    aim: 100,
   },
   {
     damage: 250,
@@ -810,8 +746,8 @@ export const void_pistolman: Tower = [
     execution: 1,
     armor_destruction: 0.25,
     camo: true,
-    aim: 100
-  }
+    aim: 100,
+  },
 ];
 //TODO: add stats
 export const workshop: Tower = [
@@ -820,12 +756,12 @@ export const workshop: Tower = [
     cooldown: 20,
     range: 5,
     crit_chance: 0.04,
-    price: 1_300
+    price: 1_300,
   },
   { income: 180, cooldown: 20, range: 5, crit_chance: 0.04 },
   { income: 360, cooldown: 20, range: 5, crit_chance: 0.05 },
   { income: 900, cooldown: 20, range: 5, crit_chance: 0.06, price: 3_900 },
   { income: 2_300, cooldown: 20, range: 5, crit_chance: 0.07, price: 11_200 },
   { income: 6_900, cooldown: 20, range: 5, crit_chance: 0.08, price: 34_800 },
-  { income: 12_000, cooldown: 20, range: 5, crit_chance: 0.4, price: 360_000 }
+  { income: 12_000, cooldown: 20, range: 5, crit_chance: 0.4, price: 360_000 },
 ];

@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 // TODO: add stats
 export const festive_tree_orange: Tower = [
@@ -7,50 +7,50 @@ export const festive_tree_orange: Tower = [
     range: 40,
     damage_buff: 0.08,
     range_buff: 0.12,
-    price: 2_023
+    price: 2_023,
   },
   {
     income: 1_260,
     range: 45,
     damage_buff: 0.08,
     range_buff: 0.15,
-    price: 3_023
+    price: 3_023,
   },
   {
     income: 2_100,
     range: 45,
     damage_buff: 0.1,
     range_buff: 0.15,
-    price: 9_023
+    price: 9_023,
   },
   {
     income: 5_880,
     range: 50,
     damage_buff: 0.1,
     range_buff: 0.18,
-    price: 27_023
+    price: 27_023,
   },
   {
     income: 16_800,
     range: 50,
     damage_buff: 0.12,
     range_buff: 0.24,
-    price: 81_023
+    price: 81_023,
   },
   {
     income: 42_000,
     range: 50,
     damage_buff: 0.16,
     range_buff: 0.24,
-    price: 243_023
+    price: 243_023,
   },
   {
     income: 420_000,
     range: 55,
     damage_buff: 0.2,
     range_buff: 0.3,
-    price: 3_755_167 // reversed-reduction: inaccurate.
-  }
+    price: 3_755_167, // reversed-reduction: inaccurate.
+  },
 ];
 
 // TODO: add stats
@@ -69,7 +69,7 @@ export const hallowed_stryker: Tower = [
     shield_bypass: 0.7,
     armor_piercing: true,
     camo: true,
-    price: 5_555
+    price: 5_555,
   },
   {},
   {},
@@ -91,8 +91,8 @@ export const hallowed_stryker: Tower = [
     purify: 4,
     shield_bypass: 1,
     armor_piercing: true,
-    camo: true
-  }
+    camo: true,
+  },
 ];
 
 // TODO: add stats
@@ -109,7 +109,7 @@ export const lord_lucifer_true: Tower = [
     burn_time: 3,
     departure: 0.25,
     aim: 195,
-    shield_dmg: 0.66
+    shield_dmg: 0.66,
   },
 
   {
@@ -124,7 +124,7 @@ export const lord_lucifer_true: Tower = [
     burn_time: 4,
     departure: 0.45,
     aim: 195,
-    shield_dmg: 0.66
+    shield_dmg: 0.66,
   },
   {},
   {},
@@ -145,9 +145,9 @@ export const lord_lucifer_true: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 245,
-    shield_dmg: 0.66
+    shield_dmg: 0.66,
     // price: 1e10000
-  }
+  },
 ];
 
 // TODO: add stats
@@ -165,7 +165,7 @@ export const lord_lucifer: Tower = [
     departure: 0.25,
     aim: 195,
     shield_dmg: 0.66,
-    price: 4_444
+    price: 4_444,
   },
   {
     damage: 25,
@@ -180,7 +180,7 @@ export const lord_lucifer: Tower = [
     departure: 0.35,
     aim: 195,
     shield_dmg: 0.66,
-    price: 2_666
+    price: 2_666,
   },
   {},
   {
@@ -191,7 +191,7 @@ export const lord_lucifer: Tower = [
     range: 200,
     exclusion: 55,
     radius: 16,
-    burn_damage: 500
+    burn_damage: 500,
     //...
   },
   {
@@ -204,7 +204,7 @@ export const lord_lucifer: Tower = [
     radius: 16,
     burn_damage: 1_200,
     // more stats...
-    armor_piercing: true
+    armor_piercing: true,
   },
   {
     /* level 4 but
@@ -223,7 +223,7 @@ export const lord_lucifer: Tower = [
     range: 240,
     exclusion: 50,
     radius: 20,
-    burn_damage: 3_000
+    burn_damage: 3_000,
   },
   {
     /*level 6 but
@@ -246,7 +246,7 @@ export const lord_lucifer: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 195,
-    shield_dmg: 0.66
+    shield_dmg: 0.66,
   },
   {
     damage: 6_666,
@@ -263,8 +263,8 @@ export const lord_lucifer: Tower = [
     camo: true,
     aim: 195,
     shield_dmg: 0.66,
-    price: 6_666_666
-  }
+    price: 6_666_666,
+  },
 ];
 // TODO: add stats
 export const strawberry_lemonade_stand_test: Tower = [
@@ -275,7 +275,7 @@ export const strawberry_lemonade_stand_test: Tower = [
     bounty_amp: 0.11,
     bounty_add: 1.2,
     cooldown_buff: 0.075,
-    price: 2_200
+    price: 2_200,
   },
   {
     income: 35,
@@ -284,7 +284,7 @@ export const strawberry_lemonade_stand_test: Tower = [
     bounty_amp: 0.135,
     bounty_add: 2.5,
     cooldown_buff: 0.075,
-    price: 1_150
+    price: 1_150,
   },
   {
     income: 55,
@@ -293,7 +293,7 @@ export const strawberry_lemonade_stand_test: Tower = [
     bounty_amp: 0.165,
     bounty_add: 5,
     cooldown_buff: 0.1125,
-    price: 2_500
+    price: 2_500,
   },
   {
     income: 135,
@@ -303,7 +303,7 @@ export const strawberry_lemonade_stand_test: Tower = [
     bounty_add: 12,
     damage_buff: 0.15,
     cooldown_buff: 0.1125,
-    price: 8_275
+    price: 8_275,
   },
   {
     income: 335,
@@ -313,7 +313,7 @@ export const strawberry_lemonade_stand_test: Tower = [
     bounty_add: 30,
     damage_buff: 0.2,
     cooldown_buff: 0.1125,
-    price: 27_500
+    price: 27_500,
   },
   {},
   {
@@ -325,9 +325,9 @@ export const strawberry_lemonade_stand_test: Tower = [
     damage_buff: 0.2,
     cooldown_buff: 0.15,
     interest: 0.02,
-    max_interest: 50_000_000 // i think???
+    max_interest: 50_000_000, // i think???
   },
-  {}
+  {},
 ];
 // TODO: add stats
 export const virtual_turret: Tower = [
@@ -344,7 +344,7 @@ export const virtual_turret: Tower = [
     soul_damage: 0.5,
     aim: 199,
     shield_dmg: 3,
-    price: 34_250
+    price: 34_250,
   },
   {},
   {},
@@ -359,9 +359,9 @@ export const virtual_turret: Tower = [
     range: 330,
     targeting_rate: 0.4,
     radius: 12,
-    bleed: 200
+    bleed: 200,
     // need to rewatch this part to hopefully get stats
-  }
+  },
 ];
 // TODO: add stats
 export const archangel_lucifer_divine: Tower = [
@@ -377,14 +377,14 @@ export const archangel_lucifer_divine: Tower = [
     valor: 0.45,
     aim: 165,
     shield_dmg: 2,
-    price: 4_444
+    price: 4_444,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const archangel_lucifer_sublime: Tower = [
@@ -399,14 +399,14 @@ export const archangel_lucifer_sublime: Tower = [
     purify: 2.6,
     valor: 0.45,
     shield_dmg: 0.25,
-    price: 4_444
+    price: 4_444,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const blazing_apollo: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -424,7 +424,7 @@ export const cursed_blizzard_fake: Tower = [
     purify: 1.2,
     armor_destruction: 0.03,
     shield_dmg: 0.5,
-    price: 10_600
+    price: 10_600,
   },
   {},
   {},
@@ -444,7 +444,7 @@ export const cursed_blizzard_fake: Tower = [
     purify: 1.55,
     armor_destruction: 0.08,
     camo: true,
-    shield_dmg: 0.5
+    shield_dmg: 0.5,
   },
   {
     damage: 900,
@@ -458,8 +458,8 @@ export const cursed_blizzard_fake: Tower = [
     purify: 2.2,
     armor_destruction: 0.05,
     camo: true,
-    shield_dmg: 0.5
-  }
+    shield_dmg: 0.5,
+  },
 ];
 // TODO: add stats
 export const cursed_blizzard: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -472,24 +472,30 @@ export const festive_tree_cobalt: Tower = [
     range: 53,
     damage_buff: 0.08,
     range_buff: 0.12,
-    price: 2_023
+    price: 2_023,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const festive_tree_gold: Tower = [
-  { income: 440, range: 40, damage_buff: 0.08, upgrade_reduction: 0.12, price: 2_023 },
+  {
+    income: 440,
+    range: 40,
+    damage_buff: 0.08,
+    upgrade_reduction: 0.12,
+    price: 2_023,
+  },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const festive_tree_green: Tower = [
@@ -498,24 +504,54 @@ export const festive_tree_green: Tower = [
     range: 40,
     damage_buff: 0.08,
     range_buff: 0.15,
-    price: 2_023
+    price: 2_023,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const festive_tree_red: Tower = [
   { income: 440, range: 40, damage_buff: 0.1, range_buff: 0.12, price: 2_023 },
   { income: 990, range: 45, damage_buff: 0.1, range_buff: 0.15, price: 3_023 },
-  { income: 1_650, range: 45, damage_buff: 0.125, range_buff: 0.15, price: 9_023 },
-  { income: 4_620, range: 50, damage_buff: 0.125, range_buff: 0.18, price: 27_023 },
-  { income: 13_200, range: 50, damage_buff: 0.15, range_buff: 0.24, price: 81_023 },
-  { income: 33_000, range: 50, damage_buff: 0.2, range_buff: 0.24, price: 243_023 },
-  { income: 330_000, range: 55, damage_buff: 0.25, range_buff: 0.3, price: 3_755_167 }
+  {
+    income: 1_650,
+    range: 45,
+    damage_buff: 0.125,
+    range_buff: 0.15,
+    price: 9_023,
+  },
+  {
+    income: 4_620,
+    range: 50,
+    damage_buff: 0.125,
+    range_buff: 0.18,
+    price: 27_023,
+  },
+  {
+    income: 13_200,
+    range: 50,
+    damage_buff: 0.15,
+    range_buff: 0.24,
+    price: 81_023,
+  },
+  {
+    income: 33_000,
+    range: 50,
+    damage_buff: 0.2,
+    range_buff: 0.24,
+    price: 243_023,
+  },
+  {
+    income: 330_000,
+    range: 55,
+    damage_buff: 0.25,
+    range_buff: 0.3,
+    price: 3_755_167,
+  },
 ];
 // TODO: add stats
 export const festive_tree_violet: Tower = [
@@ -524,14 +560,14 @@ export const festive_tree_violet: Tower = [
     range: 40,
     range_buff: 0.12,
     cooldown_buff: 0.08,
-    price: 2_023
+    price: 2_023,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const jar_guard_null: Tower = [
@@ -548,14 +584,14 @@ export const jar_guard_null: Tower = [
     camo: true,
     soul_damage: 0.3,
     shield_dmg: 2,
-    price: 2_150
+    price: 2_150,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const jar_guard_origin: Tower = [
@@ -572,14 +608,14 @@ export const jar_guard_origin: Tower = [
     soul_damage: 0.3,
     aim: 150,
     shield_dmg: 2,
-    price: 3_350
+    price: 3_350,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const jar_guard_precursor: Tower = [
@@ -595,14 +631,14 @@ export const jar_guard_precursor: Tower = [
     soul_damage: 0.3,
     aim: 165,
     shield_dmg: 4,
-    price: 2_400
+    price: 2_400,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const jar_guard_progenitor: Tower = [
@@ -619,7 +655,7 @@ export const jar_guard_progenitor: Tower = [
     soul_damage: 0.3,
     aim: 135,
     shield_dmg: 2,
-    price: 2_700
+    price: 2_700,
   },
   {},
   {},
@@ -639,8 +675,8 @@ export const jar_guard_progenitor: Tower = [
     camo: true,
     soul_damage: 0.9,
     aim: 135,
-    shield_dmg: 3
-  }
+    shield_dmg: 3,
+  },
 ];
 // TODO: add stats
 export const jar_guard_shiniest: Tower = [
@@ -655,14 +691,14 @@ export const jar_guard_shiniest: Tower = [
     cash_conv: 1,
     aim: 150,
     shield_dmg: 2,
-    price: 9_000
+    price: 9_000,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const jar_guard_singularity_test: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -686,8 +722,8 @@ export const jar_guard_singularity: Tower = [
     camo: true,
     soul_damage: 0.9,
     aim: 210,
-    shield_dmg: 150
-  }
+    shield_dmg: 150,
+  },
 ];
 // TODO: add stats
 export const molten_turret: Tower = [
@@ -710,8 +746,8 @@ export const molten_turret: Tower = [
     melt: 3.2,
     armor_piercing: true,
     camo: true,
-    aim: 100
-  }
+    aim: 100,
+  },
 ];
 // TODO: add stats
 export const radiant_raygunner: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -730,141 +766,19 @@ export const shrine_of_tartarus: Tower = [
     armor_piercing: true,
     camo: true,
     shield_dmg: 3,
-    price: 13_400
+    price: 13_400,
   },
   {},
   {},
   {},
   {},
   {},
-  {}
+  {},
 ];
 // TODO: add stats
 export const solar_vaporizer: Tower = [{}, {}, {}, {}, {}, {}, {}];
 // TODO: add stats
 export const strawberry_lemonade_stand: Tower = [{}, {}, {}, {}, {}, {}, {}];
-export const summer_stryker: Tower = [
-  {
-    damage: 75,
-    cooldown: 5,
-    exclusion: 200,
-    radius: 65,
-    inaccuracy: 1,
-    residue_length: 12,
-    scorch: 0.0125,
-    scorch_length: 12,
-    rad_strength: 1.2,
-    rad_length: 4,
-    armor_piercing: true,
-    camo: true,
-    price: 24_353
-  },
-  {
-    damage: 75,
-    cooldown: 2.5,
-    exclusion: 200,
-    radius: 65,
-    inaccuracy: 1,
-    residue_length: 12,
-    scorch: 0.0125,
-    scorch_length: 12,
-    rad_strength: 1.2,
-    rad_length: 4,
-    armor_piercing: true,
-    camo: true,
-    price: 200_000
-  },
-  {
-    damage: 75,
-    cooldown: 2.5,
-    exclusion: 200,
-    radius: 125,
-    inaccuracy: 1,
-    residue_length: 12,
-    scorch: 0.0125,
-    scorch_length: 12,
-    rad_strength: 1.2,
-    rad_length: 8,
-    armor_piercing: true,
-    camo: true,
-    price: 750_000
-  },
-  {
-    damage: 225,
-    cooldown: 10,
-    exclusion: 60,
-    radius: 125,
-    inaccuracy: 1,
-    residue_length: 12,
-    scorch: 0.0125,
-    scorch_length: 12,
-    rad_strength: 0.6,
-    rad_length: 8,
-    armor_piercing: true,
-    camo: true,
-    price: 2_500_000
-  },
-  {
-    damage: 225,
-    cooldown: 10,
-    exclusion: 60,
-    radius: 125,
-    inaccuracy: 1,
-    residue_length: 14,
-    scorch: 0.015,
-    scorch_length: 14,
-    rad_strength: 0.6,
-    rad_length: 16,
-    armor_piercing: true,
-    camo: true,
-    price: 8_000_000
-  },
-  {
-    damage: 225,
-    cooldown: 10,
-    exclusion: 60,
-    radius: 125,
-    inaccuracy: 1,
-    residue_length: 14,
-    scorch: 0.015,
-    scorch_length: 14,
-    rad_strength: 1.5,
-    rad_length: 16,
-    armor_piercing: true,
-    camo: true,
-    price: 25_000_000
-  },
-  {
-    damage: 5_000_000_000,
-    cooldown: 10,
-    exclusion: 300,
-    radius: 125,
-    inaccuracy: 1,
-    residue_length: 14,
-    scorch: 0.015,
-    scorch_length: 14,
-    rad_strength: 1.5,
-    rad_length: 16,
-    armor_piercing: true,
-    camo: true,
-    price: 155_000_000
-  },
-  {
-    damage: 225,
-    cooldown: 5,
-    exclusion: 300,
-    radius: 125,
-    inaccuracy: 1,
-    residue_length: 14,
-    scorch: 0.015,
-    scorch_length: 14,
-    rad_strength: 2,
-    rad_length: 16,
-    armor_piercing: true,
-    camo: true,
-    price: 200_000_000
-  }
-];
 // TODO: add stats
 export const summer_zero_two: Tower = [
   {
@@ -880,7 +794,7 @@ export const summer_zero_two: Tower = [
     cooldown_buff: 0.05,
     aim: 120,
     shield_dmg: 0.3,
-    price: 6_420
+    price: 6_420,
   },
   {},
   {},
@@ -899,7 +813,7 @@ export const summer_zero_two: Tower = [
     cooldown_buff: 0.7,
     camo: true,
     aim: 120,
-    shield_dmg: 0.3
+    shield_dmg: 0.3,
   },
   {
     damage: 700,
@@ -914,7 +828,7 @@ export const summer_zero_two: Tower = [
     cooldown_buff: 0.12,
     camo: true,
     aim: 120,
-    shield_dmg: 0.3
+    shield_dmg: 0.3,
   },
   {
     damage: 100,
@@ -929,8 +843,8 @@ export const summer_zero_two: Tower = [
     cooldown_buff: 0.7,
     camo: true,
     aim: 120,
-    shield_dmg: 0.3
-  }
+    shield_dmg: 0.3,
+  },
 ];
 export const sunshadow_operative: Tower = [
   {
@@ -942,7 +856,7 @@ export const sunshadow_operative: Tower = [
     valor: 0.05,
     camo: true,
     aim: 88_888_888,
-    price: 20_000
+    price: 20_000,
   },
   {
     damage: 200,
@@ -954,7 +868,7 @@ export const sunshadow_operative: Tower = [
     scald: 0.25,
     camo: true,
     aim: 88_888_888,
-    price: 90_000
+    price: 90_000,
   },
   {
     damage: 10_000,
@@ -966,7 +880,7 @@ export const sunshadow_operative: Tower = [
     scald: 0.25,
     camo: true,
     aim: 88_888_888,
-    price: 153_742
+    price: 153_742,
   },
   {
     damage: 50_000,
@@ -978,7 +892,7 @@ export const sunshadow_operative: Tower = [
     scald: 0.25,
     camo: true,
     aim: 88_888_888,
-    price: 974_574
+    price: 974_574,
   },
   {
     damage: 100_000,
@@ -991,7 +905,7 @@ export const sunshadow_operative: Tower = [
     scald: 0.25,
     camo: true,
     aim: 88_888_888,
-    price: 974_574
+    price: 974_574,
   },
   {
     damage: 100_000,
@@ -1004,7 +918,7 @@ export const sunshadow_operative: Tower = [
     scald: 0.25,
     camo: true,
     aim: 88_888_888,
-    price: 5_699_674
+    price: 5_699_674,
   },
   {
     damage: 1_000_000,
@@ -1017,7 +931,7 @@ export const sunshadow_operative: Tower = [
     scald: 1,
     camo: true,
     aim: 88_888_888,
-    price: 16_350_000
+    price: 16_350_000,
   },
   {
     damage: 1_000_000,
@@ -1030,8 +944,8 @@ export const sunshadow_operative: Tower = [
     scald: 5,
     camo: true,
     aim: 88_888_888,
-    price: 17_900_000
-  }
+    price: 17_900_000,
+  },
 ];
 // TODO: add stats
 export const terroret: Tower = [{}, {}, {}, {}, {}, {}, {}];
@@ -1053,8 +967,8 @@ export const visible_man_postnerf: Tower = [
     armor_piercing: true,
     camo: true,
     aim: 400,
-    shield_dmg: 8
-  }
+    shield_dmg: 8,
+  },
 ];
 export const visible_man: Tower = [
   {
@@ -1063,7 +977,7 @@ export const visible_man: Tower = [
     range: 105,
     all_seeing: 6.6,
     shield_dmg: 8,
-    price: 10_400
+    price: 10_400,
   },
   {
     damage: 14,
@@ -1071,7 +985,7 @@ export const visible_man: Tower = [
     range: 130,
     all_seeing: 12.2,
     shield_dmg: 8,
-    price: 1_040
+    price: 1_040,
   },
   {
     damage: 14,
@@ -1079,7 +993,7 @@ export const visible_man: Tower = [
     range: 130,
     all_seeing: 15,
     shield_dmg: 8,
-    price: 2_520
+    price: 2_520,
   },
   {
     damage: 500,
@@ -1087,7 +1001,7 @@ export const visible_man: Tower = [
     range: 500,
     all_seeing: 15,
     shield_dmg: 8,
-    price: 10_400
+    price: 10_400,
   },
   {
     damage: 1_000,
@@ -1096,7 +1010,7 @@ export const visible_man: Tower = [
     all_seeing: 20,
     execution: 15,
     shield_dmg: 8,
-    price: 44_720
+    price: 44_720,
   },
   {
     damage: 1_000,
@@ -1105,7 +1019,7 @@ export const visible_man: Tower = [
     all_seeing: 50,
     execution: 15,
     shield_dmg: 8,
-    price: 202_400
+    price: 202_400,
   },
   {
     damage: 1_000_000,
@@ -1114,7 +1028,7 @@ export const visible_man: Tower = [
     all_seeing: 250,
     execution: 35,
     shield_dmg: 8,
-    price: 2_592_000
+    price: 2_592_000,
   },
   {
     damage: 3_600_000,
@@ -1123,8 +1037,8 @@ export const visible_man: Tower = [
     all_seeing: 25,
     execution: 15,
     shield_dmg: 8,
-    price: 3_088_000
-  }
+    price: 3_088_000,
+  },
 ];
 
 // TODO: add stats
@@ -1132,12 +1046,12 @@ export const winter_executive: Tower = [
   {
     range: 40,
     upgrade_reduction: 0.075,
-    price: 15_800
+    price: 15_800,
   },
   {
     range: 45,
     upgrade_reduction: 0.075,
-    price: 8_200
+    price: 8_200,
   },
   {},
   {},
@@ -1148,7 +1062,7 @@ export const winter_executive: Tower = [
     boss_slayer: 4,
     upgrade_reduction: 0.15,
     camo: true,
-    instabreak: 0.02
+    instabreak: 0.02,
   },
   {
     damage: 150,
@@ -1158,7 +1072,7 @@ export const winter_executive: Tower = [
     range_buff: 0.15,
     upgrade_reduction: 0.15,
     camo: true,
-    instabreak: 0.024
+    instabreak: 0.024,
   },
   {
     damage: 750,
@@ -1169,7 +1083,7 @@ export const winter_executive: Tower = [
     upgrade_reduction: 0.12,
     camo: true,
     instabreak: 0.016,
-    price: 4_600_000
+    price: 4_600_000,
   },
   {
     range: 55,
@@ -1177,6 +1091,6 @@ export const winter_executive: Tower = [
     cooldown_buff: 0.12,
     upgrade_reduction: 0.3,
     camo: true,
-    price: 5_860_000
-  }
+    price: 5_860_000,
+  },
 ];

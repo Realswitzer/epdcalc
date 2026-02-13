@@ -1,0 +1,116 @@
+// Recheck stats
+import { TowerRarity, TowerType, type Tower } from "../types";
+export const heckerman: Tower = {
+  id: "heckerman",
+  name: "Heckerman",
+  rarity: TowerRarity.Majestic,
+  type: [TowerType.Offense],
+  levels: [
+    {
+      level: 1,
+      price: 5150,
+      stats: {
+        damage: 1,
+        cooldown: 1,
+        range: 420,
+        radius: 420,
+        camo: true,
+        shield_dmg: 0.69,
+      },
+    },
+    {
+      level: 2,
+      price: 1_350,
+      stats: {
+        damage: 2,
+        cooldown: 1,
+        range: 420,
+        radius: 420,
+        camo: true,
+        shield_dmg: 0.69,
+      },
+    },
+    {
+      level: 3,
+      price: 3_600,
+      stats: {
+        damage: 3,
+        cooldown: 0.8,
+        range: 420,
+        radius: 420,
+        camo: true,
+        shield_dmg: 0.69,
+      },
+    },
+    {
+      level: 4,
+      price: 15_500,
+      stats: {
+        damage: 6,
+        cooldown: 0.65,
+        range: 420,
+        radius: 420,
+        camo: true,
+        shield_dmg: 0.69,
+      },
+    },
+    {
+      level: 5,
+      price: 67_300,
+      stats: {
+        damage: 18,
+        cooldown: 0.55,
+        range: 420,
+        radius: 420,
+        armor_piercing: true,
+        camo: true,
+        shield_dmg: 0.69,
+      },
+    },
+    {
+      level: 6,
+      price: 292_000,
+      stats: {
+        damage: 50,
+        cooldown: 0.3,
+        range: 420,
+        radius: 420,
+        armor_piercing: true,
+        camo: true,
+        shield_dmg: 0.69,
+        price: 292_000,
+      },
+    },
+  ],
+  paths: [
+    {
+      id: "a",
+      level: 7,
+      price: 3_892_500,
+      stats: {
+        damage: 600,
+        cooldown: 0.3,
+        range: 690,
+        radius: 420,
+        armor_piercing: true,
+        camo: true,
+        shield_dmg: 0.69,
+      },
+    },
+    {
+      id: "b",
+      level: 7,
+      price: 4_282_000,
+      stats: {
+        damage: 100,
+        cooldown: 0.08,
+        range: 420,
+        radius: 420,
+        execution: 1.75,
+        armor_piercing: true,
+        camo: true,
+        shield_dmg: 0.69,
+      },
+    },
+  ],
+};

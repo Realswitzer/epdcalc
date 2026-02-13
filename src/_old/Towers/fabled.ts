@@ -1,4 +1,4 @@
-import { type Tower } from '../../types';
+import { type Tower } from "../../types";
 
 // TODO: add stats
 export const uranium_stryker: Tower = [
@@ -14,7 +14,7 @@ export const uranium_stryker: Tower = [
     rupture_duration: 7,
     shield_bypass: 0.3,
     armor_piercing: true,
-    camo: true
+    camo: true,
     // already placed so dont have idea for price.
   },
   {},
@@ -33,8 +33,8 @@ export const uranium_stryker: Tower = [
     inaccuracy: 15,
     rad_strength: 2.4,
     rad_length: 11,
-    rupture: 0.5
-  }
+    rupture: 0.5,
+  },
 ];
 export const mechanic: Tower = [
   {
@@ -50,7 +50,7 @@ export const mechanic: Tower = [
     cooldown_buff: 0.064,
     aim: 100,
     shield_dmg: 0.75,
-    price: 2_625
+    price: 2_625,
   },
   {
     spawns_damage: 5,
@@ -65,7 +65,7 @@ export const mechanic: Tower = [
     cooldown_buff: 0.064,
     aim: 100,
     shield_dmg: 0.75,
-    price: 1_700
+    price: 1_700,
   },
   {
     spawns_damage: 12,
@@ -81,7 +81,7 @@ export const mechanic: Tower = [
     camo: true,
     aim: 100,
     shield_dmg: 0.75,
-    price: 4_350
+    price: 4_350,
   },
   {
     spawns_damage: 40,
@@ -98,7 +98,7 @@ export const mechanic: Tower = [
     camo: true,
     aim: 100,
     shield_dmg: 0.75,
-    price: 21_700
+    price: 21_700,
   },
   {
     spawns_damage: 100,
@@ -116,7 +116,7 @@ export const mechanic: Tower = [
     camo: true,
     aim: 100,
     shield_dmg: 0.75,
-    price: 97_300
+    price: 97_300,
   },
   {
     spawns_damage: 300,
@@ -134,7 +134,7 @@ export const mechanic: Tower = [
     camo: true,
     aim: 100,
     shield_dmg: 0.75,
-    price: 460_300
+    price: 460_300,
   },
   {
     spawns_damage: 200_000,
@@ -152,7 +152,7 @@ export const mechanic: Tower = [
     camo: true,
     aim: 100,
     shield_dmg: 0.75,
-    price: 5_022_000
+    price: 5_022_000,
   },
   {
     spawns_damage: 80_000,
@@ -171,8 +171,8 @@ export const mechanic: Tower = [
     camo: true,
     aim: 100,
     shield_dmg: 0.75,
-    price: 5_704_000
-  }
+    price: 5_704_000,
+  },
 ];
 // TODO: add stats
 export const mystic_zero_two: Tower = [
@@ -192,144 +192,6 @@ export const mystic_zero_two: Tower = [
     execution: 27,
     camo: true,
     aim: 120,
-    shield_dmg: 0.9
-  }
-];
-export const quantum_turret: Tower = [
-  {
-    damage: 18,
-    crit_chance: 0.15,
-    crit_dmg: 10,
-    cooldown: 0.4,
-    range: 750,
-    exclusion: 100,
-    targeting_rate: 0.7,
-    radius: 1.5,
-    bleed: 1,
-    all_seeing: 3,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 9_100
+    shield_dmg: 0.9,
   },
-  {
-    damage: 25,
-    crit_chance: 0.2,
-    crit_dmg: 11.5,
-    cooldown: 0.375,
-    range: 900,
-    exclusion: 100,
-    targeting_rate: 0.7,
-    radius: 1.5,
-    bleed: 1,
-    all_seeing: 3.3,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 6_200
-  },
-  {
-    damage: 45,
-    crit_chance: 0.2,
-    crit_dmg: 14,
-    cooldown: 0.375,
-    range: 900,
-    exclusion: 100,
-    targeting_rate: 0.9,
-    radius: 1.75,
-    bleed: 2,
-    all_seeing: 3.3,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 11_300
-  },
-  {
-    damage: 115,
-    crit_chance: 0.25,
-    crit_dmg: 17,
-    cooldown: 0.325,
-    range: 1_050,
-    exclusion: 100,
-    targeting_rate: 0.9,
-    radius: 1.75,
-    bleed: 5,
-    all_seeing: 3.8,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 55_200
-  },
-  {
-    damage: 350,
-    crit_chance: 0.3,
-    crit_dmg: 20,
-    cooldown: 0.325,
-    range: 1_050,
-    exclusion: 100,
-    targeting_rate: 1.05,
-    radius: 2,
-    bleed: 12,
-    all_seeing: 4.2,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 270_000
-  },
-  {
-    damage: 1_000,
-    crit_chance: 0.3,
-    crit_dmg: 25,
-    cooldown: 0.25,
-    range: 1_250,
-    exclusion: 100,
-    targeting_rate: 1.05,
-    radius: 2,
-    bleed: 30,
-    all_seeing: 5.3,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 1_313_400
-  },
-  {
-    damage: 6_000,
-    crit_chance: 0.3,
-    crit_dmg: 60,
-    cooldown: 0.25,
-    range: 1_650,
-    exclusion: 100,
-    targeting_rate: 1.4,
-    radius: 3,
-    bleed: 200,
-    all_seeing: 5.3,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 21_878_500
-  },
-  {
-    damage: 2_700,
-    crit_chance: 0.55,
-    crit_dmg: 25,
-    cooldown: 0.09,
-    range: 1_250,
-    exclusion: 100,
-    targeting_rate: 3.15,
-    radius: 2,
-    bleed: 80,
-    all_seeing: 7.8,
-    shield_bypass: 1,
-    armor_piercing: true,
-    camo: true,
-    aim: 200,
-    price: 24_800_000
-  }
 ];

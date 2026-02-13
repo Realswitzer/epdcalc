@@ -41,4 +41,10 @@ export interface TowerMeta {
   stun?: boolean;
 }
 
-export const towerMeta: Partial<Record<TowerId, TowerMeta>> = {};
+export const towerMeta: Partial<Record<TowerId, TowerMeta>> = {
+  apollos_blessing: { rad: true },
+  adamant_stryker: { rad: true },
+  lemonade_stand: { eco: true },
+  super_stryker: { rad: true },
+  true_vaporizer: { shieldDps: true, stun: true },
+};
