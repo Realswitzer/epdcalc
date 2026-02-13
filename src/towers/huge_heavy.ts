@@ -1,4 +1,4 @@
-// TODO: Check rarity and ability
+// TODO: Check ability
 import { TowerRarity, TowerType, type Tower } from "../types";
 export const huge_heavy: Tower = {
   id: "huge_heavy",

@@ -6,7 +6,7 @@ export const apollos_blessing: Tower = {
   name: "Apollo's Blessing",
   rarity: TowerRarity.Exalted,
   variantOf: "shrine_of_apollo",
-  type: [TowerType.UNKNOWN_TYPE],
+  type: [TowerType.Offense],
   levels: [
     {
       level: 1,

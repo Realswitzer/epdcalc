@@ -4,7 +4,7 @@ export const summer_stryker: Tower = {
   id: "summer_stryker",
   name: "Summer Stryker",
   rarity: TowerRarity.Illustrious,
-  type: [TowerType.Support],
+  type: [TowerType.Offense, TowerType.Support],
   variantOf: "stryker",
   levels: [
     {

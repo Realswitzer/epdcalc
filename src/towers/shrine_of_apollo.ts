@@ -4,7 +4,7 @@ export const shrine_of_apollo: Tower = {
   id: "shrine_of_apollo",
   name: "Shrine of Apollo",
   rarity: TowerRarity.Prestigious,
-  type: [TowerType.Offense, TowerType.UNKNOWN_TYPE],
+  type: [TowerType.Offense],
   variantOf: "shrine_of_apollo",
   levels: [
     {

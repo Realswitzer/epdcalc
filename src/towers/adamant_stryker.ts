@@ -6,7 +6,7 @@ export const adamant_stryker: Tower = {
   variantOf: "stryker",
   name: "Adamant Stryker",
   rarity: TowerRarity.Exalted,
-  type: [TowerType.Support, TowerType.UNKNOWN_TYPE],
+  type: [TowerType.Support, TowerType.Offense],
   levels: [
     {
       level: 1,

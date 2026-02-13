@@ -6,7 +6,7 @@ export const huge_zero_two_school: Tower = {
   name: "HUGE Zero Two (School)",
   rarity: TowerRarity.Synthesized,
   variantOf: "zero_two",
-  type: [TowerType.Offense, TowerType.UNKNOWN_TYPE],
+  type: [TowerType.Offense],
   levels: [
     {
       level: 1,

@@ -5,7 +5,7 @@ export const true_vaporizer: Tower = {
   id: "true_vaporizer",
   name: "True Vaporizer",
   rarity: TowerRarity.Exalted,
-  type: [TowerType.Offense], // possibly +support?
+  type: [TowerType.Offense],
   variantOf: "vaporizer",
   levels: [
     {

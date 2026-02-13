@@ -5,7 +5,7 @@ export const super_stryker: Tower = {
   id: "super_stryker",
   name: "Super Stryker",
   variantOf: "stryker",
-  type: [TowerType.Support],
+  type: [TowerType.Support, TowerType.Offense],
   rarity: TowerRarity.Exalted,
   levels: [
     {

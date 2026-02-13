@@ -6,7 +6,7 @@ export const chief_executive_officer: Tower = {
   id: "chief_executive_officer",
   name: "Chief Executive Officer",
   rarity: TowerRarity.Exalted,
-  type: [TowerType.UNKNOWN_TYPE],
+  type: [TowerType.Support, TowerType.Offense],
   variantOf: "executive",
   levels: [
     { level: 1, price: 9_750, stats: { range: 40, upgrade_reduction: 0.075 } },

@@ -4,6 +4,8 @@
   let { statData = $bindable() as stats } = $props();
 </script>
 
+<!-- switch away from details at some point, since tailwind hates it-->
+
 <details open>
   <ul>
     <li id={statData.name}>

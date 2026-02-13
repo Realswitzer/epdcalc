@@ -5,11 +5,6 @@ export const abyssal: TowerInfo = {
   Rarity: Rarity.Prototype,
   Type: [TowerType.Support, TowerType.Offense],
 };
-export const adamant_styker: TowerInfo = {
-  Name: "Adamant Stryker",
-  Rarity: Rarity.Exalted,
-  Type: [TowerType.Support, TowerType.Offense],
-};
 export const alchemist: TowerInfo = {
   Name: "Alchemist",
   Rarity: Rarity.Prestigious,
@@ -30,11 +25,6 @@ export const angelic_warrior: TowerInfo = {
   Name: "Angelic Warrior",
   Rarity: Rarity.Standard,
   Type: TowerType.UNKNOWN_TYPE,
-};
-export const apollos_blessing: TowerInfo = {
-  Name: "Apollo's Blessing",
-  Rarity: Rarity.Exalted,
-  Type: TowerType.Offense,
 };
 export const arcane_blizzard: TowerInfo = {
   Name: "Arcane Blizzard",
@@ -86,16 +76,6 @@ export const capitalist: TowerInfo = {
   Rarity: Rarity.Exotic,
   Type: [TowerType.Offense, TowerType.Generator],
 };
-export const casual_zero_two: TowerInfo = {
-  Name: "Casual Zero Two",
-  Rarity: Rarity.Exalted,
-  Type: TowerType.Offense,
-};
-export const chief_executive_officer: TowerInfo = {
-  Name: "Chief Executive Officer",
-  Rarity: Rarity.Exalted,
-  Type: [TowerType.Support, TowerType.Offense],
-};
 export const code_0_0_2: TowerInfo = {
   Name: "Code: 0-0-2",
   Rarity: Rarity.Lustrous,
@@ -141,11 +121,6 @@ export const demolitions_expert: TowerInfo = {
   Name: "Demolitions Expert",
   Rarity: Rarity.Prototype,
   Type: TowerType.Defense,
-};
-export const elder_godfather: TowerInfo = {
-  Name: "Elder Godfather",
-  Rarity: Rarity.Unknown,
-  Type: TowerType.Offense,
 };
 export const electrician: TowerInfo = {
   Name: "Electrician",
@@ -282,11 +257,6 @@ export const heavy: TowerInfo = {
   Rarity: Rarity.Standard,
   Type: TowerType.Offense,
 };
-export const heckerman: TowerInfo = {
-  Name: "Heckerman",
-  Rarity: Rarity.Majestic,
-  Type: TowerType.Offense,
-};
 export const heckler: TowerInfo = {
   Name: "Heckler",
   Rarity: Rarity.Standard,
@@ -301,11 +271,6 @@ export const hellfire: TowerInfo = {
   Name: "Hellfire",
   Rarity: Rarity.Elusive,
   Type: TowerType.UNKNOWN_TYPE,
-};
-export const high_engineer: TowerInfo = {
-  Name: "High Engineer",
-  Rarity: Rarity.Exalted,
-  Type: TowerType.Defense,
 };
 export const hitman: TowerInfo = {
   Name: "Hitman",
@@ -322,11 +287,6 @@ export const huge_demolisher: TowerInfo = {
   Rarity: Rarity.ElusiveStandard,
   Type: TowerType.Offense,
 };
-export const huge_elder_godfather: TowerInfo = {
-  Name: "HUGE Elder Godfather",
-  Rarity: Rarity.Unknown,
-  Type: TowerType.Offense,
-};
 export const huge_festive_tree: TowerInfo = {
   Name: "HUGE Festive Tree",
   Rarity: Rarity.Elusive,
@@ -336,16 +296,6 @@ export const huge_festive_tree: TowerInfo = {
 export const huge_godfather: TowerInfo = {
   Name: "HUGE Godfather",
   Rarity: Rarity.ElusiveStandard,
-  Type: TowerType.Offense,
-};
-export const huge_heavy: TowerInfo = {
-  Name: "HUGE Heavy",
-  Rarity: Rarity.Unknown,
-  Type: TowerType.Offense,
-};
-export const huge_heckerman: TowerInfo = {
-  Name: "HUGE Heckerman",
-  Rarity: Rarity.Synthesized,
   Type: TowerType.Offense,
 };
 export const huge_jar_guard: TowerInfo = {
@@ -377,11 +327,6 @@ export const huge_sharpshooter: TowerInfo = {
 export const huge_shotgunner: TowerInfo = {
   Name: "HUGE Shotgunner",
   Rarity: Rarity.ElusiveStandard,
-  Type: TowerType.Offense,
-};
-export const huge_zero_two_school: TowerInfo = {
-  Name: "HUGE Zero Two (School)",
-  Rarity: Rarity.Synthesized,
   Type: TowerType.Offense,
 };
 export const invisible_man: TowerInfo = {
@@ -448,17 +393,6 @@ export const killzone_rookie: TowerInfo = {
   Name: "Killzone (Rookie)",
   Rarity: Rarity.Lustrous,
   Type: [TowerType.Offense, TowerType.Support],
-};
-export const killzone: TowerInfo = {
-  Name: "Killzone",
-  Rarity: Rarity.Prestigious,
-  Type: [TowerType.Offense, TowerType.Support],
-};
-export const lemonade_stand: TowerInfo = {
-  Name: "Lemonade Stand",
-  Rarity: Rarity.Elusive,
-  Type: [TowerType.Generator, TowerType.Support],
-  GeneratorType: GeneratorType.Time,
 };
 export const liferender: TowerInfo = {
   Name: "Liferender",
@@ -556,11 +490,6 @@ export const phantom_killzone: TowerInfo = {
   Rarity: Rarity.Prime,
   Type: [TowerType.Offense, TowerType.Support],
 };
-export const phase_turret: TowerInfo = {
-  Name: "Phase Turret",
-  Rarity: Rarity.Legendary,
-  Type: TowerType.Offense,
-};
 export const pistolman: TowerInfo = {
   Name: "Pistolman",
   Rarity: Rarity.Standard,
@@ -576,42 +505,17 @@ export const quantum_stryker: TowerInfo = {
   Rarity: Rarity.Fusion,
   Type: [TowerType.Offense, TowerType.Support],
 };
-export const quantum_turret: TowerInfo = {
-  Name: "Quantum Turret",
-  Rarity: Rarity.Fabled,
-  Type: TowerType.Offense,
-};
 export const radiant_raygunner: TowerInfo = {
   Name: "Radiant Raygunner",
   Rarity: Rarity.Illustrious,
   Type: TowerType.UNKNOWN_TYPE,
 };
-export const raygunner_alpha: TowerInfo = {
-  Name: "Raygunner (Alpha)",
-  Rarity: Rarity.Lustrous,
-  Type: TowerType.Offense,
-};
-export const raygunner_mk2: TowerInfo = {
-  Name: "Raygunner Mk.2",
-  Rarity: Rarity.Exalted,
-  Type: TowerType.Offense,
-};
-export const raygunner: TowerInfo = {
-  Name: "Raygunner",
-  Rarity: Rarity.Prestigious,
-  Type: TowerType.Offense,
-};
+
 export const rogue: TowerInfo = {
   Name: "Rogue",
   Rarity: Rarity.Standard,
   Type: TowerType.Offense,
 };
-export const samurai_sentinel: TowerInfo = {
-  Name: "Samurai Sentinel",
-  Rarity: Rarity.Legendary,
-  Type: TowerType.Offense,
-};
-
 export const sanctified_stryker: TowerInfo = {
   Name: "Sanctified Stryker",
   Rarity: Rarity.Legendary,
@@ -658,11 +562,6 @@ export const shredder: TowerInfo = {
   Rarity: Rarity.Exotic,
   Type: TowerType.UNKNOWN_TYPE,
 };
-export const shrine_of_apollo: TowerInfo = {
-  Name: "Shrine of Apollo",
-  Rarity: Rarity.Prestigious,
-  Type: TowerType.Offense,
-};
 export const shrine_of_tartarus: TowerInfo = {
   Name: "Shrine of Tartarus",
   Rarity: Rarity.Illustrious,
@@ -699,20 +598,10 @@ export const strawberry_lemonade_stand: TowerInfo = {
   Type: [TowerType.Generator, TowerType.Support],
   GeneratorType: GeneratorType.Time,
 };
-export const stryker: TowerInfo = {
-  Name: "Stryker",
-  Rarity: Rarity.Prestigious,
-  Type: [TowerType.Offense, TowerType.Support],
-};
 export const stunner: TowerInfo = {
   Name: "Stunner",
   Rarity: Rarity.Standard,
   Type: TowerType.Support,
-};
-export const summer_stryker: TowerInfo = {
-  Name: "Summer Stryker",
-  Rarity: Rarity.Illustrious,
-  Type: [TowerType.Offense, TowerType.Support],
 };
 export const summer_zero_two: TowerInfo = {
   Name: "Summer Zero Two",
@@ -724,11 +613,6 @@ export const sunshadow_operative: TowerInfo = {
   Rarity: Rarity.Illustrious,
   Type: TowerType.Offense,
 };
-export const super_stryker: TowerInfo = {
-  Name: "Super Stryker",
-  Rarity: Rarity.Exalted,
-  Type: [TowerType.Support, TowerType.Offense],
-};
 export const terroret: TowerInfo = {
   Name: "Terroret",
   Rarity: Rarity.Illustrious,
@@ -736,11 +620,6 @@ export const terroret: TowerInfo = {
 };
 export const titanium_turret: TowerInfo = {
   Name: "Titanium Turret",
-  Rarity: Rarity.Exalted,
-  Type: TowerType.Offense,
-};
-export const true_vaporizer: TowerInfo = {
-  Name: "True Vaporizer",
   Rarity: Rarity.Exalted,
   Type: TowerType.Offense,
 };
@@ -808,10 +687,5 @@ export const zero_two_supreme: TowerInfo = {
 export const zero_two_unknown: TowerInfo = {
   Name: "Zero Two (???)",
   Rarity: Rarity.Unknown,
-  Type: TowerType.Offense,
-};
-export const zero_two: TowerInfo = {
-  Name: "Zero Two",
-  Rarity: Rarity.Prestigious,
   Type: TowerType.Offense,
 };
