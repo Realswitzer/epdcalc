@@ -2,28 +2,28 @@ import { TowerId } from "./types";
 
 // NOTE: used for UI, aim to keep /towers as truth
 // All of this is subjective, so if I miss a tower, it's not my fault for ignoring indie Humanoids.
-export interface TowerMeta {
+export const TowerMetaKey = {
   /**
    * Whether a tower is used for ecoing.
    *
    * Not all towers, especially some of the bad cash conv. towers (Godfather), will count
    */
-  eco?: boolean;
+  eco: "Eco",
   /**
    * Whether a tower has high Shield DPS, based on price, overall SDPS, instabreak, etc.
    *
    * NOTE: Just because it is in the list, it may not be the best, but attempts will
    * probably be made to include all stages.
    */
-  shieldDps?: boolean;
+  shieldDps: "Shield DPS",
   /** Whether a tower applies Rad */
-  rad?: boolean;
+  rad: "Rad",
   /** Whether a tower applies Scorch */
-  scorch?: boolean;
+  scorch: "Scorch",
   /** Whether a tower applies Frostbite */
-  frostbite?: boolean;
+  frostbite: "Frostbite",
   /** Whether a tower applies Rupture */
-  rupture?: boolean;
+  rupture: "Rupture",
   /**
    * "Win condition" describes towers that are strong and practically necessary,
    * especially factoring in late-game. This is primarily based off of what I
@@ -34,27 +34,27 @@ export interface TowerMeta {
    * Some may not be win conditions themselves, but used in combinations
    * Namely, Summer Stryker with Code 0-0-2 or Code 002.
    */
-  win_condition?: boolean;
-  /**
-   * Whether a tower has stun
-   */
-  stun?: boolean;
+  win_condition: "Win Condition",
+  /** Whether a tower has stun */
+  stun: "Stun",
   /**
    * "Leech fodder" is a term to describe towers that leech would be extremely
    * good with. Effectively, it'll probably just be the top 5 base dmg towers.
    * Leech is already good without necessarily needing fodder, but this sets it
    * so far over the edge
    */
-  leech_fodder?: boolean;
+  leech_fodder: "Leech Fodder",
   /**
    * Some things for types of buffs, only *good* towers will be factored in.
    * Engi does not count. Nor does High Engi.
    */
-  cd_buff?: boolean;
-  dmg_buff?: boolean;
-  range_buff?: boolean;
-  upg_reduction_buff?: boolean;
-}
+  cd_buff: "Cooldown Buff",
+  dmg_buff: "Damage Buff",
+  range_buff: "Range Buff",
+  upg_reduction_buff: "Upg. Buff",
+} as const;
+
+export type TowerMeta = Partial<Record<keyof typeof TowerMetaKey, boolean>>;
 
 export const towerMeta: Partial<Record<TowerId, TowerMeta>> = {
   adamant_stryker: { rad: true },

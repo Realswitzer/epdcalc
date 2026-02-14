@@ -1,6 +1,8 @@
 <script lang="ts">
   let { filters = $bindable() } = $props();
   import humanize from "$lib/humanize";
+  import { TowerRarity, TowerType, VariantTower } from "epdcalc/types";
+  import { TowerMetaKey } from "epdcalc/towerMeta";
   let openSections = $state({
     type: false,
     rarity: false,
@@ -15,55 +17,19 @@
     meta: new Set<string>(),
   });
 
-  const TowerType = ["Offense", "Defense", "Generator", "Support"];
-  const TowerRarity = [
-    "Elusive",
-    "Elusive/Standard",
-    "Exalted",
-    "Exotic",
-    "Fabled",
-    "Fusion",
-    "Illustrious",
-    "Legendary",
-    "Lustrous",
-    "Majestic",
-    "Prestigious",
-    "Prime",
-    "Prototype",
-    "Standard",
-    "Synthesized",
-    "Unknown",
-    "???",
-  ];
-  const TowerVariants = [
-    "zero_two",
-    "shrine_of_apollo",
-    "raygunner",
-    "vaporizer",
-    "executive",
-    "scorcher",
-    "stryker",
-    "blizzard",
-    "lucifer",
-    "jar_guard",
-    "lemonade_stand",
-  ];
-  const MetaKeys = [
-    "eco",
-    "shield_dps",
-    "rad",
-    "scorch",
-    "frostbite",
-    "rupture",
-    "win_condition",
-    "stun",
-  ];
-
   const filterSections = [
-    { key: "type", label: "Type", items: TowerType },
-    { key: "rarity", label: "Rarity", items: TowerRarity },
-    { key: "variant", label: "Variant", items: TowerVariants },
-    { key: "meta", label: "Metas", items: MetaKeys },
+    { key: "type", label: "Type", items: Object.values(TowerType).sort() },
+    {
+      key: "rarity",
+      label: "Rarity",
+      items: Object.values(TowerRarity).sort(),
+    },
+    {
+      key: "variant",
+      label: "Variant",
+      items: Object.values(VariantTower).sort(),
+    },
+    { key: "meta", label: "Metas", items: Object.values(TowerMetaKey).sort() },
   ] as const;
 
   function toggleSet(set: Set<string>, value: string, checked: boolean) {

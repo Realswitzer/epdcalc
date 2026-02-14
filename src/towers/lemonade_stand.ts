@@ -98,7 +98,6 @@ export const lemonade_stand: Tower = {
         interest: 0.02,
         damage_buff: 0.15,
         cooldown_buff: 0.1,
-        price: 777000,
       },
     },
     {

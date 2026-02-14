@@ -7,7 +7,10 @@
   let towerKeys = Object.keys(towers);
 </script>
 
-<div id="TowerGrid" class="w-full h-full">
+<div
+  id="TowerGrid"
+  class="grid grid-cols-[repeat(auto-fill,9rem)] gap-x-8 justify-start"
+>
   {#each towerKeys as tower}
     <TowerCard {tower} bind:selectedTowerKey />
   {/each}

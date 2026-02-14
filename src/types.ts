@@ -8,7 +8,7 @@ export interface Tower {
   type: TowerType[];
   paths: TowerPath[];
   generatorType?: GeneratorType;
-  variantOf?: VariantTower;
+  variantOf?: Partial<keyof typeof VariantTower>;
 }
 
 export type TowerId = keyof typeof towers;
@@ -18,39 +18,22 @@ export type TowerId = keyof typeof towers;
 // which while they are modeled after the Godfather,
 // is too distinct to be considered a variant of it
 // Effectively, 3+ significant variants to be considered
-export type VariantTower =
-  | "zero_two"
-  | "shrine_of_apollo"
-  | "raygunner"
-  | "vaporizer"
-  | "executive"
-  | "scorcher"
-  | "stryker"
-  | "blizzard"
-  | "lucifer"
-  | "jar_guard"
-  | "lemonade_stand"
-  | "engineer"
-  | "turret"
-  | "killzone";
-
-// basically just a cheap excuse for localization for the frontend, though may be fully removed at some point
-// will need a similar obj/function to convert tower stats to expected, however.
-export const friendlyName = {
-  VariantTower: {
-    zero_two: "Zero Two",
-    shrine_of_apollo: "Shrine of Apollo",
-    raygunner: "Raygunner",
-    vaporizer: "Vaporizer",
-    executive: "Executive",
-    scorcher: "Scorcher",
-    stryker: "Stryker",
-    blizzard: "Blizzard",
-    lucifer: "Lucifer",
-    jar_guard: "Jar Guard",
-    lemonade_stand: "Lemonade Stand",
-  },
-};
+export const VariantTower = {
+  blizzard: "Blizzard",
+  engineer: "Engineer",
+  executive: "Executive",
+  jar_guard: "Jar Guard",
+  killzone: "Killzone",
+  lemonade_stand: "Lemonade Stand",
+  lucifer: "Lucifer",
+  raygunner: "Raygunner",
+  scorcher: "Scorcher",
+  shrine_of_apollo: "Shrine of Apollo",
+  stryker: "Stryker",
+  turret: "Turret",
+  vaporizer: "Vaporizer",
+  zero_two: "Zero Two",
+} as const;
 
 export interface TowerLevel {
   level: number;
