@@ -19,5 +19,12 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
+  },
+  "scripts": {
+    "build": "cd './web' && vite build",
+    "dev": "cd './web' && bun run dev",
+    "prepare": "cd './web' && svelte-kit sync || echo ''",
+    "check": "cd './web' && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "cd './web' && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   }
 }
