@@ -9,7 +9,7 @@
     name="og:description"
     content="poorly made calculator for entry point defense"
   />
-  <meta name="og:type" content="website"/>
+  <meta name="og:type" content="website" />
   <meta name="keywords" content="epdcalc, sylvyon.dev" />
   <meta name="robots" content="noindex, nofollow" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
